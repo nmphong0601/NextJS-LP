@@ -1,0 +1,29 @@
+{
+  "name": "gleads-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "build:prodution": "env-cmd -f .env.production next build && next export",
+    "build:development": "env-cmd -f .env.development next build && next export"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.6.9",
+    "env-cmd": "^10.1.0",
+    "fs": "^0.0.1-security",
+    "graphql": "^16.5.0",
+    "next": "12.2.2",
+    "path": "^0.12.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "responsive-loader": "^3.0.4",
+    "sharp": "^0.30.7"
+  },
+  "devDependencies": {
+    "eslint": "8.20.0",
+    "eslint-config-next": "12.2.2"
+  }
+}
