@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@apollo/client": "^3.6.9",
+    "bootstrap": "^5.2.2",
     "env-cmd": "^10.1.0",
     "fs": "^0.0.1-security",
     "graphql": "^16.5.0",
@@ -20,6 +21,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "responsive-loader": "^3.0.4",
+    "sass": "^1.55.0",
     "sharp": "^0.30.7"
   },
   "devDependencies": {
