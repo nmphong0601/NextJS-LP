@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from 'styles/home.module.css'
+import styles from "styles/home.module.scss";
 
 export default function Home() {
     // https://freefrontend.com/css-book-effects/
     return (
-        <div className={styles.container}>
+        <div className="container">
             <Head>
                 <title>Create Next App</title>
                 <meta
