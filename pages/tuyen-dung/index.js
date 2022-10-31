@@ -1,24 +1,187 @@
 //import resources from "pages/api/resources";
 import { getResources } from "common/funtions";
-import { useState } from "react";
+import { Children, cloneElement, useEffect, useRef, useState } from "react";
 // import path from "path";
 
 import styles from "./index.module.scss";
 
+const DIRECTIOM_TYPE = {
+    next: "NEXT",
+    prev: "PREV",
+};
+
 const Card = (props) => {
     const { data, ...otherProps } = props;
     return (
-        <div className={styles.flip}>
-            <div className={styles.back}></div>
-            <div {...otherProps}>
-                <div className="d-block mb-2">
-                    <img
-                        src="/assets/images/BanLamViec_2.jpg"
-                        style={{ width: "100%", height: "100%" }}
-                    />
-                </div>
-                <div className="d-flex flex-col justify-content-center">
-                    <div>{data?.code}</div>
+        <div {...otherProps}>
+            <div className="d-block mb-2">
+                <img
+                    src="/assets/images/BanLamViec_2.jpg"
+                    style={{ width: "100%", height: "100%" }}
+                />
+            </div>
+            <div className="d-flex flex-col justify-content-center">
+                <div>{data?.code}</div>
+            </div>
+        </div>
+    );
+};
+
+const Slider = ({ children, settings }) => {
+    const [slides, setSlides] = useState([]);
+    const [activeSlide, setActiveSlide] = useState(0);
+    const [needTransition, setNeedTransition] = useState(true);
+    const [internalSettings, setInternalSettings] = useState({});
+    const [direction, setDirection] = useState("");
+
+    const containerRef = useRef(null);
+
+    const [width, setWidth] = useState(0);
+    const [slideWidth, setSlideWidth] = useState(0);
+
+    const defaultSettings = {
+        initialSlide: 1,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        useTransition: true,
+        spaceBetween: 20,
+    };
+
+    useEffect(() => {
+        setInternalSettings({ ...defaultSettings, ...settings });
+    }, [settings]);
+
+    useEffect(() => {
+        setActiveSlide(internalSettings.initialSlide);
+    }, [internalSettings]);
+
+    useEffect(() => {
+        if (Children.count(children) !== 0) {
+            setSlides(Children.toArray(children));
+        }
+    }, [children]);
+
+    useEffect(() => {
+        setWidth(containerRef.current.clientWidth);
+        setSlideWidth(
+            containerRef.current.clientWidth / internalSettings.slidesToShow
+        );
+    });
+
+    const handleSliderTranslateEnd = () => {
+        console.log("handleSliderTranslateEnd");
+        switch (direction) {
+            case DIRECTIOM_TYPE.next:
+                vaildNextSlider();
+                break;
+            case DIRECTIOM_TYPE.prev:
+                vaildPrevSlider();
+                break;
+            default:
+                break;
+        }
+    };
+
+    const vaildNextSlider = () => {
+        let _activeSlide = activeSlide;
+        // if (_activeSlide > slides.length - internalSettings.slidesToShow) {
+        _activeSlide -= 1;
+        const _slides = [
+            ...slides,
+            ...slides.slice(0, internalSettings.slidesToShow),
+        ].slice(-slides.length);
+        setNeedTransition(false);
+        setActiveSlide(_activeSlide);
+        setSlides(_slides);
+        // }
+    };
+
+    const vaildPrevSlider = () => {
+        let _activeSlide = activeSlide;
+        // if (_activeSlide < 1) {
+        _activeSlide += 1;
+        const _slides = [
+            ...slides.slice(-internalSettings.slidesToShow),
+            ...slides,
+        ].slice(0, slides.length);
+        setNeedTransition(false);
+        setActiveSlide(_activeSlide);
+        setSlides(_slides);
+        //}
+    };
+
+    const handleNext = () => {
+        let _activeSlide = activeSlide;
+        _activeSlide += 1;
+        if (_activeSlide > slides.length - internalSettings.slidesToShow)
+            return;
+        setNeedTransition(true);
+        setActiveSlide(_activeSlide);
+        setDirection(DIRECTIOM_TYPE.next);
+    };
+
+    const handlePrev = () => {
+        let _activeSlide = activeSlide;
+        _activeSlide = _activeSlide - internalSettings.slidesToScroll;
+        if (_activeSlide < 0) return;
+        setNeedTransition(true);
+        setActiveSlide(_activeSlide);
+        setDirection(DIRECTIOM_TYPE.prev);
+    };
+
+    const transLateVal = () => {
+        return activeSlide * slideWidth * internalSettings.slidesToScroll;
+    };
+
+    const sliderStyle = () => {
+        if (needTransition) {
+            return {
+                transform: `translateX(-${transLateVal()}px)`,
+                transition: "transform 0.3s ease-in-out",
+                width: `${slideWidth * slides.length}px`,
+            };
+        }
+
+        return {
+            transform: `translateX(-${transLateVal()}px)`,
+            width: `${slideWidth * slides.length}px`,
+        };
+    };
+
+    return (
+        <div className="overflow-hidden">
+            <div className="position-relative">
+                <div
+                    ref={containerRef}
+                    className="container position-relative mx-auto w-100 overflow-visible whitespace-no-wrap"
+                >
+                    <div
+                        style={sliderStyle()}
+                        className="d-flex justify-content-center"
+                        onTransitionEnd={handleSliderTranslateEnd}
+                    >
+                        {slides.map((item, i) => (
+                            <div
+                                key={i}
+                                style={{
+                                    width: `${slideWidth}px`,
+                                    marginLeft: `${
+                                        internalSettings.spaceBetween / 2
+                                    }px`,
+                                    marginRight: `${
+                                        internalSettings.spaceBetween / 2
+                                    }px`,
+                                }}
+                            >
+                                {item}
+                            </div>
+                        ))}
+                    </div>
+                    <div>
+                        <button onClick={() => handlePrev()}>prev</button>
+                        <button onClick={() => handleNext()}> next</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -26,8 +189,6 @@ const Card = (props) => {
 };
 
 const Component = ({ data }) => {
-    const [checkedPage, setCheckedPage] = useState(["page-1", "page-2"]);
-
     const onPageChange = (e) => {
         const pages = [...checkedPage];
         console.log("pages: ", pages);
@@ -44,129 +205,13 @@ const Component = ({ data }) => {
     };
 
     return (
-        <div className="container">
-            {/* <div className="row">
-                {data.posts.slice(0, 6).map((country) => (
-                    <Card
-                        key={country.code}
-                        data={country}
-                        className="col-lg-3 d-flex flex-column"
-                    />
+        <section className="mt-4 mb-4">
+            <Slider>
+                {data?.posts.slice(0, 7).map((item, i) => (
+                    <Card key={i} data={item} className="w-full" />
                 ))}
-            </div> */}
-            <div className="cover">
-                <div className="book">
-                    <label
-                        // htmlFor={`page-1`}
-                        className="book__page book__page--1"
-                    >
-                        <div className="page__content">Page first</div>
-                    </label>
-
-                    <label
-                        // htmlFor={nextPage}
-                        className="book__page book__page--4"
-                    >
-                        <div className="page__content">Page last</div>
-                    </label>
-
-                    {/* <!-- Resets the page --> */}
-                    <input
-                        type="radio"
-                        name="page"
-                        id="page-1"
-                        value={"page-1"}
-                        checked={
-                            checkedPage.findIndex((x) => x === "page-1") !== -1
-                        }
-                        onClick={(e) => onPageChange(e)}
-                        style={{
-                            zIndex: `${
-                                checkedPage.findIndex((x) => x === "page-1") !==
-                                -1
-                                    ? 100
-                                    : 10
-                            }`,
-                        }}
-                    />
-
-                    {/* <!-- Goes to the second page --> */}
-                    <input
-                        type="radio"
-                        name="page-2"
-                        id="page-2"
-                        value={"page-2"}
-                        checked={
-                            checkedPage.findIndex((x) => x === "page-2") !== -1
-                        }
-                        onClick={(e) => onPageChange(e)}
-                        style={{
-                            zIndex: `${
-                                checkedPage.findIndex((x) => x === "page-1") !==
-                                -1
-                                    ? 100
-                                    : 10
-                            }`,
-                        }}
-                    />
-                    <label
-                        className={`book__page book__page--2`}
-                        style={{
-                            zIndex: `${
-                                checkedPage.findIndex((x) => x === "page-1") !==
-                                -1
-                                    ? 100
-                                    : 10
-                            }`,
-                        }}
-                    >
-                        <div className="book__page-front">
-                            <div className="page__content">Page 1</div>
-                        </div>
-                        <div className="book__page-back">
-                            <div className="page__content">Page 1.2</div>
-                        </div>
-                    </label>
-                    {/* <!-- Goes to the second page --> */}
-                    <input
-                        type="radio"
-                        name="page-3"
-                        id="page-3"
-                        value={"page-3"}
-                        onClick={(e) => onPageChange(e)}
-                        checked={
-                            checkedPage.findIndex((x) => x === "page-3") !== -1
-                        }
-                        style={{
-                            zIndex: `${
-                                checkedPage.findIndex((x) => x === "page-3") !==
-                                -1
-                                    ? 100
-                                    : 10
-                            }`,
-                        }}
-                    />
-                    <label
-                        className={`book__page book__page--2`}
-                        style={{
-                            zIndex: `${
-                                checkedPage.findIndex((x) => x === "page-3") !==
-                                -1
-                                    ? 100
-                                    : 10
-                            }`,
-                        }}
-                    >
-                        <div className="book__page-front">
-                            <div className="page__content">Page 2</div>
-                        </div>
-                        <div className="book__page-back">
-                            <div className="page__content">Page 2.2</div>
-                        </div>
-                    </label>
-                </div>
-            </div>
-        </div>
+            </Slider>
+        </section>
     );
 };
 
