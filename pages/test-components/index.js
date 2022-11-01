@@ -46,11 +46,44 @@ const Slider = ({ children, settings }) => {
         infinite: true,
         useTransition: true,
         spaceBetween: 20,
+        loopAddSlides: 0,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
     };
 
     useEffect(() => {
         setInternalSettings({ ...defaultSettings, ...settings });
     }, [settings]);
+
+    useEffect(() => {
+        let allSettings = { ...defaultSettings, ...settings };
+
+        if (allSettings.responsive) {
+            const responsives = [...allSettings.responsive];
+            const breakpoints = responsives.filter(
+                (x) => x.breakpoint >= width
+            );
+            const breakpoint =
+                breakpoints && breakpoints.length > 0
+                    ? breakpoints.reduce((prev, curr) => {
+                          return prev < curr ? prev : curr;
+                      })
+                    : undefined;
+            const breakpointSettings = breakpoint
+                ? breakpoint.settings
+                : undefined;
+            allSettings = breakpointSettings ? breakpointSettings : allSettings;
+        }
+
+        setInternalSettings(allSettings);
+    }, [width]);
 
     useEffect(() => {
         setActiveSlide(internalSettings.initialSlide);
@@ -68,6 +101,71 @@ const Slider = ({ children, settings }) => {
             containerRef.current.clientWidth / internalSettings.slidesToShow
         );
     });
+
+    const calcLoopSlides = (slides) => {
+        let loopedSlides = Math.ceil(
+            parseFloat(internalSettings.slidesToShow, 10)
+        );
+
+        loopedSlides += internalSettings.loopAddSlides;
+
+        if (loopedSlides > slides.length) {
+            loopedSlides = slides.length;
+        }
+
+        return loopedSlides;
+    };
+
+    const renderLoop = (slides, settings) => {
+        const modifiedSlides = slides.map((child, index) => {
+            return cloneElement(child, {
+                "data-slide-index": index,
+                style: {
+                    width: `${slideWidth}px`,
+                    marginLeft: `${settings.spaceBetween / 2}px`,
+                    marginRight: `${settings.spaceBetween / 2}px`,
+                },
+            });
+        });
+
+        function duplicateSlide(child, index, position) {
+            return cloneElement(child, {
+                key: `${child.key}-duplicate-${index}-${position}`,
+                className: `${child.props.className || ""} slide-duplicate`,
+                style: {
+                    width: `${slideWidth}px`,
+                    marginLeft: `${settings.spaceBetween / 2}px`,
+                    marginRight: `${settings.spaceBetween / 2}px`,
+                },
+            });
+        }
+
+        const loopedSlides = calcLoopSlides(modifiedSlides);
+
+        const prependSlides = [];
+        const appendSlides = [];
+        for (let i = 0; i < loopedSlides; i += 1) {
+            const index =
+                i -
+                Math.floor(i / modifiedSlides.length) * modifiedSlides.length;
+            appendSlides.push(
+                duplicateSlide(modifiedSlides[index], i, "append")
+            );
+            prependSlides.unshift(
+                duplicateSlide(
+                    modifiedSlides[modifiedSlides.length - index - 1],
+                    i,
+                    "prepend"
+                )
+            );
+        }
+
+        return [...prependSlides, ...modifiedSlides, ...appendSlides];
+    };
+
+    const renderSlides = () => {
+        return renderLoop(slides, internalSettings);
+    };
 
     const handleSliderTranslateEnd = () => {
         console.log("handleSliderTranslateEnd");
@@ -161,7 +259,7 @@ const Slider = ({ children, settings }) => {
                         className="d-flex justify-content-center"
                         onTransitionEnd={handleSliderTranslateEnd}
                     >
-                        {slides.map((item, i) => (
+                        {/* {slides.map((item, i) => (
                             <div
                                 key={i}
                                 style={{
@@ -176,7 +274,8 @@ const Slider = ({ children, settings }) => {
                             >
                                 {item}
                             </div>
-                        ))}
+                        ))} */}
+                        {renderSlides()}
                     </div>
                     <div>
                         <button onClick={() => handlePrev()}>prev</button>
