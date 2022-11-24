@@ -10,6 +10,34 @@ const DIRECTIOM_TYPE = {
     prev: "PREV",
 };
 
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+
+function random(min, max) {
+    return min + Math.random() * (max - min + 1);
+}
+
+function getColor(hexCode, opacity) {
+    let result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hexCode);
+    let r = parseInt(result[1], 16),
+        g = parseInt(result[2], 16),
+        b = parseInt(result[3], 16),
+        a = 1;
+
+    if (hexCode.length === 9) {
+        a = parseInt(hexCode.slice(7, 9), 16) / 255;
+    }
+    if (opacity) {
+        a = opacity;
+    }
+
+    const color = "rgba(" + r + ", " + g + ", " + b + ", " + a + ")";
+    return color;
+}
+
 const Card = (props) => {
     const { data, ...otherProps } = props;
     return (
@@ -287,30 +315,138 @@ const Slider = ({ children, settings }) => {
     );
 };
 
-const Component = ({ data }) => {
-    const onPageChange = (e) => {
-        const pages = [...checkedPage];
-        console.log("pages: ", pages);
-        if (e.target.value) {
-            const idx = pages.findIndex((x) => x === e.target.value);
-            if (idx !== -1) {
-                pages.splice(idx, 1);
-            } else {
-                pages.push(e.target.value);
-            }
-        }
+const Particle = ({ color, bg, speed, particleNum }) => {
+    const [particles, setParticles] = useState([]);
 
-        setCheckedPage(pages);
+    const defaultOptions = {
+        maxSpeed: 2,
+        minSpeed: 0.5,
+        maxSize: 5,
+        minSize: 1,
+        maxOpacity: 1,
+        minOpacity: 0.2,
+    };
+
+    useEffect(() => {
+        init();
+    }, []);
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            draw();
+        }, 15);
+
+        return () => {
+            clearInterval(timer);
+        };
+    }, [particles]);
+
+    const init = () => {
+        const { maxSpeed, minSpeed, maxOpacity, minOpacity, maxSize, minSize } =
+            defaultOptions;
+        const _particles = [...particles];
+        const totalParticles = particleNum
+            ? particleNum
+            : window.innerWidth / 3;
+
+        for (let i = 0; i < totalParticles; i++) {
+            var startX = getRandomInt(0, window.innerWidth);
+            var startY = getRandomInt(0, window.innerHeight);
+            var speedX = getRandomInt(minSpeed, speed);
+            var speedY = getRandomInt(minSpeed, speed);
+            var opacity =
+                Math.random() * (maxOpacity - minOpacity) + minOpacity;
+            var size = Math.random() * (maxSize - minSize) + minSize;
+
+            _particles.push({
+                x: startX,
+                y: startY,
+                speedX: speedX,
+                speedY: speedY,
+                opacity: opacity,
+                size: size,
+            });
+        }
+        setParticles(_particles);
+    };
+
+    const draw = () => {
+        const canvas = document.getElementById("bg-particle");
+        const ctx = canvas.getContext("2d");
+        const _particles = [...particles];
+        const { maxSpeed, minSpeed, maxOpacity, minOpacity, maxSize, minSize } =
+            defaultOptions;
+
+        ctx.fillStyle = getColor(bg, 0.9);
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        _particles.forEach((particle, index) => {
+            let y = particle.y + particle.speedY;
+            let x = particle.x + particle.speedX;
+
+            if (y > window.innerHeight) {
+                y = getRandomInt(-100, -10);
+                particle.x = getRandomInt(0, window.innerWidth);
+                particle.speedY = Math.random() * (speed - minSpeed) + minSpeed;
+                particle.opacity =
+                    Math.random() * (maxOpacity - minOpacity) + minOpacity;
+                particle.size = Math.random() * (maxSize - minSize) + minSize;
+            }
+
+            if (x > window.innerWidth) {
+                x = getRandomInt(-100, -10);
+                particle.y = getRandomInt(0, window.innerHeight);
+                particle.speedX = Math.random() * (speed - minSpeed) + minSpeed;
+                particle.opacity =
+                    Math.random() * (maxOpacity - minOpacity) + minOpacity;
+                particle.size = Math.random() * (maxSize - minSize) + minSize;
+            }
+
+            particle.x = x;
+            particle.y = y;
+
+            ctx.fillStyle = getColor(color, particle.opacity);
+            ctx.beginPath();
+            ctx.arc(
+                particle.x,
+                particle.y,
+                particle.size,
+                0,
+                Math.PI * 2,
+                false
+            );
+            ctx.fill();
+        });
+
+        setParticles(_particles);
     };
 
     return (
-        <section className="mt-4 mb-4">
-            <Slider>
-                {data?.posts.slice(0, 7).map((item, i) => (
-                    <Card key={i} data={item} className="w-full" />
-                ))}
-            </Slider>
-        </section>
+        <div>
+            <canvas id="bg-particle" width="1400" height="600"></canvas>
+        </div>
+    );
+};
+
+const Component = ({ data }) => {
+    return (
+        <>
+            <section className="mt-4 mb-4">
+                <Slider>
+                    {data?.posts.slice(0, 7).map((item, i) => (
+                        <Card key={i} data={item} className="w-full" />
+                    ))}
+                </Slider>
+            </section>
+            <section className="mt-4 mb-4">
+                <Particle
+                    bg="#7D010D"
+                    color="#FFFFFF"
+                    speed={3}
+                    particleNum={300}
+                />
+            </section>
+        </>
     );
 };
 
