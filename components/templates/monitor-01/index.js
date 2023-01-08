@@ -233,7 +233,7 @@ const Monitor01 = ({ infor }) => {
                 className="container position-absolute overflow-hidden w-100 h-100 start-0 end-0 bg-white"
                 style={{
                     transition:
-                        "transform 2s, opacity 3s, z-index 4s, visibility 4s",
+                        "transform 2s, opacity 3s, z-index 3s, visibility 3s",
                     transform: leave ? "translate(-120%,0)" : "translate(0,0)",
                     opacity: leave ? "0" : "1",
                     zIndex: leave ? "0" : "100",
