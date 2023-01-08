@@ -207,18 +207,21 @@ const Monitor01 = ({ infor }) => {
             word.split("").forEach((char, index) => {
                 const idx = randomInt(0, colors.length - 1);
                 const color = getColor(colors[idx]);
-                const balloon = createElement("div", {
-                    className: `balloon ${styles["balloon"]}`,
-                    style: {
-                        width: `100px`,
-                        height: `120px`,
-                        left: `${120 * index}px`,
-                        "--color": color.normal,
-                        "--color-darken": color.darken,
+                const balloon = createElement(
+                    "div",
+                    {
+                        className: `balloon ${styles["balloon"]}`,
+                        style: {
+                            width: `100px`,
+                            height: `120px`,
+                            left: `${120 * index}px`,
+                            "--color": color.normal,
+                            "--color-darken": color.darken,
+                        },
+                        key: index,
                     },
-                    children: <span>{char}</span>,
-                    key: index,
-                });
+                    <span>{char}</span>
+                );
 
                 balloonList.push(balloon);
             });

@@ -12,20 +12,20 @@ const nextConfig = {
     sassOptions: {
         includePaths: [path.join(__dirname, "styles")],
     },
-    module: {
-        rules: [
-            {
-                test: /\.(jpe?g|png|webp)$/i,
-                use: {
-                    loader: "responsive-loader",
-                    options: {
-                        // If you want to enable sharp support:
-                        adapter: require("responsive-loader/sharp"),
-                    },
-                },
-            },
-        ],
-    },
+    // module: {
+    //     rules: [
+    //         {
+    //             test: /\.(jpe?g|png|webp)$/i,
+    //             use: {
+    //                 loader: "responsive-loader",
+    //                 options: {
+    //                     // If you want to enable sharp support:
+    //                     adapter: require("responsive-loader/sharp"),
+    //                 },
+    //             },
+    //         },
+    //     ],
+    // },
 };
 
 module.exports = nextConfig
