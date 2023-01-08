@@ -16,7 +16,7 @@ const nextConfig = {
         return [
             {
                 source: "/",
-                destination: "/demo-hpbd",
+                destination: "/hpbd",
                 permanent: true,
             },
         ];
