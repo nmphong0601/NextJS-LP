@@ -1,0 +1,12 @@
+{
+    "infor": {
+        "avatar": {
+            "src": "/assets/images/placeholder.png",
+            "alt": "placeholder",
+            "width": 1200,
+            "height": 1200
+        },
+        "full_name": "Nguyễn Văn A",
+        "birthday": "01/01/2023"
+    }
+}

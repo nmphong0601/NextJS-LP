@@ -12,22 +12,23 @@
   },
   "dependencies": {
     "@apollo/client": "^3.6.9",
+    "@next/font": "^13.1.1",
     "bootstrap": "^5.2.2",
     "env-cmd": "^10.1.0",
     "fs": "^0.0.1-security",
     "graphql": "^16.5.0",
-    "next": "12.2.2",
+    "next": "^13.1.1",
     "path": "^0.12.7",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^7.8.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "responsive-loader": "^3.0.4",
     "sass": "^1.55.0",
     "sharp": "^0.30.7"
   },
   "devDependencies": {
     "eslint": "8.20.0",
-    "eslint-config-next": "12.2.2"
+    "eslint-config-next": "^13.1.1"
   }
 }
