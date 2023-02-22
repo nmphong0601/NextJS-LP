@@ -42,8 +42,8 @@ const FacebookChat = () => {
                         background: "#0A7CFF",
                         borderRadius: "100%",
                     }}
-                    onClick={function (e) {
-                        this.classList.add("animate");
+                    onClick={(e) => {
+                        e.target.classList.add("animate");
                         window.FB.XFBML.parse() || FB.XFBML.parse();
                         // window.FB.CustomerChat.showDialog();
                     }}
