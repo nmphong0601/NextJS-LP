@@ -69,7 +69,7 @@ const FacebookChat = () => {
                 });
 
                 FB.Event.subscribe("customerchat.show", () => {
-                    setTimeout(() => showBubble(0, 40), 1500);
+                    setTimeout(() => showBubble(120), 1500);
                 });
 
                 FB.Event.subscribe("customerchat.hide", () => {});
@@ -98,29 +98,6 @@ const FacebookChat = () => {
         <div className="position-fixed">
             <div id="fb-root"></div>
             <div id="fb-customer-chat" className="fb-customerchat"></div>
-            {/* <div
-                className="position-fixed d-flex justify-content-center align-items-center animate"
-                style={{
-                    width: "60px",
-                    height: "60px",
-                    bottom: "24px",
-                    right: "24px",
-                    zIndex: "9999999999",
-                    background: "#0A7CFF",
-                    borderRadius: "100%",
-                    cursor: "pointer",
-                }}
-                onClick={(e) => {
-                    window.FB.CustomerChat.showDialog();
-                }}
-            >
-                <Image
-                    unoptimized={true}
-                    width={36}
-                    height={36}
-                    src="/assets/icons/facebook-chat-new.svg"
-                />
-            </div> */}
         </div>
     );
 };

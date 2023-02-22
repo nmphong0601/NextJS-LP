@@ -18,6 +18,29 @@ function MyApp({ Component, pageProps }) {
         <main className={gluten.className}>
             <Component {...pageProps} />
             <FacebookChat />
+            <div
+                className="position-fixed d-flex justify-content-center align-items-center animate"
+                style={{
+                    width: "60px",
+                    height: "60px",
+                    bottom: "24px",
+                    right: "24px",
+                    zIndex: "9999999999",
+                    background: "#0A7CFF",
+                    borderRadius: "100%",
+                    cursor: "pointer",
+                }}
+                onClick={(e) => {
+                    FB.CustomerChat.show(true);
+                }}
+            >
+                <Image
+                    unoptimized={true}
+                    width={36}
+                    height={36}
+                    src="/assets/icons/facebook-chat-new.svg"
+                />
+            </div>
         </main>
     );
 }
