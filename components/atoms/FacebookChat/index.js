@@ -7,8 +7,32 @@ const FacebookChat = () => {
     return (
         <div className="position-fixed">
             <div id="fb-root">
+                <style jsx>
+                    {`
+                        .animate > img {
+                            animation: pulse 1s linear 4;
+                        }
+                        @keyframes pulse {
+                            0% {
+                                transform: scale(1);
+                            }
+                            25% {
+                                transform: scale(1.1);
+                            }
+                            50% {
+                                transform: scale(1);
+                            }
+                            75% {
+                                transform: scale(0.9);
+                            }
+                            100% {
+                                transform: scale(1);
+                            }
+                        }
+                    `}
+                </style>
                 <div
-                    className="position-fixed d-flex justify-content-center align-items-center"
+                    className="position-fixed d-flex justify-content-center align-items-center animate"
                     style={{
                         width: "60px",
                         height: "60px",
