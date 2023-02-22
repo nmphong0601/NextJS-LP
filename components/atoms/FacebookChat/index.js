@@ -7,7 +7,7 @@ const FacebookChat = () => {
     return (
         <div className="position-fixed">
             <div id="fb-root">
-                <div
+                {/* <div
                     className="position-fixed d-flex justify-content-center align-items-center animate"
                     style={{
                         width: "60px",
@@ -28,7 +28,7 @@ const FacebookChat = () => {
                         height={36}
                         src="/assets/icons/facebook-chat-new.svg"
                     />
-                </div>
+                </div> */}
             </div>
             <div id="fb-customer-chat" className="fb-customerchat w-50"></div>
             <Script id="facebook-messager" strategy="lazyOnload">{`
