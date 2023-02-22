@@ -66,7 +66,7 @@ const FacebookChat = () => {
                 });
 
                 FB.Event.subscribe("customerchat.load", () => {
-                    setTimeout(() => setBottomSpacing(24), 1500);
+                    setTimeout(() => setBottomSpacing(40), 1500);
                 });
 
                 FB.Event.subscribe("xfbml.render", () => {
