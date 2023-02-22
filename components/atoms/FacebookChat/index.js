@@ -42,7 +42,8 @@ const FacebookChat = () => {
                         background: "#0A7CFF",
                         borderRadius: "100%",
                     }}
-                    onClick={(e) => {
+                    onClick={function (e) {
+                        this.classList.add("animate");
                         window.FB.XFBML.parse() || FB.XFBML.parse();
                         // window.FB.CustomerChat.showDialog();
                     }}
@@ -68,7 +69,7 @@ const FacebookChat = () => {
                         xfbml            :  false,
                         version          : 'v16.0'
                     });
-                    FB.CustomerChat.show(true);
+                    FB.Event.subscribe('customerchat.load', FB.CustomerChat.show(true));
                 };
 
                 (function(d, s, id) {
