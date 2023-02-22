@@ -5,27 +5,19 @@ import { useEffect } from "react";
 // flag to identify wether or not messenger chat is mounted
 let isMounted = false;
 
-export const setVisible = () => {
+export const showBubble = (from, to) => {
     const css = `
         .fb_reset {
             visibility: visible  !important;
-        }`;
-
-    const style = document.createElement("style");
-    style.appendChild(document.createTextNode(css));
-    document.head.appendChild(style);
-};
-
-export const setBottomSpacing = (bottomSpacing) => {
-    const css = `
+        }
         [data-testid="bubble_iframe"] {
             visibility: visible !important;
             bottom: 0 !important;
-            transform: translateY(${-bottomSpacing}px) !important;
+            transform: translateY(${-to}px) !important;
             transition: transform 0.3s !important;
         }
         [data-testid='dialog_iframe'] {
-            bottom: ${bottomSpacing + 56}px !important;
+            bottom: ${to + 56}px !important;
         }`;
 
     const style = document.createElement("style");
@@ -54,6 +46,9 @@ const FacebookChat = () => {
                 const css = `
                     .fb_reset {
                         visibility: hidden !important;
+                    }
+                    [data-testid="bubble_iframe"] {
+                        visibility: hidden !important;
                     }`;
 
                 const style = document.createElement("style");
@@ -65,21 +60,21 @@ const FacebookChat = () => {
                     version: "v16.0",
                 });
 
-                FB.Event.subscribe("customerchat.load", () => {
-                    setTimeout(() => setBottomSpacing(40), 1500);
-                });
+                // FB.Event.subscribe("customerchat.load", () => {
+                //     setTimeout(() => showBubble(0, 40), 1500);
+                // });
 
                 FB.Event.subscribe("xfbml.render", () => {
                     isMounted = true;
                 });
 
-                FB.Event.subscribe("customerchat.show", () => {});
+                FB.Event.subscribe("customerchat.show", () => {
+                    setTimeout(() => showBubble(0, 40), 1500);
+                });
 
                 FB.Event.subscribe("customerchat.hide", () => {});
 
-                FB.Event.subscribe("customerchat.dialogShow", () => {
-                    setVisible();
-                });
+                FB.Event.subscribe("customerchat.dialogShow", () => {});
 
                 FB.Event.subscribe("customerchat.dialogHide", () => {});
             };
@@ -101,32 +96,31 @@ const FacebookChat = () => {
     };
     return (
         <div className="position-fixed">
-            <div id="fb-root">
-                <div
-                    className="position-fixed d-flex justify-content-center align-items-center animate"
-                    style={{
-                        width: "60px",
-                        height: "60px",
-                        bottom: "24px",
-                        right: "24px",
-                        zIndex: "9999999999",
-                        background: "#0A7CFF",
-                        borderRadius: "100%",
-                        cursor: "pointer",
-                    }}
-                    onClick={(e) => {
-                        window.FB.CustomerChat.showDialog();
-                    }}
-                >
-                    <Image
-                        unoptimized={true}
-                        width={36}
-                        height={36}
-                        src="/assets/icons/facebook-chat-new.svg"
-                    />
-                </div>
-            </div>
+            <div id="fb-root"></div>
             <div id="fb-customer-chat" className="fb-customerchat"></div>
+            {/* <div
+                className="position-fixed d-flex justify-content-center align-items-center animate"
+                style={{
+                    width: "60px",
+                    height: "60px",
+                    bottom: "24px",
+                    right: "24px",
+                    zIndex: "9999999999",
+                    background: "#0A7CFF",
+                    borderRadius: "100%",
+                    cursor: "pointer",
+                }}
+                onClick={(e) => {
+                    window.FB.CustomerChat.showDialog();
+                }}
+            >
+                <Image
+                    unoptimized={true}
+                    width={36}
+                    height={36}
+                    src="/assets/icons/facebook-chat-new.svg"
+                />
+            </div> */}
         </div>
     );
 };
