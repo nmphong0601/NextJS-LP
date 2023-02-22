@@ -5,11 +5,47 @@ import { useEffect } from "react";
 // flag to identify wether or not messenger chat is mounted
 let isMounted = false;
 
-export const setBottomSpacing = (bottomSpacing) => {
+export const showMessenger = (shouldShowDialog) => {
+    try {
+        if (isMounted && FB?.CustomerChat) {
+            FB.CustomerChat.show(shouldShowDialog);
+        } else if (!isMounted) {
+            console.warn(
+                "Messenger could not expand messenger due to the messenger chat not beeing mounted yet."
+            );
+        }
+    } catch (err) {
+        throw err;
+    }
+};
+
+export const hideMessenger = () => {
+    try {
+        if (isMounted && FB?.CustomerChat) {
+            FB.CustomerChat.hide();
+        } else if (!isMounted) {
+            console.warn(
+                "Messenger could not hide messenger due to the messenger chat not beeing mounted yet."
+            );
+        }
+    } catch (err) {
+        throw err;
+    }
+};
+
+export const setVisible = () => {
     const css = `
         .fb_reset {
-            visibility: visible !important;
-        }
+            visibility: visible  !important;
+        }`;
+
+    const style = document.createElement("style");
+    style.appendChild(document.createTextNode(css));
+    document.head.appendChild(style);
+};
+
+export const setBottomSpacing = (bottomSpacing) => {
+    const css = `
         [data-testid="bubble_iframe"] {
             visibility: visible !important;
             bottom: 0 !important;
@@ -65,7 +101,9 @@ const FacebookChat = () => {
                     isMounted = true;
                 });
 
-                FB.Event.subscribe("customerchat.show", () => {});
+                FB.Event.subscribe("customerchat.show", () => {
+                    setVisible();
+                });
 
                 FB.Event.subscribe("customerchat.hide", () => {});
 
@@ -92,7 +130,7 @@ const FacebookChat = () => {
     return (
         <div className="position-fixed">
             <div id="fb-root">
-                {/* <div
+                <div
                     className="position-fixed d-flex justify-content-center align-items-center animate"
                     style={{
                         width: "60px",
@@ -114,7 +152,7 @@ const FacebookChat = () => {
                         height={36}
                         src="/assets/icons/facebook-chat-new.svg"
                     />
-                </div> */}
+                </div>
             </div>
             <div id="fb-customer-chat" className="fb-customerchat"></div>
         </div>
