@@ -15,10 +15,10 @@ const FacebookChat = () => {
 
                 window.fbAsyncInit = function() {
                     FB.init({
-                        xfbml            : true,
+                        xfbml            :  false,
                         version          : 'v16.0'
                     });
-                    FB.CustomerChat.hide();
+                    FB.XFBML.parse();
                 };
 
                 (function(d, s, id) {
