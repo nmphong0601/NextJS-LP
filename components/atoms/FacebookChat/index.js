@@ -18,6 +18,9 @@ const FacebookChat = () => {
                         background: "#0A7CFF",
                         borderRadius: "100%",
                     }}
+                    onClick={(e) => {
+                        FB.XFBML.parse(e.target);
+                    }}
                 >
                     <Image
                         unoptimized={true}
@@ -39,7 +42,6 @@ const FacebookChat = () => {
                         xfbml            :  false,
                         version          : 'v16.0'
                     });
-                    FB.XFBML.parse();
                 };
 
                 (function(d, s, id) {
