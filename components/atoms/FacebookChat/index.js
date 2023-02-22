@@ -7,30 +7,6 @@ const FacebookChat = () => {
     return (
         <div className="position-fixed">
             <div id="fb-root">
-                {/* <style jsx>
-                    {`
-                        .animate > img {
-                            animation: pulse 1s linear 4;
-                        }
-                        @keyframes pulse {
-                            0% {
-                                transform: scale(1);
-                            }
-                            25% {
-                                transform: scale(1.1);
-                            }
-                            50% {
-                                transform: scale(1);
-                            }
-                            75% {
-                                transform: scale(0.9);
-                            }
-                            100% {
-                                transform: scale(1);
-                            }
-                        }
-                    `}
-                </style> */}
                 <div
                     className="position-fixed d-flex justify-content-center align-items-center animate"
                     style={{
@@ -43,7 +19,6 @@ const FacebookChat = () => {
                         borderRadius: "100%",
                     }}
                     onClick={(e) => {
-                        // e.target.classList.add("animate");
                         window.FB.CustomerChat.showDialog();
                     }}
                 >
@@ -64,7 +39,6 @@ const FacebookChat = () => {
 
                 window.fbAsyncInit = function() {
                     FB.init({
-                        status           : true,
                         xfbml            :  true,
                         version          : 'v16.0'
                     });
