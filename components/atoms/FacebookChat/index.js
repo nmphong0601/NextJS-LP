@@ -7,7 +7,7 @@ const FacebookChat = () => {
     return (
         <div className="position-fixed">
             <div id="fb-root">
-                <style jsx>
+                {/* <style jsx>
                     {`
                         .animate > img {
                             animation: pulse 1s linear 4;
@@ -30,7 +30,7 @@ const FacebookChat = () => {
                             }
                         }
                     `}
-                </style>
+                </style> */}
                 <div
                     className="position-fixed d-flex justify-content-center align-items-center animate"
                     style={{
@@ -43,7 +43,7 @@ const FacebookChat = () => {
                         borderRadius: "100%",
                     }}
                     onClick={(e) => {
-                        e.target.classList.add("animate");
+                        // e.target.classList.add("animate");
                         window.FB.CustomerChat.showDialog();
                     }}
                 >
