@@ -52,13 +52,9 @@ const FacebookChat = () => {
                 style.appendChild(document.createTextNode(css));
                 document.head.appendChild(style);
 
-                FB.Event.subscribe("customerchat.load", () => {
-                    setTimeout(() => setBottomSpacing(24), 1500);
-                });
-
                 FB.init({
                     xfbml: true,
-                    version: "v.16.0",
+                    version: "v16.0",
                 });
 
                 FB.Event.subscribe("customerchat.load", () => {
