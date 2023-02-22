@@ -19,7 +19,7 @@ const FacebookChat = () => {
                         borderRadius: "100%",
                     }}
                     onClick={(e) => {
-                        FB.XFBML.parse(e.target);
+                        window.FB.XFBML.parse(e.target);
                     }}
                 >
                     <Image
