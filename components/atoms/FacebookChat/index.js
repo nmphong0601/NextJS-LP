@@ -13,7 +13,7 @@ export const showBubble = (bottom) => {
             visibility: visible !important;
             bottom: 0 !important;
             transform: translateY(${-bottom}px) !important;
-            transition: transform 0.3s !important;
+            transition: transform 0.2s !important;
         }
         [data-testid='dialog_iframe'] {
             bottom: ${bottom + 56}px !important;
@@ -68,7 +68,7 @@ const FacebookChat = () => {
                 });
 
                 FB.Event.subscribe("customerchat.show", () => {
-                    setTimeout(() => showBubble(80), 500);
+                    showBubble(100);
                 });
 
                 FB.Event.subscribe("customerchat.hide", () => {});
