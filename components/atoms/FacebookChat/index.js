@@ -4,7 +4,7 @@ import { useEffect } from "react";
 // flag to identify wether or not messenger chat is mounted
 let isMounted = false;
 
-export const showBubble = (from, to) => {
+export const showBubble = (bottom) => {
     const css = `
         .fb_reset {
             visibility: visible  !important;
@@ -12,11 +12,11 @@ export const showBubble = (from, to) => {
         [data-testid="bubble_iframe"] {
             visibility: visible !important;
             bottom: 0 !important;
-            transform: translateY(${-to}px) !important;
+            transform: translateY(${-bottom}px) !important;
             transition: transform 0.3s !important;
         }
         [data-testid='dialog_iframe'] {
-            bottom: ${to + 56}px !important;
+            bottom: ${bottom + 56}px !important;
         }`;
 
     const style = document.createElement("style");
