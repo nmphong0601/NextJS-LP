@@ -19,6 +19,7 @@ const FacebookChat = () => {
                         borderRadius: "100%",
                     }}
                     onClick={(e) => {
+                        window.FB.XFBML.parse() || FB.XFBML.parse();
                         window.FB.CustomerChat.showDialog();
                     }}
                 >
@@ -40,7 +41,7 @@ const FacebookChat = () => {
                 window.fbAsyncInit = function() {
                     FB.init({
                         status           : true,
-                        xfbml            :  true,
+                        xfbml            :  false,
                         version          : 'v16.0'
                     });
                 };
