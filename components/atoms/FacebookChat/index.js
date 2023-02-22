@@ -1,9 +1,110 @@
 import Image from "next/image";
 import Script from "next/script";
 
+// flag to identify wether or not messenger chat is mounted
+let isMounted = false;
+
+export const setBottomSpacing = (
+  bottomSpacing
+) => {
+
+  const css = `
+  .fb_reset {
+    visibility: visible !important;
+  }
+  [data-testid="bubble_iframe"] {
+    visibility: visible !important;
+    bottom: 0 !important;
+    transform: translateY(${-bottomSpacing}px) !important;
+    transition: transform 0.3s !important;
+  }
+  [data-testid='dialog_iframe'] {
+    bottom: ${bottomSpacing + 56}px !important;
+  }
+  `;
+
+  const style = document.createElement("style");
+  document.head.appendChild(style);
+  style.appendChild(document.createTextNode(css));
+};
+
 const FacebookChat = () => {
     // const [hover, setHover] = useState(false);
+    useEffect(() => {
+      try {
+        initMessenger();
+      } catch (err) {
+        console.log(err);
+      }
+    }, []);
 
+    const initMessenger = () => {
+      try {
+        const chatbox = document.getElementById("fb-customer-chat");
+
+        chatbox.setAttribute("page_id", "525721164174881");
+        chatbox.setAttribute("attribution", "biz_inbox");
+
+        window.fbAsyncInit = function () {
+          const css = `
+              .fb_reset {
+                visibility: hidden !important;
+              }
+            `;
+
+          const style = document.createElement("style");
+          document.head.appendChild(style);
+          style.appendChild(document.createTextNode(css));
+
+          FB.Event.subscribe("customerchat.load", () => {
+              setTimeout(() => setBottomSpacing(24), 1500);
+          });
+
+          FB.init({
+            xfbml: true,
+            version: "v.16.0",
+          });
+
+          FB.Event.subscribe("customerchat.load", () => {
+            setTimeout(() => setBottomSpacing(24), 1500);
+          });
+
+          FB.Event.subscribe("xfbml.render", () => {
+            isMounted = true;
+          });
+
+          FB.Event.subscribe("customerchat.show", () => {
+            
+          });
+
+          FB.Event.subscribe("customerchat.hide", () => {
+            
+          });
+
+          FB.Event.subscribe("customerchat.dialogShow", () => {
+            
+          });
+
+          FB.Event.subscribe("customerchat.dialogHide", () => {
+            
+          });
+        };
+
+        (function (d, s, id) {
+          let js,
+            // eslint-disable-next-line prefer-const
+            fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          // eslint-disable-next-line prefer-const
+          js = d.createElement(s);
+          js.id = id;
+          js.src = `https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js`;
+          fjs?.parentNode?.insertBefore(js, fjs);
+        })(document, "script", "facebook-jssdk");
+      } catch (err) {
+        throw err;
+      }
+    };
     return (
         <div className="position-fixed">
             <div id="fb-root">
@@ -31,28 +132,7 @@ const FacebookChat = () => {
                     />
                 </div>
             </div>
-            <div id="fb-customer-chat" className="fb-customerchat w-50"></div>
-            <Script id="facebook-messager" strategy="lazyOnload">{`
-                var chatbox = document.getElementById('fb-customer-chat');
-                chatbox.setAttribute("page_id", "525721164174881");
-                chatbox.setAttribute("attribution", "biz_inbox");
-                chatbox.setAttribute("greeting_dialog_display", "hide");
-
-                window.fbAsyncInit = function() {
-                    FB.init({
-                        xfbml            :  true,
-                        version          : 'v16.0'
-                    });
-                };
-
-                (function(d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0];
-                    if (d.getElementById(id)) return;
-                    js = d.createElement(s); js.id = id;
-                    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-                    fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));
-        `}</Script>
+            <div id="fb-customer-chat" className="fb-customerchat"></div>
         </div>
     );
 };
