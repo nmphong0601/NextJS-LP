@@ -1,24 +1,24 @@
 import Image from "next/image";
 import Script from "next/script";
+import { useEffect } from "react";
 
 // flag to identify wether or not messenger chat is mounted
 let isMounted = false;
 
 export const setBottomSpacing = (bottomSpacing) => {
     const css = `
-  .fb_reset {
-    visibility: visible !important;
-  }
-  [data-testid="bubble_iframe"] {
-    visibility: visible !important;
-    bottom: 0 !important;
-    transform: translateY(${-bottomSpacing}px) !important;
-    transition: transform 0.3s !important;
-  }
-  [data-testid='dialog_iframe'] {
-    bottom: ${bottomSpacing + 56}px !important;
-  }
-  `;
+        .fb_reset {
+            visibility: visible !important;
+        }
+        [data-testid="bubble_iframe"] {
+            visibility: visible !important;
+            bottom: 0 !important;
+            transform: translateY(${-bottomSpacing}px) !important;
+            transition: transform 0.3s !important;
+        }
+        [data-testid='dialog_iframe'] {
+            bottom: ${bottomSpacing + 56}px !important;
+        }`;
 
     const style = document.createElement("style");
     style.appendChild(document.createTextNode(css));
@@ -44,10 +44,9 @@ const FacebookChat = () => {
 
             window.fbAsyncInit = function () {
                 const css = `
-              .fb_reset {
-                visibility: hidden !important;
-              }
-            `;
+                    .fb_reset {
+                        visibility: hidden !important;
+                    }`;
 
                 const style = document.createElement("style");
                 style.appendChild(document.createTextNode(css));
