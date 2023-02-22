@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps }) {
                     cursor: "pointer",
                 }}
                 onClick={(e) => {
-                    FB.CustomerChat.show(true);
+                    FB.CustomerChat.show(false);
                 }}
             >
                 <Image
