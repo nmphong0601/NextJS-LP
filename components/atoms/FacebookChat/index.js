@@ -6,7 +6,7 @@ const FacebookChat = () => {
     return (
         <div className="position-fixed">
             <div id="fb-root"></div>
-            <div id="fb-customer-chat" class="fb-customerchat w-50"></div>
+            <div id="fb-customer-chat" className="fb-customerchat w-50"></div>
             <Script id="facebook-messager" strategy="lazyOnload">{`
                 var chatbox = document.getElementById('fb-customer-chat');
                 chatbox.setAttribute("page_id", "525721164174881");
@@ -18,6 +18,7 @@ const FacebookChat = () => {
                         xfbml            : true,
                         version          : 'v16.0'
                     });
+                    FB.CustomerChat.hide();
                 };
 
                 (function(d, s, id) {
