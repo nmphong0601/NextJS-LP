@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Script from "next/script";
 
 const FacebookChat = () => {
@@ -5,7 +6,27 @@ const FacebookChat = () => {
 
     return (
         <div className="position-fixed">
-            <div id="fb-root"></div>
+            <div id="fb-root">
+                <div
+                    className="position-fixed d-flex justify-content-center align-items-center"
+                    style={{
+                        width: "60px",
+                        height: "60px",
+                        bottom: "24px",
+                        right: "24px",
+                        zIndex: "9999999999",
+                        background: "#0A7CFF",
+                        borderRadius: "100%",
+                    }}
+                >
+                    <Image
+                        unoptimized={true}
+                        width={36}
+                        height={36}
+                        src="/assets/icons/facebook-chat-new.svg"
+                    />
+                </div>
+            </div>
             <div id="fb-customer-chat" className="fb-customerchat w-50"></div>
             <Script id="facebook-messager" strategy="lazyOnload">{`
                 var chatbox = document.getElementById('fb-customer-chat');
