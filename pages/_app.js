@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "styles/globals.scss";
 
 import { useEffect } from "react";
+import Image from "next/image";
 import FacebookChat from "components/atoms/FacebookChat";
 
 const gluten = Gluten({
