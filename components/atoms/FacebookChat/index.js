@@ -44,8 +44,7 @@ const FacebookChat = () => {
                     }}
                     onClick={(e) => {
                         e.target.classList.add("animate");
-                        window.FB.XFBML.parse() || FB.XFBML.parse();
-                        // window.FB.CustomerChat.showDialog();
+                        window.FB.CustomerChat.showDialog();
                     }}
                 >
                     <Image
@@ -66,10 +65,9 @@ const FacebookChat = () => {
                 window.fbAsyncInit = function() {
                     FB.init({
                         status           : true,
-                        xfbml            :  false,
+                        xfbml            :  true,
                         version          : 'v16.0'
                     });
-                    FB.Event.subscribe('customerchat.load', FB.CustomerChat.show);
                 };
 
                 (function(d, s, id) {
