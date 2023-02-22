@@ -5,34 +5,6 @@ import { useEffect } from "react";
 // flag to identify wether or not messenger chat is mounted
 let isMounted = false;
 
-export const showMessenger = (shouldShowDialog) => {
-    try {
-        if (isMounted && FB?.CustomerChat) {
-            FB.CustomerChat.show(shouldShowDialog);
-        } else if (!isMounted) {
-            console.warn(
-                "Messenger could not expand messenger due to the messenger chat not beeing mounted yet."
-            );
-        }
-    } catch (err) {
-        throw err;
-    }
-};
-
-export const hideMessenger = () => {
-    try {
-        if (isMounted && FB?.CustomerChat) {
-            FB.CustomerChat.hide();
-        } else if (!isMounted) {
-            console.warn(
-                "Messenger could not hide messenger due to the messenger chat not beeing mounted yet."
-            );
-        }
-    } catch (err) {
-        throw err;
-    }
-};
-
 export const setVisible = () => {
     const css = `
         .fb_reset {
@@ -99,15 +71,16 @@ const FacebookChat = () => {
 
                 FB.Event.subscribe("xfbml.render", () => {
                     isMounted = true;
+                    FB.CustomerChat.show(true);
                 });
 
-                FB.Event.subscribe("customerchat.show", () => {
-                    setVisible();
-                });
+                FB.Event.subscribe("customerchat.show", () => {});
 
                 FB.Event.subscribe("customerchat.hide", () => {});
 
-                FB.Event.subscribe("customerchat.dialogShow", () => {});
+                FB.Event.subscribe("customerchat.dialogShow", () => {
+                    setVisible();
+                });
 
                 FB.Event.subscribe("customerchat.dialogHide", () => {});
             };
