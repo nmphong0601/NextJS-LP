@@ -71,7 +71,6 @@ const FacebookChat = () => {
 
                 FB.Event.subscribe("xfbml.render", () => {
                     isMounted = true;
-                    FB.CustomerChat.show(true);
                 });
 
                 FB.Event.subscribe("customerchat.show", () => {});
