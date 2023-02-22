@@ -68,7 +68,7 @@ const FacebookChat = () => {
                 });
 
                 FB.Event.subscribe("customerchat.show", () => {
-                    setTimeout(() => showBubble(120), 1500);
+                    setTimeout(() => showBubble(80), 500);
                 });
 
                 FB.Event.subscribe("customerchat.hide", () => {});
