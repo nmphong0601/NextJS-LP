@@ -20,7 +20,7 @@ const FacebookChat = () => {
                     }}
                     onClick={(e) => {
                         window.FB.XFBML.parse() || FB.XFBML.parse();
-                        window.FB.CustomerChat.showDialog();
+                        // window.FB.CustomerChat.showDialog();
                     }}
                 >
                     <Image
@@ -35,7 +35,7 @@ const FacebookChat = () => {
             <Script id="facebook-messager" strategy="lazyOnload">{`
                 var chatbox = document.getElementById('fb-customer-chat');
                 chatbox.setAttribute("page_id", "525721164174881");
-                chatbox.setAttribute("attribution", "setup_tool");
+                chatbox.setAttribute("attribution", "biz_inbox");
                 chatbox.setAttribute("greeting_dialog_display", "hide");
 
                 window.fbAsyncInit = function() {
@@ -44,6 +44,7 @@ const FacebookChat = () => {
                         xfbml            :  false,
                         version          : 'v16.0'
                     });
+                    FB.CustomerChat.show(true);
                 };
 
                 (function(d, s, id) {
