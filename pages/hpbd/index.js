@@ -6,8 +6,8 @@ import { Children, cloneElement, useEffect, useRef, useState } from "react";
 import staticData from "./data.json";
 
 /* components */
-import Monitor01 from "components/templates/monitor-01";
-import Monitor02 from "components/templates/monitor-02";
+// import Monitor01 from "components/templates/monitor-01";
+// import Monitor02 from "components/templates/monitor-02";
 
 import styles from "./index.module.scss";
 import Image from "next/image";
@@ -15,12 +15,7 @@ import Image from "next/image";
 const Component = ({ data }) => {
     // const [hover, setHover] = useState(false);
 
-    return (
-        <div className="position-relative vw-100 vh-100">
-            <Monitor01 infor={staticData?.infor} />
-            <Monitor02 />
-        </div>
-    );
+    return <div className="position-relative vw-100 vh-100"></div>;
 };
 
 export async function getStaticProps() {

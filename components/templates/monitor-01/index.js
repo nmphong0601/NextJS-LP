@@ -165,7 +165,7 @@ const Monitor01 = ({ infor }) => {
 
             setBalloons(_balloons);
         }
-    }, [words]);
+    }, [words, balloons]);
 
     useEffect(() => {
         if (balloons.length > 0 && balloons.length === words.length) {
