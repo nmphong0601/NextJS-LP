@@ -4,11 +4,8 @@ import Script from "next/script";
 // flag to identify wether or not messenger chat is mounted
 let isMounted = false;
 
-export const setBottomSpacing = (
-  bottomSpacing
-) => {
-
-  const css = `
+export const setBottomSpacing = (bottomSpacing) => {
+    const css = `
   .fb_reset {
     visibility: visible !important;
   }
@@ -23,92 +20,84 @@ export const setBottomSpacing = (
   }
   `;
 
-  const style = document.createElement("style");
-  document.head.appendChild(style);
-  style.appendChild(document.createTextNode(css));
+    const style = document.createElement("style");
+    style.appendChild(document.createTextNode(css));
+    document.head.appendChild(style);
 };
 
 const FacebookChat = () => {
     // const [hover, setHover] = useState(false);
     useEffect(() => {
-      try {
-        initMessenger();
-      } catch (err) {
-        console.log(err);
-      }
+        try {
+            initMessenger();
+        } catch (err) {
+            console.log(err);
+        }
     }, []);
 
     const initMessenger = () => {
-      try {
-        const chatbox = document.getElementById("fb-customer-chat");
+        try {
+            const chatbox = document.getElementById("fb-customer-chat");
 
-        chatbox.setAttribute("page_id", "525721164174881");
-        chatbox.setAttribute("attribution", "biz_inbox");
+            chatbox.setAttribute("page_id", "525721164174881");
+            chatbox.setAttribute("attribution", "biz_inbox");
 
-        window.fbAsyncInit = function () {
-          const css = `
+            window.fbAsyncInit = function () {
+                const css = `
               .fb_reset {
                 visibility: hidden !important;
               }
             `;
 
-          const style = document.createElement("style");
-          document.head.appendChild(style);
-          style.appendChild(document.createTextNode(css));
+                const style = document.createElement("style");
+                style.appendChild(document.createTextNode(css));
+                document.head.appendChild(style);
 
-          FB.Event.subscribe("customerchat.load", () => {
-              setTimeout(() => setBottomSpacing(24), 1500);
-          });
+                FB.Event.subscribe("customerchat.load", () => {
+                    setTimeout(() => setBottomSpacing(24), 1500);
+                });
 
-          FB.init({
-            xfbml: true,
-            version: "v.16.0",
-          });
+                FB.init({
+                    xfbml: true,
+                    version: "v.16.0",
+                });
 
-          FB.Event.subscribe("customerchat.load", () => {
-            setTimeout(() => setBottomSpacing(24), 1500);
-          });
+                FB.Event.subscribe("customerchat.load", () => {
+                    setTimeout(() => setBottomSpacing(24), 1500);
+                });
 
-          FB.Event.subscribe("xfbml.render", () => {
-            isMounted = true;
-          });
+                FB.Event.subscribe("xfbml.render", () => {
+                    isMounted = true;
+                });
 
-          FB.Event.subscribe("customerchat.show", () => {
-            
-          });
+                FB.Event.subscribe("customerchat.show", () => {});
 
-          FB.Event.subscribe("customerchat.hide", () => {
-            
-          });
+                FB.Event.subscribe("customerchat.hide", () => {});
 
-          FB.Event.subscribe("customerchat.dialogShow", () => {
-            
-          });
+                FB.Event.subscribe("customerchat.dialogShow", () => {});
 
-          FB.Event.subscribe("customerchat.dialogHide", () => {
-            
-          });
-        };
+                FB.Event.subscribe("customerchat.dialogHide", () => {});
+            };
 
-        (function (d, s, id) {
-          let js,
-            // eslint-disable-next-line prefer-const
-            fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          // eslint-disable-next-line prefer-const
-          js = d.createElement(s);
-          js.id = id;
-          js.src = `https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js`;
-          fjs?.parentNode?.insertBefore(js, fjs);
-        })(document, "script", "facebook-jssdk");
-      } catch (err) {
-        throw err;
-      }
+            (function (d, s, id) {
+                let js,
+                    // eslint-disable-next-line prefer-const
+                    fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                // eslint-disable-next-line prefer-const
+                js = d.createElement(s);
+                js.id = id;
+                js.src = `https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js`;
+                fjs?.parentNode?.insertBefore(js, fjs);
+            })(document, "script", "facebook-jssdk");
+        } catch (err) {
+            throw err;
+        }
     };
     return (
         <div className="position-fixed">
             <div id="fb-root">
-                <div
+                {/* <div
                     className="position-fixed d-flex justify-content-center align-items-center animate"
                     style={{
                         width: "60px",
@@ -130,7 +119,7 @@ const FacebookChat = () => {
                         height={36}
                         src="/assets/icons/facebook-chat-new.svg"
                     />
-                </div>
+                </div> */}
             </div>
             <div id="fb-customer-chat" className="fb-customerchat"></div>
         </div>
