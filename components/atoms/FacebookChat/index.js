@@ -11,7 +11,6 @@ const FacebookChat = () => {
                 var chatbox = document.getElementById('fb-customer-chat');
                 chatbox.setAttribute("page_id", "525721164174881");
                 chatbox.setAttribute("attribution", "biz_inbox");
-                chatbox.setAttribute("greeting_dialog_display", "Hello");
 
                 window.fbAsyncInit = function() {
                     FB.init({
