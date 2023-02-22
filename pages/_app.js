@@ -39,7 +39,7 @@ function MyApp({ Component, pageProps }) {
                     unoptimized={true}
                     width={36}
                     height={36}
-                    src="/assets/icons/facebook-chat-new.svg"
+                    src="/assets/icons/expand-chat.svg"
                 />
             </div>
         </main>
