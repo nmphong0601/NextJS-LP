@@ -69,7 +69,7 @@ const FacebookChat = () => {
                         xfbml            :  false,
                         version          : 'v16.0'
                     });
-                    FB.Event.subscribe('customerchat.load', FB.CustomerChat.show(true));
+                    FB.Event.subscribe('customerchat.load', FB.CustomerChat.show);
                 };
 
                 (function(d, s, id) {
