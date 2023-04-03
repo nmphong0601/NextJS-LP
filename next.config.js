@@ -2,6 +2,7 @@
 const path = require("path");
 
 const nextConfig = {
+    basePath: "",
     reactStrictMode: true,
     swcMinify: true,
     images: {
@@ -12,15 +13,16 @@ const nextConfig = {
     sassOptions: {
         includePaths: [path.join(__dirname, "styles")],
     },
-    async redirects() {
-        return [
-            {
-                source: "/",
-                destination: "/hpbd",
-                permanent: true,
-            },
-        ];
-    },
+
+    // async redirects() {
+    //     return [
+    //         {
+    //             source: "/",
+    //             destination: "/hpbd",
+    //             permanent: true,
+    //         },
+    //     ];
+    // },
     // module: {
     //     rules: [
     //         {

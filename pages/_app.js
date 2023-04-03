@@ -3,8 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "styles/globals.scss";
 
 import { useEffect } from "react";
-import Image from "next/image";
-import FacebookChat from "components/atoms/FacebookChat";
 
 const gluten = Gluten({
     weight: ["400", "500", "600", "800"],
@@ -18,30 +16,6 @@ function MyApp({ Component, pageProps }) {
     return (
         <main className={gluten.className}>
             <Component {...pageProps} />
-            <FacebookChat />
-            <div
-                className="position-fixed d-flex justify-content-center align-items-center animate"
-                style={{
-                    width: "60px",
-                    height: "60px",
-                    bottom: "24px",
-                    right: "24px",
-                    zIndex: "9999999999",
-                    background: "#0A7CFF",
-                    borderRadius: "100%",
-                    cursor: "pointer",
-                }}
-                onClick={(e) => {
-                    FB.CustomerChat.show(false);
-                }}
-            >
-                <Image
-                    unoptimized={true}
-                    width={36}
-                    height={36}
-                    src="/assets/icons/expand-chat.svg"
-                />
-            </div>
         </main>
     );
 }

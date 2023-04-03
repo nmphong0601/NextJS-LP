@@ -1,34 +1,36 @@
 {
-  "name": "gleads-demo",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "build:prodution": "env-cmd -f .env.production next build && next export",
-    "build:development": "env-cmd -f .env.development next build && next export"
-  },
-  "dependencies": {
-    "@apollo/client": "^3.6.9",
-    "@next/font": "^13.1.1",
-    "bootstrap": "^5.2.2",
-    "env-cmd": "^10.1.0",
-    "fs": "^0.0.1-security",
-    "graphql": "^16.5.0",
-    "next": "^13.1.1",
-    "path": "^0.12.7",
-    "postcss-flexbugs-fixes": "^5.0.2",
-    "postcss-preset-env": "^7.8.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "responsive-loader": "^3.0.4",
-    "sass": "^1.55.0",
-    "sharp": "^0.30.7"
-  },
-  "devDependencies": {
-    "eslint": "8.20.0",
-    "eslint-config-next": "^13.1.1"
-  }
+    "name": "gleads-demo",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "npm run partytown && next build",
+        "start": "next start",
+        "lint": "next lint",
+        "build:prodution": "npm run partytown && env-cmd -f .env.production next build && next export",
+        "build:development": "npm run partytown && env-cmd -f .env.development next build && next export",
+        "partytown": "partytown copylib public/~partytown"
+    },
+    "dependencies": {
+        "@apollo/client": "^3.6.9",
+        "@builder.io/partytown": "^0.7.5",
+        "@next/font": "^13.1.1",
+        "bootstrap": "^5.2.2",
+        "env-cmd": "^10.1.0",
+        "fs": "^0.0.1-security",
+        "graphql": "^16.5.0",
+        "next": "^13.1.1",
+        "path": "^0.12.7",
+        "postcss-flexbugs-fixes": "^5.0.2",
+        "postcss-preset-env": "^7.8.2",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "responsive-loader": "^3.0.4",
+        "sass": "^1.55.0",
+        "sharp": "^0.30.7"
+    },
+    "devDependencies": {
+        "eslint": "8.20.0",
+        "eslint-config-next": "^13.1.1"
+    }
 }
