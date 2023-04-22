@@ -1,0 +1,114 @@
+.table-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+table {
+    width: max-content;
+    // transform: translateX(0px);
+    transform: translateX(calc((100vw - 1.6rem)*(-0)));
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: ease-in;
+}
+th, td {
+    position: relative;
+    border: 1px solid #e6e6e6;
+    width: calc(100vw - 1.6rem);
+    padding: 16px;
+}
+th {
+    text-align: center;
+}
+th:nth-child(1), td:nth-child(1), th:empty, td:empty {
+    display: none;
+}
+th[data-title], td[data-title] {
+    padding-left: 96px;
+}
+th[data-title], td[data-title] > * {
+    display: none;
+}
+th[data-title]:before, td[data-title]:before {
+    content: attr(data-title);
+    font-weight: 700;
+    display: block;
+    width: 96px;
+    margin-left: -96px;
+    float: left;
+    position: relative;
+    z-index: 1;
+    padding: 16px;
+    white-space: pre-wrap;
+}
+th[data-title]:after, td[data-title]:after {
+    content: attr(data-content);
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    padding: 16px;
+    left: 96px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: pre-wrap;
+    border-left: 1px solid #e6e6e6;
+}
+
+@media (min-width: 375px) {
+    th[data-title], td[data-title] {
+        padding-left: 216px;
+    }
+
+    th[data-title]:before, td[data-title]:before {
+        width: 216px;
+        margin-left: -216px;
+    }
+    th[data-title]:after, td[data-title]:after {
+        left: 216px;
+    }
+}
+
+@media (min-width: 576px){
+    th, td {
+        max-width: calc(540px - 1.6rem);
+    }
+}
+
+@media (min-width: 768px) {
+     th, td {
+        max-width: calc(720px - 1.6rem);
+    }
+}
+
+@media (min-width: 990px) {
+     th, td {
+        max-width: calc(960px - 1.6rem);
+    }
+}
+
+@media (min-width: 1024px){
+    .table-wrapper {
+        width: 100%;
+    }
+    table {
+        width: 100%;
+    }
+
+    th:nth-child(1):not(:empty), td:nth-child(1):not(:empty) {
+        display: table-cell;
+    }
+    th[data-title], td[data-title] {
+        padding-left: 16px;
+    }
+    th[data-title]:before, td[data-title]:before {
+        display: none;
+    }
+    th[data-title]:after, td[data-title]:after {
+        width: 100%;
+        left: 0;
+        border: none;
+    }
+}
+

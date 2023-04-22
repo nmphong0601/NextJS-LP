@@ -16,53 +16,347 @@ export default function Home() {
             </Head>
 
             <main className={styles.main}>
-                <h1 className={styles.title}>
-                    Welcome to <a href="https://nextjs.org">Next.js!</a>
-                </h1>
-
-                <p className={styles.description}>
-                    Get started by editing{" "}
-                    <code className={styles.code}>pages/index.js</code>
-                </p>
-
-                <div className={styles.grid}>
-                    <a href="https://nextjs.org/docs" className={styles.card}>
-                        <h2>Documentation &rarr;</h2>
-                        <p>
-                            Find in-depth information about Next.js features and
-                            API.
-                        </p>
-                    </a>
-
-                    <a href="https://nextjs.org/learn" className={styles.card}>
-                        <h2>Learn &rarr;</h2>
-                        <p>
-                            Learn about Next.js in an interactive course with
-                            quizzes!
-                        </p>
-                    </a>
-
-                    <a
-                        href="https://github.com/vercel/next.js/tree/canary/examples"
-                        className={styles.card}
-                    >
-                        <h2>Examples &rarr;</h2>
-                        <p>
-                            Discover and deploy boilerplate example Next.js
-                            projects.
-                        </p>
-                    </a>
-
-                    <a
-                        href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                        className={styles.card}
-                    >
-                        <h2>Deploy &rarr;</h2>
-                        <p>
-                            Instantly deploy your Next.js site to a public URL
-                            with Vercel.
-                        </p>
-                    </a>
+                <div className="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th rowspan="2" colspan="1">
+                                    Giá SEO tổng thể
+                                </th>
+                                <th rowspan="1" colspan="1">
+                                    Gói Cơ Bản
+                                </th>
+                                <th rowspan="1" colspan="1">
+                                    Gói Nâng Cao
+                                </th>
+                                <th rowspan="1" colspan="1">
+                                    Gói Chuyên Sâu
+                                </th>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <th rowspan="1" colspan="1">
+                                    175,000,000đ
+                                </th>
+                                <th rowspan="1" colspan="1">
+                                    250,000,000đ
+                                </th>
+                                <th rowspan="1" colspan="1">
+                                    Liên hệ tư vấn
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Số lượng từ khóa</td>
+                                <td
+                                    data-title="Số lượng từ khóa"
+                                    data-content="150 - 170"
+                                >
+                                    <div>150 - 170</div>
+                                </td>
+                                <td
+                                    data-title="Số lượng từ khóa"
+                                    data-content="230 - 250"
+                                >
+                                    <div>230 - 250</div>
+                                </td>
+                                <td
+                                    data-title="Số lượng từ khóa"
+                                    data-content="500 - 1500"
+                                >
+                                    <div>500 - 1500</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Thời gian SEO</td>
+                                <td
+                                    data-title="Thời gian SEO"
+                                    data-content="6 - 8 tháng"
+                                >
+                                    <div>6 - 8 tháng</div>
+                                </td>
+                                <td
+                                    data-title="Thời gian SEO"
+                                    data-content="8 - 10 tháng"
+                                >
+                                    <div>8 - 10 tháng</div>
+                                </td>
+                                <td
+                                    data-title="Thời gian SEO"
+                                    data-content="12+ tháng"
+                                >
+                                    <div>12+ tháng</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Cam kết KPI</td>
+                                <td
+                                    data-title="Cam kết KPI"
+                                    data-content="30% top 5 80% top 10"
+                                >
+                                    <div>
+                                        <div>30% top 5</div>
+                                        <div>80% top 10</div>
+                                    </div>
+                                </td>
+                                <td
+                                    data-title="Cam kết KPI"
+                                    data-content="30% top 5 80% top 10"
+                                >
+                                    <div>
+                                        <div>30% top 5</div>
+                                        <div>80% top 10</div>
+                                    </div>
+                                </td>
+                                <td
+                                    data-title="Cam kết KPI"
+                                    data-content="30% top 5 80% top 10"
+                                >
+                                    <div>
+                                        <div>30% top 5</div>
+                                        <div>80% top 10</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Cam kết traffic theo từng ngành</td>
+                                <td
+                                    data-title="Cam kết traffic theo từng ngành"
+                                    data-content="✓"
+                                >
+                                    <span>✓</span>
+                                </td>
+                                <td
+                                    data-title="Cam kết traffic theo từng ngành"
+                                    data-content="✓"
+                                >
+                                    <span>✓</span>
+                                </td>
+                                <td
+                                    data-title="Cam kết traffic theo từng ngành"
+                                    data-content="✓"
+                                >
+                                    <span>✓</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Hỗ trợ SEO Image</td>
+                                <td
+                                    data-title="Hỗ trợ SEO Image"
+                                    data-content="✓"
+                                >
+                                    <span>✓</span>
+                                </td>
+                                <td
+                                    data-title="Hỗ trợ SEO Image"
+                                    data-content="✓"
+                                >
+                                    <span>✓</span>
+                                </td>
+                                <td
+                                    data-title="Hỗ trợ SEO Image"
+                                    data-content="✓"
+                                >
+                                    <span>✓</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Hỗ trợ SEO Google Map</td>
+                                <td
+                                    data-title="Hỗ trợ SEO Google Map"
+                                    data-content="✕"
+                                >
+                                    <span>✕</span>
+                                </td>
+                                <td
+                                    data-title="Hỗ trợ SEO Google Map"
+                                    data-content="✓"
+                                >
+                                    <span>✓</span>
+                                </td>
+                                <td
+                                    data-title="Hỗ trợ SEO Google Map"
+                                    data-content="✓"
+                                >
+                                    <span>✓</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Hỗ trợ SEO Youtube</td>
+                                <td
+                                    data-title="Hỗ trợ SEO Youtube"
+                                    data-content="✕"
+                                >
+                                    <span>✕</span>
+                                </td>
+                                <td
+                                    data-title="Hỗ trợ SEO Youtube"
+                                    data-content="✕"
+                                >
+                                    <span>✕</span>
+                                </td>
+                                <td
+                                    data-title="Hỗ trợ SEO Youtube"
+                                    data-content="✓"
+                                >
+                                    <span>✓</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Hỗ trợ tối ưu Google Ads miễn phí</td>
+                                <td
+                                    data-title="Hỗ trợ tối ưu Google Ads miễn phí"
+                                    data-content="✕"
+                                >
+                                    <span>✕</span>
+                                </td>
+                                <td
+                                    data-title="Hỗ trợ tối ưu Google Ads miễn phí"
+                                    data-content="✕"
+                                >
+                                    <span>✕</span>
+                                </td>
+                                <td
+                                    data-title="Hỗ trợ tối ưu Google Ads miễn phí"
+                                    data-content="✓"
+                                >
+                                    <span>✓</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Báo cáo định kỳ hằng tháng</td>
+                                <td
+                                    data-title="Báo cáo định kỳ hằng tháng"
+                                    data-content="✓"
+                                >
+                                    <span>✓</span>
+                                </td>
+                                <td
+                                    data-title="Báo cáo định kỳ hằng tháng"
+                                    data-content="✓"
+                                >
+                                    <span>✓</span>
+                                </td>
+                                <td
+                                    data-title="Báo cáo định kỳ hằng tháng"
+                                    data-content="✓"
+                                >
+                                    <span>✓</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Hỗ trợ viết content chuẩn SEO, tối ưu dung
+                                    lượng hình ảnh
+                                </td>
+                                <td
+                                    data-title="Hỗ trợ viết content chuẩn SEO, tối ưu dung
+                                    lượng hình ảnh"
+                                    data-content="✓"
+                                >
+                                    <span>✓</span>
+                                </td>
+                                <td
+                                    data-title="Hỗ trợ viết content chuẩn SEO, tối ưu dung
+                                    lượng hình ảnh"
+                                    data-content="✓"
+                                >
+                                    <span>✓</span>
+                                </td>
+                                <td
+                                    data-title="Hỗ trợ viết content chuẩn SEO, tối ưu dung
+                                    lượng hình ảnh"
+                                    data-content="✓"
+                                >
+                                    <span>✓</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h6>SEO onsite</h6>
+                                    <p>
+                                        Kiểm tra file sitemap.xml, robots.txt,
+                                        .htaccess, thẻ Meta robot: index hay
+                                        noindex, thẻ Canonical, quét lỗi 404
+                                        toàn trang, page speed, Mobile Friendly,
+                                        Breadcrumb, Table Of Content, Schema
+                                        Validator
+                                    </p>
+                                </td>
+                                <td data-title="SEO onsite" data-content="✓">
+                                    <span>✓</span>
+                                </td>
+                                <td data-title="SEO onsite" data-content="✓">
+                                    <span>✓</span>
+                                </td>
+                                <td data-title="SEO onsite" data-content="✓">
+                                    <span>✓</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td rowspan="5">
+                                    Thanh toán theo
+                                    <span>3 giai đoạn</span>
+                                </td>
+                            </tr>
+                            <tr class="odd:bg-gleads-greys-100">
+                                <td text="Giai đoạn 1 (bắt đầu dự án)">
+                                    Giai đoạn 1 (bắt đầu dự án)
+                                </td>
+                                <td
+                                    colspan="2"
+                                    text="<div><span class='text-gleads-pink-700 font-bold'>50%</span> của hợp đồng</div>"
+                                >
+                                    <div>
+                                        <span>50%</span> của hợp đồng
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td text="Giai đoạn 2">Giai đoạn 2</td>
+                                <td
+                                    colspan="2"
+                                    text="<div><span class='text-gleads-pink-700 font-bold'>20%</span> khi 60% tổng từ khóa lên trang 2</div>"
+                                >
+                                    <div>
+                                        <span>20%</span>
+                                        khi 60% tổng từ khóa lên trang 2
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td text="Giai đoạn 3">Giai đoạn 3</td>
+                                <td
+                                    colspan="2"
+                                    text="<div><span class='text-gleads-pink-700 font-bold'>30%</span> còn lại của hợp đồng:</div><ul class='list-disc ml-6 font-bold'><li>30% khi đạt 100% KPI</li><li>20% khi đạt 90% KPI</li><li>10% khi đạt 80% KPI</li></ul>"
+                                >
+                                    <div>
+                                        <span>30%</span>
+                                        còn lại của hợp đồng:
+                                    </div>
+                                    <ul>
+                                        <li>30% khi đạt 100% KPI</li>
+                                        <li>20% khi đạt 90% KPI</li>
+                                        <li>10% khi đạt 80% KPI</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td text="Duy trì thứ hạng từ khóa">
+                                    Duy trì thứ hạng từ khóa
+                                </td>
+                                <td
+                                    colspan="2"
+                                    text="<div><span class='text-gleads-pink-700 font-bold'>5%</span> x (tổng tiền dự án)/tháng</div>"
+                                >
+                                    <div>
+                                        <span>5%</span>x (tổng tiền dự án)/tháng
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </main>
             <footer className={styles.footer}>

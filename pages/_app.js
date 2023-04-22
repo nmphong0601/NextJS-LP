@@ -1,6 +1,7 @@
 import { Gluten } from "@next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "styles/globals.scss";
+import "styles/custom.scss";
 
 import { useEffect } from "react";
 
