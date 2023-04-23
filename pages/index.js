@@ -34,7 +34,6 @@ export default function Home() {
                                 </th>
                             </tr>
                             <tr>
-                                <th></th>
                                 <th rowspan="1" colspan="1">
                                     175,000,000đ
                                 </th>
