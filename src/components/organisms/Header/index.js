@@ -130,7 +130,7 @@ const SearchBox = ({ className }) => {
 
     return (
         <div className={`search-box ${className ? className : ""}`}>
-            <div className="category">
+            <div className="category hidden lg:block">
                 <div
                     className="chosen-container chosen-container-single chosen-container-active chosen-with-drop"
                     onMouseLeave={() => {
@@ -200,34 +200,36 @@ const Header = () => {
     return (
         <header className={styles.header}>
             <section className="header-top">
-                <ul className="menu-left">
-                    <li>
-                        <a
-                            title="Chào mừng bạn đến với cửa hàng của chúng tôi!"
-                            href="https://nmp-amazon-store.vercel.app"
-                        >
-                            Chào mừng bạn đến với cửa hàng của chúng tôi!
-                        </a>
-                    </li>
-                </ul>
-                <ul className="menu-right">
-                    <li>
-                        <a
-                            title="Về chúng tôi"
-                            href="https://nmp-amazon-store.vercel.app/about-us"
-                        >
-                            Về chúng tôi
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            title="Liên hệ"
-                            href="https://nmp-amazon-store.vercel.app/contact-us"
-                        >
-                            Liên hệ
-                        </a>
-                    </li>
-                </ul>
+                <div className="container flex max-w-full items-center justify-center lg:justify-between">
+                    <ul className="menu-left">
+                        <li>
+                            <a
+                                title="Chào mừng bạn đến với cửa hàng của chúng tôi!"
+                                href="https://nmp-amazon-store.vercel.app"
+                            >
+                                Chào mừng bạn đến với cửa hàng của chúng tôi!
+                            </a>
+                        </li>
+                    </ul>
+                    <ul className="menu-right">
+                        <li className="first:pl-0 last:pr-0 px-2">
+                            <a
+                                title="Về chúng tôi"
+                                href="https://nmp-amazon-store.vercel.app/about-us"
+                            >
+                                Về chúng tôi
+                            </a>
+                        </li>
+                        <li className="first:pl-0 last:pr-0 px-2">
+                            <a
+                                title="Liên hệ"
+                                href="https://nmp-amazon-store.vercel.app/contact-us"
+                            >
+                                Liên hệ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </section>
             <section className="header-middle">
                 <div className="flex items-center lg:hidden">
@@ -251,11 +253,11 @@ const Header = () => {
                             }}
                         >
                             <span
-                                className={`flaticon-magnifying-glass-1 ${
+                                className={
                                     showSearchWidget
-                                        ? "before:content-['\\f112'] before:text-xl"
-                                        : ""
-                                }`}
+                                        ? "flaticon-close text-xl"
+                                        : "flaticon-magnifying-glass-1"
+                                }
                             ></span>
                         </button>
                     </div>
