@@ -114,7 +114,7 @@ const SearchWidget = ({ isOpen }) => {
                 isOpen ? "translate-y-0 z-50" : "translate-y-5 opacity-0 z-0"
             }`}
         >
-            <div className="w-full text-left p-4 px-10 font-semibold">
+            <div className="w-full text-left p-4 md:px-8 lg:px-16 font-semibold">
                 Tìm kiếm
             </div>
             <div className="flex justify-center p-4 pb-0">
