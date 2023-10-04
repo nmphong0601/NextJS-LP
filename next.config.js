@@ -13,16 +13,22 @@ const nextConfig = {
     sassOptions: {
         includePaths: [path.join(__dirname, "styles")],
     },
+    webpack: function (config, options) {
+        return config;
+    },
+    eslint: {
+        dirs: ["pages", "utils"], // Only run ESLint on the 'pages' and 'utils' directories during production builds (next build)
+    },
 
-    // async redirects() {
-    //     return [
-    //         {
-    //             source: "/",
-    //             destination: "/hpbd",
-    //             permanent: true,
-    //         },
-    //     ];
-    // },
+    async redirects() {
+        return [
+            {
+                source: "/",
+                destination: "/trang-chu",
+                permanent: true,
+            },
+        ];
+    },
     // module: {
     //     rules: [
     //         {

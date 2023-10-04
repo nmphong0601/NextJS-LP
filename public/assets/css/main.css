@@ -1,0 +1,400 @@
+/* roboto-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/roboto/roboto-v30-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto/roboto-v30-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-500italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 500;
+  src: url('../fonts/roboto/roboto-v30-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto/roboto-v30-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-700italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/roboto/roboto-v30-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/roboto/roboto-v30-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-900italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 900;
+  src: url('../fonts/roboto/roboto-v30-latin-900italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-regular - vietnamese */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto/roboto-v30-vietnamese-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-italic - vietnamese */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/roboto/roboto-v30-vietnamese-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-500 - vietnamese */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto/roboto-v30-vietnamese-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-500italic - vietnamese */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 500;
+  src: url('../fonts/roboto/roboto-v30-vietnamese-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-700 - vietnamese */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto/roboto-v30-vietnamese-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-700italic - vietnamese */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/roboto/roboto-v30-vietnamese-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-900 - vietnamese */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/roboto/roboto-v30-vietnamese-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-900italic - vietnamese */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 900;
+  src: url('../fonts/roboto/roboto-v30-vietnamese-900italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body{
+  margin: 0 auto;
+  color: #666;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+a {
+  color: #0a0a0a;
+  text-decoration: none;
+  transition: color 0.25s, border-color 0.25s, background-color 0.25s, opacity 0.25s, width 0.25s ease 0s;
+}
+a:hover{
+  color: #65a15a;
+}
+
+section {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input, button, select, input:focus-visible, button:focus-visible, select:focus-visible {
+  border: none;
+  outline: none;
+}
+
+button, button[type="button"], input[type="submit"], input[type="button"]{
+  color: #ffffff;
+}
+
+.header-top, .btn-search, .count {
+  background-color: #65a15a;
+}
+
+.chosen-container:hover {
+  cursor: pointer;
+}
+
+.chosen-container-single .chosen-single {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 0 0 0 8px;
+  height: 25px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background-color: #fff;
+  background: linear-gradient(#fff 20%,#f6f6f6 50%,#eee 52%,#f4f4f4 100%);
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 0 3px #fff inset, 0 1px 1px rgba(0,0,0,.1);
+  box-shadow: 0 0 3px #fff inset, 0 1px 1px rgba(0,0,0,.1);
+  color: #444;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 24px;
+}
+
+.chosen-container-single .chosen-single .chosen-label {
+  display: block;
+  overflow: hidden;
+  margin-right: 26px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.chosen-container-single .chosen-single .chosen-dropdown {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: calc(100%/6);
+  height: 100%;
+}
+
+.chosen-container-single .chosen-single .chosen-dropdown b {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*-------------------------------------HEADER TOP - START-------------------------------------------*/
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.header-top ul {
+  list-style: none;
+  list-style-type: none;
+  padding: 0;
+  vertical-align: middle;
+  margin: 0;
+}
+.header-top ul.menu-right {
+  list-style: none;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+.header-top ul li {
+  display: inline-block;
+}
+.header-top ul li > a {
+  text-decoration: none;
+  color: #fff;
+ }
+ul.menu-right li {
+  display: inline-block;
+  border-left: 2px solid #fff;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+ul.menu-right li:first-child {
+  border-left: none;
+}
+/*-------------------------------------HEADER TOP - END-------------------------------------------*/
+
+
+/*-------------------------------------HEADER MIDDLE - START-------------------------------------------*/
+.header-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.header-logo .logo {
+  width: 160px;
+}
+.search-bar {
+  display: table;
+  position: relative;
+  width: max-content;
+  border: 1px solid #eee;
+}
+.search-bar > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+.category {
+  position: relative;
+  border-right: 1px solid #eee;
+}
+.category .chosen-container {
+    margin-bottom: 0;
+    text-align: left;
+    width: 100% !important;
+    position: relative;
+}
+.category .chosen-container-single .chosen-single {
+  border: none;
+  border-radius: 0;
+  padding: 0 32px 0 16px;
+  max-width: 100%;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: transparent;
+  height: 46px;
+  line-height: 46px;
+}
+.category .chosen-container-single .chosen-single .chosen-label {
+    margin: 0;
+    color: #868686;
+}
+.category .chosen-container-active.chosen-with-drop .chosen-single {
+  border: none;
+  background: #ffffff;
+  box-shadow: none !important;
+}
+.category .chosen-container-single .chosen-single .chosen-dropdown b {
+  background: none !important;
+  position: relative;
+}
+.category .chosen-container-single .chosen-single .chosen-dropdown b::before {
+  display: block;
+  content: '';
+  width: 0;
+  height: 0;
+  border-width: 6px 5px;
+  border-style: solid;
+  border-color: #aaa transparent transparent transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-25%);
+  right: 16px;
+}
+.content input {
+  min-width: 320px;
+  padding: 0 16px;
+}
+.btn-search {
+  font-size: 20px;
+  height: 3rem;
+  line-height: 3rem;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  font-weight: normal;
+}
+/*-------------------------------------HEADER MIDDLE - END-------------------------------------------*/
+
+/*-------------------------------------HEADER RIGHT - START-------------------------------------------*/
+.customer {
+  position: relative;
+  text-align: right;
+}
+.block-user, .block-cart, .block-link {
+  display: inline-block;
+  font-size: 24px;
+  width: 40px;
+  line-height: 46px;
+  text-align: center;
+  position: relative;
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.block-link .count {
+  position: absolute;
+  top: 6px;
+  right: -8px;
+  display: inline-block;
+  min-width: 22px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  padding: 0 3px;
+  border-radius: 22px;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+}
+.btn-shine::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      120deg,
+      rgba(255,255,255, 0) 40%,
+      rgba(255,255,255, .5),
+      rgba(255,255,255, 0) 80%
+  );
+  left: -100%;
+  /* transition: all 0.6s ease-in-out; */
+}
+.btn-shine:hover::before{
+  /* left: 100%; */
+  animation: shine 3s;
+}
+
+@keyframes shine {
+  0% {left: -100px}
+  20% {left: 100%}
+  100% {left: 100%}
+}

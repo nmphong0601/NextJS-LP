@@ -1,0 +1,253 @@
+import { useState } from "react";
+import styles from "./Index.module.scss";
+
+const categories = [
+    {
+        label: "Tất cả loại sản phẩm",
+        value: 0,
+    },
+    {
+        label: "Loại 1",
+        value: 1,
+    },
+    {
+        label: "Loại 2",
+        value: 2,
+    },
+    {
+        label: "Loại 3",
+        value: 3,
+    },
+];
+
+const LoginForm = ({ isOpen }) => {
+    const [remember, setRemember] = useState(false);
+
+    return (
+        <div
+            className={`${styles["login-form"]} ${
+                isOpen ? "translate-y-0 z-50" : "translate-y-5 opacity-0 z-0"
+            }`}
+        >
+            <div className="w-full text-left p-4 px-5 font-semibold">
+                Đăng nhập
+            </div>
+            <div className="p-4 px-5 text-left w-full">
+                <div className="form-login">
+                    <div className="input-group flex flex-col items-start">
+                        <label
+                            className="inline-flex w-full"
+                            htmlFor="username"
+                        >
+                            <span>Tên đăng nhập hoặc email&nbsp;</span>
+                            <span className={styles.required}>*</span>
+                        </label>
+                        <input
+                            id="username"
+                            name="username"
+                            type="text"
+                            autoComplete="off"
+                            className="w-full border border-gray-300 focus:border-gray-300 ring-0 mb-2"
+                        />
+                    </div>
+                    <div className="input-group flex flex-col items-start">
+                        <label
+                            className="inline-flex w-full"
+                            htmlFor="password"
+                        >
+                            <span>Mật khẩu&nbsp;</span>
+                            <span className={styles.required}>*</span>
+                        </label>
+                        <input
+                            id="password"
+                            name="password"
+                            type="password"
+                            autoComplete="off"
+                            className="w-full border border-gray-300 focus:border-gray-300 ring-0 mb-2"
+                        />
+                    </div>
+                    <div className="mb-4">
+                        <label>
+                            <input type="checkbox" />
+                            <span
+                                className={`relative pl-7 ${
+                                    remember ? "checked" : ""
+                                }`}
+                                onClick={() => setRemember(!remember)}
+                            >
+                                Ghi nhớ
+                            </span>
+                        </label>
+                    </div>
+                    <button className="bg-nmp-primary p-4 px-5 hover:bg-nmp-dark">
+                        Đăng nhập
+                    </button>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+const WidgetCarts = ({ isOpen }) => {
+    return (
+        <div
+            className={`${styles["widget-carts"]} ${
+                isOpen ? "translate-y-0 z-50" : "translate-y-5 opacity-0 z-0"
+            }`}
+        >
+            <div className="w-full text-left p-4 px-5 font-semibold">
+                Giỏ hàng
+            </div>
+            <div className="p-4 px-5 text-left w-full">
+                <p className="message-cart">Không có sản phẩm trong giỏ hàng</p>
+            </div>
+        </div>
+    );
+};
+
+const Header = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const [showLoginForm, setShowLoginForm] = useState(false);
+    const [showWidget, setShowWidget] = useState(false);
+    const [activeCategory, setActiveCategory] = useState(0);
+
+    return (
+        <header className={styles.header}>
+            <section className="header-top">
+                <ul className="menu-left">
+                    <li>
+                        <a
+                            title="Chào mừng bạn đến với cửa hàng của chúng tôi!"
+                            href="https://nmp-amazon-store.vercel.app"
+                        >
+                            Chào mừng bạn đến với cửa hàng của chúng tôi!
+                        </a>
+                    </li>
+                </ul>
+                <ul className="menu-right">
+                    <li>
+                        <a
+                            title="Về chúng tôi"
+                            href="https://nmp-amazon-store.vercel.app/about-us"
+                        >
+                            Về chúng tôi
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            title="Liên hệ"
+                            href="https://nmp-amazon-store.vercel.app/contact-us"
+                        >
+                            Liên hệ
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section className="header-middle">
+                <div className="header-logo">
+                    <a href="https://nmp-amazon-store.vercel.app">
+                        <img
+                            alt="NMP"
+                            className="logo"
+                            src="assets/images/logo.svg"
+                        />
+                    </a>
+                </div>
+                <div className="search-bar">
+                    <div className="category">
+                        <div
+                            className="chosen-container chosen-container-single chosen-container-active chosen-with-drop"
+                            onMouseLeave={() => {
+                                setIsOpen(false);
+                            }}
+                        >
+                            <a
+                                className="chosen-single"
+                                onClick={() => setIsOpen(!isOpen)}
+                            >
+                                <span className="chosen-label">
+                                    {
+                                        categories.find(
+                                            (x) => x.value === activeCategory
+                                        ).label
+                                    }
+                                </span>
+                                <div className="chosen-dropdown-btn">
+                                    <b></b>
+                                </div>
+                            </a>
+                            <div
+                                className={`chosen-dropdown ${
+                                    !isOpen && "hidden"
+                                }`}
+                                onMouseLeave={() => {
+                                    setIsOpen(false);
+                                }}
+                            >
+                                <ul className="chosen-results">
+                                    {categories.map((category, index) => {
+                                        return (
+                                            <li
+                                                key={`category-${index}`}
+                                                className="active-result"
+                                                onClick={() => {
+                                                    setActiveCategory(
+                                                        category.value
+                                                    );
+                                                    setIsOpen(false);
+                                                }}
+                                            >
+                                                {category.label}
+                                            </li>
+                                        );
+                                    })}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <input
+                        type="text"
+                        autoComplete="off"
+                        className="txt-search focus:ring-0"
+                        placeholder="Tìm kiếm tại đây..."
+                        aria-label="Tìm kiếm tại đây..."
+                        aria-describedby="basic-addon1"
+                    />
+                    <button type="button" className="btn-shine btn-search">
+                        <span className="flaticon-magnifying-glass"></span>
+                    </button>
+                </div>
+                <div className="customer">
+                    <div className="block-user relative">
+                        <button
+                            className="block-link"
+                            onClick={() => {
+                                setShowLoginForm(!showLoginForm);
+                                setShowWidget(false);
+                            }}
+                        >
+                            <span className="flaticon-user"></span>
+                        </button>
+                        {<LoginForm isOpen={showLoginForm} />}
+                    </div>
+                    <div className="block-cart">
+                        <button
+                            className="block-link"
+                            onClick={() => {
+                                setShowWidget(!showWidget);
+                                setShowLoginForm(false);
+                            }}
+                        >
+                            <span className="flaticon-shopping-bag-1"></span>
+                            <span className="count">0</span>
+                        </button>
+                        {<WidgetCarts isOpen={showWidget} />}
+                    </div>
+                </div>
+            </section>
+            <section className="header-bottom"></section>
+        </header>
+    );
+};
+
+export default Header;
