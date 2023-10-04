@@ -1,7 +1,6 @@
 .header {
     [class~="header-top"] {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         color: #fff;
         padding-top: 1.5rem;
@@ -13,29 +12,37 @@
             padding: 0;
             vertical-align: middle;
             margin: 0;
+            
+            &[class~="menu-right"] {
+                list-style: none;
+                list-style-type: none;
+                justify-content: flex-end;
+
+                li {
+                    display: inline-block;
+                    border-left: 2px solid #fff;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                }
+
+                li:first-child {
+                    border-left: none;
+                }
+
+                @apply hidden lg:flex;
+            }
+
+            li {
+                display: inline-block;
+
+                > a {
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
         }
-    }
-    [class~="header-top"] ul[class~="menu-right"] {
-        list-style: none;
-        list-style-type: none;
-        display: flex;
-        justify-content: flex-end;
-    }
-    [class~="header-top"] ul li {
-        display: inline-block;
-    }
-    [class~="header-top"] ul li > a {
-        text-decoration: none;
-        color: #fff;
-    }
-    ul[class~="menu-right"] li {
-        display: inline-block;
-        border-left: 2px solid #fff;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-    }
-    ul[class~="menu-right"] li:first-child {
-        border-left: none;
+
+        @apply justify-center lg:justify-between;
     }
 
     /*-------------------------------------HEADER MIDDLE - START-------------------------------------------*/
@@ -43,14 +50,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+        position: relative;
 
         [class~="header-logo"] [class~="logo"] {
             width: 160px;
         }
 
-        [class~="search-bar"] {
+        [class~="search-box"] {
             display: flex;
             position: relative;
             border: 1px solid #eee;
@@ -126,6 +132,7 @@
             border: 1px solid #eee;
             z-index: 1000;
             max-width: 240px;
+            background-color: #ffffff;
         }
         [class~="active-result"]{
             @apply p-2 px-4;
@@ -134,6 +141,8 @@
                 color: #888;
             }
         }
+
+        @apply py-3 lg:py-12 border-b border-neutral-300 lg:border-none;
     }
     input[class~="txt-search"] {
         min-width: 320px;
@@ -149,6 +158,15 @@
         z-index: 1;
         overflow: hidden;
         font-weight: normal;
+        flex-shrink: 0;
+        width: 46px;
+
+        span[class^="flaticon"]{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
     /*-------------------------------------HEADER MIDDLE - END-------------------------------------------*/
 
@@ -222,10 +240,13 @@
     font-weight: normal;
 }
 
-.login-form, .widget-carts {
+.popup-dialog {
     box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.16);
-    line-height: 28px;
-    @apply absolute w-80 right-0 flex flex-col items-start divide-y divide-gray-300 transition-transform duration-300 ease-out;
+    @apply absolute bg-white leading-7 transition-transform duration-300 ease-out;
+}
+
+.login-form, .widget-carts {
+    @apply w-80 right-0 flex flex-col items-start divide-y divide-gray-300;
 
     [class~="message-cart"]{
         text-align: center;

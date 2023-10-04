@@ -13,7 +13,14 @@ const nextConfig = {
     sassOptions: {
         includePaths: [path.join(__dirname, "styles")],
     },
-    webpack: function (config, options) {
+    webpack: function (config, { dev, ...options }) {
+        if (dev) {
+            config.watchOptions = {
+                followSymlinks: true,
+            };
+
+            config.snapshot.managedPaths = [];
+        }
         return config;
     },
     eslint: {
@@ -29,6 +36,17 @@ const nextConfig = {
             },
         ];
     },
+    headers: () => [
+        {
+            source: "/:path*",
+            headers: [
+                {
+                    key: "Cache-Control",
+                    value: "no-store",
+                },
+            ],
+        },
+    ],
     // module: {
     //     rules: [
     //         {

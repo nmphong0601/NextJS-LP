@@ -20,12 +20,12 @@ const categories = [
     },
 ];
 
-const LoginForm = ({ isOpen }) => {
+const LoginFormWidget = ({ isOpen }) => {
     const [remember, setRemember] = useState(false);
 
     return (
         <div
-            className={`${styles["login-form"]} ${
+            className={`${styles["popup-dialog"]} ${styles["login-form"]} ${
                 isOpen ? "translate-y-0 z-50" : "translate-y-5 opacity-0 z-0"
             }`}
         >
@@ -88,10 +88,10 @@ const LoginForm = ({ isOpen }) => {
     );
 };
 
-const WidgetCarts = ({ isOpen }) => {
+const CartsWidget = ({ isOpen }) => {
     return (
         <div
-            className={`${styles["widget-carts"]} ${
+            className={`${styles["popup-dialog"]} ${styles["widget-carts"]} ${
                 isOpen ? "translate-y-0 z-50" : "translate-y-5 opacity-0 z-0"
             }`}
         >
@@ -105,11 +105,97 @@ const WidgetCarts = ({ isOpen }) => {
     );
 };
 
-const Header = () => {
+const SearchWidget = ({ isOpen }) => {
+    return (
+        <div
+            className={`${
+                styles["popup-dialog"]
+            } w-full left-0 top-full py-4 divide-y divide-gray-300 ${
+                isOpen ? "translate-y-0 z-50" : "translate-y-5 opacity-0 z-0"
+            }`}
+        >
+            <div className="w-full text-left p-4 px-10 font-semibold">
+                Tìm kiếm
+            </div>
+            <div className="flex justify-center p-4 pb-0">
+                <SearchBox className="w-full" />
+            </div>
+        </div>
+    );
+};
+
+const SearchBox = ({ className }) => {
     const [isOpen, setIsOpen] = useState(false);
+    const [activeCategory, setActiveCategory] = useState(0);
+
+    return (
+        <div className={`search-box ${className ? className : ""}`}>
+            <div className="category">
+                <div
+                    className="chosen-container chosen-container-single chosen-container-active chosen-with-drop"
+                    onMouseLeave={() => {
+                        setIsOpen(false);
+                    }}
+                >
+                    <a
+                        className="chosen-single"
+                        onClick={() => setIsOpen(!isOpen)}
+                    >
+                        <span className="chosen-label">
+                            {
+                                categories.find(
+                                    (x) => x.value === activeCategory
+                                ).label
+                            }
+                        </span>
+                        <div className="chosen-dropdown-btn">
+                            <b></b>
+                        </div>
+                    </a>
+                    <div
+                        className={`chosen-dropdown ${!isOpen && "hidden"}`}
+                        onMouseLeave={() => {
+                            setIsOpen(false);
+                        }}
+                    >
+                        <ul className="chosen-results">
+                            {categories.map((category, index) => {
+                                return (
+                                    <li
+                                        key={`category-${index}`}
+                                        className="active-result"
+                                        onClick={() => {
+                                            setActiveCategory(category.value);
+                                            setIsOpen(false);
+                                        }}
+                                    >
+                                        {category.label}
+                                    </li>
+                                );
+                            })}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <input
+                type="text"
+                autoComplete="off"
+                className="txt-search focus:ring-0 w-full"
+                placeholder="Tìm kiếm tại đây..."
+                aria-label="Tìm kiếm tại đây..."
+                aria-describedby="basic-addon"
+            />
+            <button type="button" className="btn-shine btn-search">
+                <span className="flaticon-magnifying-glass"></span>
+            </button>
+        </div>
+    );
+};
+
+const Header = () => {
     const [showLoginForm, setShowLoginForm] = useState(false);
     const [showWidget, setShowWidget] = useState(false);
-    const [activeCategory, setActiveCategory] = useState(0);
+    const [showSearchWidget, setShowSearchWidget] = useState(false);
 
     return (
         <header className={styles.header}>
@@ -144,6 +230,37 @@ const Header = () => {
                 </ul>
             </section>
             <section className="header-middle">
+                <div className="flex items-center lg:hidden">
+                    <div className="menu-bar inline-block align-middle text-[0]">
+                        <button className="menu block leading-10 w-7 h-12 p-3 px-0 group">
+                            <span className="w-full block border-solid border-b-2 border-black group-hover:border-nmp-primary mb-2"></span>
+                            <span className="w-full block border-solid border-b-2 border-black group-hover:border-nmp-primary mb-2"></span>
+                            <span className="w-full block border-solid border-b-2 border-black group-hover:border-nmp-primary mb-2"></span>
+                        </button>
+                    </div>
+                    <div
+                        className="header-search-inner"
+                        data-teamo="teamo-dropdown"
+                    >
+                        <button
+                            className="link-dropdown block-link"
+                            onClick={() => {
+                                setShowLoginForm(false);
+                                setShowWidget(false);
+                                setShowSearchWidget(!showSearchWidget);
+                            }}
+                        >
+                            <span
+                                className={`flaticon-magnifying-glass-1 ${
+                                    showSearchWidget
+                                        ? "before:content-['\\f112'] before:text-xl"
+                                        : ""
+                                }`}
+                            ></span>
+                        </button>
+                    </div>
+                </div>
+                <SearchWidget isOpen={showSearchWidget} />
                 <div className="header-logo">
                     <a href="https://nmp-amazon-store.vercel.app">
                         <img
@@ -153,69 +270,8 @@ const Header = () => {
                         />
                     </a>
                 </div>
-                <div className="search-bar">
-                    <div className="category">
-                        <div
-                            className="chosen-container chosen-container-single chosen-container-active chosen-with-drop"
-                            onMouseLeave={() => {
-                                setIsOpen(false);
-                            }}
-                        >
-                            <a
-                                className="chosen-single"
-                                onClick={() => setIsOpen(!isOpen)}
-                            >
-                                <span className="chosen-label">
-                                    {
-                                        categories.find(
-                                            (x) => x.value === activeCategory
-                                        ).label
-                                    }
-                                </span>
-                                <div className="chosen-dropdown-btn">
-                                    <b></b>
-                                </div>
-                            </a>
-                            <div
-                                className={`chosen-dropdown ${
-                                    !isOpen && "hidden"
-                                }`}
-                                onMouseLeave={() => {
-                                    setIsOpen(false);
-                                }}
-                            >
-                                <ul className="chosen-results">
-                                    {categories.map((category, index) => {
-                                        return (
-                                            <li
-                                                key={`category-${index}`}
-                                                className="active-result"
-                                                onClick={() => {
-                                                    setActiveCategory(
-                                                        category.value
-                                                    );
-                                                    setIsOpen(false);
-                                                }}
-                                            >
-                                                {category.label}
-                                            </li>
-                                        );
-                                    })}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <input
-                        type="text"
-                        autoComplete="off"
-                        className="txt-search focus:ring-0"
-                        placeholder="Tìm kiếm tại đây..."
-                        aria-label="Tìm kiếm tại đây..."
-                        aria-describedby="basic-addon1"
-                    />
-                    <button type="button" className="btn-shine btn-search">
-                        <span className="flaticon-magnifying-glass"></span>
-                    </button>
+                <div className="hidden lg:block">
+                    <SearchBox />
                 </div>
                 <div className="customer">
                     <div className="block-user relative">
@@ -224,24 +280,26 @@ const Header = () => {
                             onClick={() => {
                                 setShowLoginForm(!showLoginForm);
                                 setShowWidget(false);
+                                setShowSearchWidget(false);
                             }}
                         >
                             <span className="flaticon-user"></span>
                         </button>
-                        {<LoginForm isOpen={showLoginForm} />}
+                        {<LoginFormWidget isOpen={showLoginForm} />}
                     </div>
                     <div className="block-cart">
                         <button
                             className="block-link"
                             onClick={() => {
-                                setShowWidget(!showWidget);
                                 setShowLoginForm(false);
+                                setShowWidget(!showWidget);
+                                setShowSearchWidget(false);
                             }}
                         >
                             <span className="flaticon-shopping-bag-1"></span>
                             <span className="count">0</span>
                         </button>
-                        {<WidgetCarts isOpen={showWidget} />}
+                        {<CartsWidget isOpen={showWidget} />}
                     </div>
                 </div>
             </section>
