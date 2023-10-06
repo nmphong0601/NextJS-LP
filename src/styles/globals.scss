@@ -138,17 +138,21 @@ body{
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
 }
-a, button.block-link {
+a, button.block-link, .label-block-link {
   color: #0a0a0a;
   text-decoration: none;
   transition: color 0.25s, border-color 0.25s, background-color 0.25s, opacity 0.25s, width 0.25s ease 0s;
 }
-a:hover, button.block-link:hover {
+a:hover, button.block-link:hover, .label-block-link:hover {
   color: #65a15a;
 }
 
+.label-block-link {
+  @apply leading-[50px] lg:leading-[60px];
+}
+
 section {
-  @apply px-4 md:px-8 lg:px-16;
+  @apply relative px-4 md:px-8 lg:px-16;
 }
 
 img {
@@ -253,4 +257,15 @@ button, button[type="button"], input[type="submit"], input[type="button"]{
     display: block;
     width: 100%;
     height: 100%;
+}
+
+.swiper {
+  height: 100%;
+}
+
+.swiper-slide {
+  height: auto
+}
+.swiper-wrapper {
+  align-items: stretch
 }

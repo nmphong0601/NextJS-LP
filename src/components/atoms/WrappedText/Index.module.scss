@@ -1,0 +1,171 @@
+.wrapped-character {
+    opacity: 0;
+    @apply relative inline-block backdrop-filter-none filter-none origin-center;
+}
+
+.wrapped-character-drop-ltr-end {
+    opacity: 0;
+    animation: hide-text-rtl 0.75s backwards;
+}
+
+.wrapped-character-drop-ltr-start {
+    animation: drop-text-ltr 0.75s forwards;
+}
+
+.wrapped-character-rotate-rtl-start {
+    animation: rotate-text-rtl 0.75s forwards;
+}
+
+.wrapped-character-rotate-rtl-end {
+    opacity: 0;
+    animation: hide-rotate-text-rtl 0.75s backwards;
+}
+
+.wrapped-character-rtl-start {
+    animation: text-rtl 0.8s forwards;
+}
+
+.wrapped-character-rtl-end {
+    opacity: 0;
+    animation: hide-text-rtl 0.8s backwards;
+}
+
+.wrapped-character-ltr-start {
+    animation: text-ltr 0.8s forwards;
+}
+
+.wrapped-character-ltr-end {
+    opacity: 0;
+    animation: hide-text-ltr 0.8s backwards;
+}
+
+@keyframes text-ltr {
+	0% {
+		left: -100px;
+		opacity: 0;
+	}
+	
+	50% {
+		left: 0;
+        opacity: 0.8;
+	}
+
+	100% {
+		left: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes hide-text-ltr {
+	0% {
+		opacity: 1;
+		
+	}
+	
+	50% {
+		opacity: 0.5;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes text-rtl {
+	0% {
+		right: -100px;
+		opacity: 0;
+	}
+	
+	50% {
+		right: 0;
+        opacity: 0.6;
+	}
+
+	100% {
+		right: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes hide-text-rtl {
+	0% {
+		opacity: 1;
+		
+	}
+	
+	50% {
+		opacity: 0.5;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes rotate-text-rtl {
+	0% {
+        transform: rotate(90deg);
+		right: -100px;
+		opacity: 0;
+	}
+	
+	50% {
+        transform: rotate(0);
+		right: 0;
+	}
+
+	100% {
+        transform: rotate(0);
+		right: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes hide-rotate-text-rtl {
+	0% {
+		opacity: 1;
+		
+	}
+	
+	50% {
+		opacity: 0.8;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes drop-text-ltr {
+	0% {
+		top: -50px;
+		opacity: 0;
+	}
+	
+	50% {
+		top: 0;
+	}
+
+	100% {
+		top: 0;
+		opacity: 1;
+	}
+}
+
+@keyframes hide-text-rtl {
+	0% {
+        top: 0;
+		opacity: 1;
+		
+	}
+	
+	50% {
+		top: -50px;
+	}
+
+	100% {
+		top: -50px;
+		opacity: 0;
+	}
+}

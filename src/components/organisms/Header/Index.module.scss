@@ -1,8 +1,7 @@
 .header {
     [class~="header-top"] {
         color: #fff;
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
+        @apply py-2 lg:py-6;
 
         ul {
             list-style: none;
@@ -50,118 +49,7 @@
             width: 160px;
         }
 
-        [class~="search-box"] {
-            display: flex;
-            position: relative;
-            border: 1px solid #eee;
-
-            align-items: center;
-        }
-
-        [class~="category"] {
-            position: relative;
-            width: 200px;
-            border-right: 1px solid #eee;
-
-            [class~="chosen-container"] {
-                margin-bottom: 0;
-                text-align: left;
-                width: 100% !important;
-                position: relative;
-            }
-
-            [class~="chosen-container-single"] {
-                [class~="chosen-single"] {
-                    [class~="chosen-label"] {
-                        margin: 0;
-                        color: #868686;
-                    }
-
-                    border: none;
-                    border-radius: 0;
-                    padding: 0 32px 0 16px;
-                    max-width: 100%;
-                    -webkit-box-shadow: none;
-                    -moz-box-shadow: none;
-                    box-shadow: none;
-                    background: transparent;
-                    height: 46px;
-                    line-height: 46px;
-
-                    [class~="chosen-dropdown-btn"] b {
-                        background: none !important;
-                        position: relative;
-
-                        &::before {
-                            display: block;
-                            content: '';
-                            width: 0;
-                            height: 0;
-                            border-width: 6px 5px;
-                            border-style: solid;
-                            border-color: #aaa transparent transparent transparent;
-                            position: absolute;
-                            top: 50%;
-                            transform: translateY(-25%);
-                            right: 16px;
-                        }
-                    }
-                }
-            }
-
-            [class~="chosen-container-active"] {
-                &[class~="chosen-with-drop"] {
-                    [class~="chosen-single"] {
-                        border: none;
-                        background: #ffffff;
-                        box-shadow: none !important;
-                    }
-                }
-            }
-        }
-
-        [class~="chosen-dropdown"] {
-            position: absolute;
-            width: 100%;
-            border: 1px solid #eee;
-            z-index: 1000;
-            max-width: 240px;
-            background-color: #ffffff;
-        }
-        [class~="active-result"]{
-            @apply p-2 px-4;
-            &:hover {
-                background: #f6f6f6;
-                color: #888;
-            }
-        }
-
         @apply py-3 lg:py-12 border-b border-neutral-300 lg:border-none;
-    }
-    input[class~="txt-search"] {
-        padding: 8px 16px;
-        border: none;
-
-        @apply min-w-0 lg:min-w-[320px];
-    }
-    [class~="btn-search"] {
-        font-size: 20px;
-        height: 3rem;
-        line-height: 3rem;
-        padding: 0 20px;
-        position: relative;
-        z-index: 1;
-        overflow: hidden;
-        font-weight: normal;
-        flex-shrink: 0;
-        width: 46px;
-
-        span[class^="flaticon"]{
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-        }
     }
     /*-------------------------------------HEADER MIDDLE - END-------------------------------------------*/
 
@@ -228,6 +116,13 @@
         100% {left: 100%}
     }
 
+    /*-------------------------------------HEADER BOTTOM - START-------------------------------------------*/
+
+    [class~="header-bottom"] {
+        @apply bg-nmp-gray;
+    }
+
+    /*-------------------------------------HEADER BOTTOM - END-------------------------------------------*/
 }
 
 .required {
