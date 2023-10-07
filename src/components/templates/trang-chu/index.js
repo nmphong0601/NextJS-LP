@@ -1,6 +1,7 @@
 import styles from "./index.module.scss";
 import Card from "components/molecules/Card";
-import Slider from "components/molecules/Slider";
+import PosterSlider from "components/molecules/PosterSlider";
+import ProSlider from "components/molecules/ProSlider";
 
 const posters = [
   {
@@ -33,13 +34,156 @@ const posters = [
   },
 ];
 
+const saleOffProducts = [
+  {
+    id: 18,
+    title: "Monstera subpinnata",
+    rate: 5,
+    price: "330000",
+    image: {
+      alt: "Monstera subpinnata",
+      src: "assets/images/products/pd-18/pd18-600x600.jpg",
+      width: 600,
+      height: 600,
+    },
+    imageHover: {
+      alt: "Monstera subpinnata",
+      src: "assets/images/products/pd-1/pd1-600x600.jpg",
+      width: 600,
+      height: 600,
+    },
+    saleOff: {
+      ratio: 9,
+      price: "299000",
+      expireDate: "12/31/2023 21:15:00",
+    },
+    quantity: 13,
+  },
+  {
+    id: 17,
+    title: "Aspidistra Elatior",
+    rate: 0,
+    price: "150000",
+    image: {
+      alt: "Aspidistra Elatior",
+      src: "assets/images/products/pd-17/pd17-600x600.jpg",
+      width: 600,
+      height: 600,
+    },
+    imageHover: {
+      alt: "Aspidistra Elatior",
+      src: "assets/images/products/pd-17/pd17-600x600.jpg",
+      width: 600,
+      height: 600,
+    },
+    saleOff: {
+      ratio: 13,
+      price: "130000",
+      expireDate: "10/31/2023 11:30:00",
+    },
+    quantity: 2,
+  },
+  {
+    id: 11,
+    title: "Cretan Brake Fern",
+    rate: 0,
+    price: "250000",
+    image: {
+      alt: "Cretan Brake Fern",
+      src: "assets/images/products/pd-11/pd11-600x600.jpg",
+      width: 600,
+      height: 600,
+    },
+    imageHover: {
+      alt: "Cretan Brake Fern",
+      src: "assets/images/products/pd-11/pd11-600x600.jpg",
+      width: 600,
+      height: 600,
+    },
+    saleOff: null,
+    quantity: 7,
+  },
+  {
+    id: 7,
+    title: "Canary Date Palm",
+    rate: 2,
+    price: "310000",
+    image: {
+      alt: "Canary Date Palm",
+      src: "assets/images/products/pd-7/pd7-600x600.jpg",
+      width: 600,
+      height: 600,
+    },
+    imageHover: {
+      alt: "Canary Date Palm",
+      src: "assets/images/products/pd-7/pd7-600x600.jpg",
+      width: 600,
+      height: 600,
+    },
+    saleOff: {
+      ratio: 6,
+      price: "290000",
+      expireDate: "10/21/2023 8:45:00",
+    },
+    quantity: 5,
+  },
+  {
+    id: 4,
+    title: "Bird's Nest Fern",
+    rate: 3.5,
+    price: "340000",
+    image: {
+      alt: "Bird's Nest Fern",
+      src: "assets/images/products/pd-4/pd4-600x600.jpg",
+      width: 600,
+      height: 600,
+    },
+    imageHover: {
+      alt: "Bird's Nest Fern",
+      src: "assets/images/products/pd-4/pd4-600x600.jpg",
+      width: 600,
+      height: 600,
+    },
+    saleOff: {
+      ratio: 6,
+      price: "309000",
+      expireDate: "10/10/2023 19:00:00",
+    },
+    quantity: 10,
+  },
+  {
+    id: 2,
+    title: "Areca palm",
+    rate: 3,
+    price: "210000",
+    image: {
+      alt: "Areca palm",
+      src: "assets/images/products/pd-2/pd2-600x600.jpg",
+      width: 600,
+      height: 600,
+    },
+    imageHover: {
+      alt: "Areca palm",
+      src: "assets/images/products/pd-2/pd2-600x600.jpg",
+      width: 600,
+      height: 600,
+    },
+    saleOff: {
+      ratio: 10,
+      price: "189000",
+      expireDate: "11/05/2023 6:30:00",
+    },
+    quantity: 0,
+  },
+];
+
 const TrangChuTemplate = ({ infor }) => {
   return (
     <>
       <div>
-        <section className="py-5 relative inline-grid grid-cols-1 lg:grid-cols-3 grid-rows-1 gap-4">
-          <Slider className="col-span-1 lg:col-span-2" />
-          <div className="grid grid-cols-2 grid-rows-1 lg:grid-cols-1 lg:grid-rows-2 gap-4">
+        <section className="pt-5 pb-5 relative inline-grid grid-cols-1 lg:grid-cols-3 grid-rows-1 gap-4">
+          <PosterSlider className="col-span-1 lg:col-span-2" />
+          <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-1 lg:grid-cols-1 lg:grid-rows-2 gap-4">
             {posters.map((poster, index) => {
               return (
                 <Card
@@ -50,6 +194,12 @@ const TrangChuTemplate = ({ infor }) => {
               );
             })}
           </div>
+        </section>
+        <section className="pt-5 pb-14 relative">
+          <div className="text-center">
+            <h3 className="title">Deal of the day</h3>
+          </div>
+          <ProSlider products={saleOffProducts} />
         </section>
       </div>
     </>

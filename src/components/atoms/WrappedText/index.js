@@ -72,10 +72,14 @@ const WrappedText = ({
   }
 
   return (
-    <div className="wrapped-line" {...props}>
+    <div
+      className="wrapped-line leading-4 sm:leading-6 md:leading-normal"
+      {...props}
+    >
       {words.map((word, index) => {
         if (typeof word !== "string") {
           return cloneElement(word, {
+            key: `child-${index}`,
             style: { ...word.props?.style, animationDelay: "0.7s" },
             className: `${styles["wrapped-character"]} ${
               isActive
@@ -89,7 +93,7 @@ const WrappedText = ({
           return (
             <Fragment key={`wrapped-word-${index}`}>
               <div
-                className="wrapped-word inline-block tracking-widest"
+                className="wrapped-word inline-block md:tracking-widest"
                 {...wordProps}
               >
                 {characters.map((character, indexChar) => {

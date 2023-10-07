@@ -57,6 +57,7 @@
     [class~="customer"] {
         position: relative;
         text-align: right;
+        display: flex;
     }
     [class~="block-user"], [class~="block-cart"], [class~="block-link"] {
         display: inline-block;

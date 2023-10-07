@@ -1,6 +1,8 @@
 import { useState } from "react";
 import styles from "./Index.module.scss";
 
+import useDeviceDetect from "common/utils/useDeviceDetect";
+
 import SearchBox from "./SearchBox";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
@@ -389,6 +391,7 @@ const SearchWidget = ({ isOpen }) => {
 };
 
 const Header = () => {
+  const { isDesktop } = useDeviceDetect();
   const [showSidebar, setShowSidebar] = useState(false);
   const [showLoginForm, setShowLoginForm] = useState(false);
   const [showWidget, setShowWidget] = useState(false);
@@ -473,9 +476,14 @@ const Header = () => {
             <button
               className="block-link"
               onClick={() => {
-                setShowLoginForm(!showLoginForm);
-                setShowWidget(false);
-                setShowSearchWidget(false);
+                if (isDesktop) {
+                  setShowLoginForm(!showLoginForm);
+                  setShowWidget(false);
+                  setShowSearchWidget(false);
+                } else {
+                  location.href =
+                    "https://nmp-amazon-store.vercel.app//auth/login";
+                }
               }}
             >
               <span className="flaticon-user"></span>

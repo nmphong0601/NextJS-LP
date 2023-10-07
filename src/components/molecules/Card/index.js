@@ -9,11 +9,12 @@ const Card = ({ data, className, ...props }) => {
         width={data.background.width}
         height={data.background.height}
         unoptimized
-        className="relative z-0 w-full"
+        className="relative z-0 h-auto w-full"
         alt={data.background.alt}
+        style={{ objectFit: "cover", minHeight: "240px" }}
       />
-      <div className="absolute inset-0 md:top-1/2 lg:top-1/3 xl:top-1/2 left-12 z-10 md:-translate-y-1/2 lg:-translate-y-1/3 xl:-translate-y-1/2 max-w-[180px]">
-        <h3 className="mb-3 font-bold capitalize text-3xl text-black">
+      <div className="absolute max-w-[180px] inset-0 flex flex-col justify-center px-2 sm:px-4 md:px-6">
+        <h3 className="mb-3 font-bold capitalize text-xl lg:text-3xl text-black">
           {data.title}
         </h3>
         <p className="block">{data.description}</p>
@@ -21,7 +22,7 @@ const Card = ({ data, className, ...props }) => {
           <a
             href={data.button.url}
             target="_blank"
-            className="inline-block mt-3 uppercase bg-nmp-primary hover:bg-nmp-dark p-2 px-5 font-bold text-xs text-white hover:text-white"
+            className="inline-block text-center mt-3 uppercase bg-nmp-primary hover:bg-nmp-dark p-2 px-5 lg:py-4 font-bold text-xs text-white hover:text-white max-w-max"
           >
             {data.button.label}
           </a>

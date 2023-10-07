@@ -26,13 +26,14 @@ const slides = [
       {
         text: "Teamo a plant",
         characterProps: {
-          className: "text-nmp-primary font-bold uppercase",
+          className:
+            "text-nmp-primary font-bold uppercase text-xs sm:text-sm md:text-base",
         },
       },
       {
         text: "Get 20% Off",
         characterProps: {
-          className: "font-bold text-3xl text-black",
+          className: "font-bold text-xs sm:text-sm md:text-3xl text-black",
         },
         effect: {
           position: "rtl",
@@ -42,7 +43,7 @@ const slides = [
       {
         text: "Plants",
         characterProps: {
-          className: "font-bold text-3xl text-black",
+          className: "font-bold text-xs sm:text-sm md:text-3xl text-black",
         },
         effect: {
           position: "rtl",
@@ -76,13 +77,14 @@ const slides = [
       {
         text: "Teamo best collection",
         characterProps: {
-          className: "text-nmp-primary font-bold uppercase",
+          className:
+            "text-nmp-primary font-bold uppercase text-xs sm:text-sm md:text-base",
         },
       },
       {
         text: "Inspiration ",
         characterProps: {
-          className: "font-bold text-3xl text-black",
+          className: "font-bold text-xs sm:text-sm md:text-3xl text-black",
         },
         effect: {
           position: "rtl",
@@ -92,7 +94,7 @@ const slides = [
       {
         text: "Plants",
         characterProps: {
-          className: "font-bold text-3xl text-black",
+          className: "font-bold text-xs sm:text-sm md:text-3xl text-black",
         },
         effect: {
           position: "rtl",
@@ -126,13 +128,15 @@ const slides = [
       {
         text: "Sale up to 40% off",
         characterProps: {
-          className: "text-nmp-primary font-bold uppercase",
+          className:
+            "text-nmp-primary font-bold uppercase text-xs sm:text-sm md:text-base",
         },
       },
       {
         text: "Plans for",
         characterProps: {
-          className: "font-bold text-3xl text-black capitallize",
+          className:
+            "font-bold text-xs sm:text-sm md:text-3xl text-black capitallize",
         },
         effect: {
           position: "rtl",
@@ -142,7 +146,8 @@ const slides = [
       {
         text: "Your house",
         characterProps: {
-          className: "font-bold text-3xl text-black capitallize",
+          className:
+            "font-bold text-xs sm:text-sm md:text-3xl text-black capitallize",
         },
         effect: {
           position: "rtl",
@@ -173,7 +178,6 @@ const Slider = (props) => {
     <div {...props}>
       <Swiper
         modules={[Navigation, Pagination, EffectFade, Autoplay]}
-        height={100}
         effect="fade"
         speed={1000}
         autoplay={{ delay: 5000 }}
@@ -188,8 +192,6 @@ const Slider = (props) => {
         spaceBetween={50}
         slidesPerView={1}
         initialSlide={0}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
         onRealIndexChange={(swipper) => {
           setActiveSlide(swipper.realIndex);
         }}
@@ -205,8 +207,8 @@ const Slider = (props) => {
                 className="relative z-0 h-full"
                 alt={slide.background.alt}
               />
-              <div className="absolute inset-0 top-1/2 left-12 z-10 -translate-y-1/2">
-                <div className="mb-6">
+              <div className="absolute inset-0 flex flex-col justify-center px-8 md:px-10">
+                <div className="mb-2 md:mb-6">
                   {slide.contents &&
                     slide.contents.length > 0 &&
                     slide.contents.map((content, idxContent) => {
@@ -224,6 +226,7 @@ const Slider = (props) => {
                       } else {
                         return (
                           <WrappedText
+                            key={`wrapped-text-${idxContent}`}
                             isActive={activeSlide === idxSlide}
                             text={content.text}
                             charProps={content.characterProps}
@@ -234,7 +237,7 @@ const Slider = (props) => {
                     })}
                 </div>
                 <button
-                  className={`relative uppercase bg-nmp-primary hover:bg-nmp-dark p-4 px-6 font-bold opacity-0 ${
+                  className={`relative max-w-max uppercase text-xs md:text-xl bg-nmp-primary hover:bg-nmp-dark p-4 py-3 lg:px-6 font-bold opacity-0 ${
                     activeSlide === idxSlide
                       ? styles["animation-bot-to-top"]
                       : styles["animation-bot-to-top-out"]
