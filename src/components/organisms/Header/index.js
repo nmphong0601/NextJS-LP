@@ -415,7 +415,7 @@ const Header = () => {
             <li className="first:pl-0 last:pr-0 px-2">
               <a
                 title="Về chúng tôi"
-                href="https://nmp-amazon-store.vercel.app/about-us"
+                href={`${process.env.NEXT_HOST}/about-us`}
               >
                 Về chúng tôi
               </a>
@@ -423,7 +423,7 @@ const Header = () => {
             <li className="first:pl-0 last:pr-0 px-2">
               <a
                 title="Liên hệ"
-                href="https://nmp-amazon-store.vercel.app/contact-us"
+                href={`${process.env.NEXT_HOST}/contact-us`}
               >
                 Liên hệ
               </a>
