@@ -402,7 +402,7 @@ const Header = () => {
       <section className="header-top">
         <div className="container flex max-w-full items-center justify-center lg:justify-between">
           <ul className="menu-left">
-            <li>
+            <li className="text-center lg:text-left">
               <a
                 title="Chào mừng bạn đến với cửa hàng của chúng tôi!"
                 href={process.env.NEXT_HOST}
