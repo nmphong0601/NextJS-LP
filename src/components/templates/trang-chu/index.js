@@ -621,7 +621,7 @@ const TrangChuTemplate = ({ infor }) => {
         <section className="pt-5 pb-14 relative">
           <Tabs items={tabList} />
         </section>
-        <Gallery title={"Gallery Feeds"} images={images} />
+        <Gallery title={"Gallery Feed"} images={images} />
       </div>
     </>
   );
