@@ -8,7 +8,7 @@
 
     [class~="nav-category"] {
         white-space: nowrap;
-        @apply relative w-72 text-right;
+        @apply relative w-72;
 
         [class~="block-title"] {
             @apply flex justify-start items-center gap-4 bg-nmp-primary px-8 cursor-pointer text-white;
