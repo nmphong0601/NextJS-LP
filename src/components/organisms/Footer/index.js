@@ -25,44 +25,44 @@ const Footer = () => {
             </div>
           </div>
           <div className="md:col-6 lg:col-3 mb-8">
-            <h2 class="widget-title">Quick Menu</h2>
+            <h2 className="widget-title">Quick Menu</h2>
             <div className="quick-menu-container">
               <ul id="quick-menu" className="quick-menu">
-                <li id="menu-item-726" class="quick-menu-item">
+                <li id="menu-item-726" className="quick-menu-item">
                   <a href="#">New Arrivals</a>
                 </li>
-                <li id="menu-item-727" class="quick-menu-item">
+                <li id="menu-item-727" className="quick-menu-item">
                   <a href="#">Hot Sale</a>
                 </li>
-                <li id="menu-item-728" class="quick-menu-item">
+                <li id="menu-item-728" className="quick-menu-item">
                   <a href="#">Cacti</a>
                 </li>
-                <li id="menu-item-729" class="quick-menu-item">
+                <li id="menu-item-729" className="quick-menu-item">
                   <a href="#">Palms</a>
                 </li>
-                <li id="menu-item-730" class="quick-menu-item">
+                <li id="menu-item-730" className="quick-menu-item">
                   <a href="#">Ferns</a>
                 </li>
               </ul>
             </div>
           </div>
           <div className="md:col-6 lg:col-3 mb-8">
-            <h2 class="widget-title">Information</h2>
+            <h2 className="widget-title">Information</h2>
             <div className="quick-menu-container">
               <ul id="quick-menu" className="quick-menu">
-                <li id="menu-item-693" class="quick-menu-item">
+                <li id="menu-item-693" className="quick-menu-item">
                   <a href="#">Order Tracking</a>
                 </li>
-                <li id="menu-item-694" class="quick-menu-item">
+                <li id="menu-item-694" className="quick-menu-item">
                   <a href="#">Contact Us</a>
                 </li>
-                <li id="menu-item-106" class="quick-menu-item">
+                <li id="menu-item-106" className="quick-menu-item">
                   <a href="#">Delivery</a>
                 </li>
-                <li id="menu-item-108" class="quick-menu-item">
+                <li id="menu-item-108" className="quick-menu-item">
                   <a href="#">Return</a>
                 </li>
-                <li id="menu-item-104" class="quick-menu-item">
+                <li id="menu-item-104" className="quick-menu-item">
                   <a href="#">FAQs</a>
                 </li>
               </ul>

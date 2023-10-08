@@ -36,5 +36,5 @@ export default function useDeviceDetect() {
     setDesktop(_screen === "DESKTOP");
   }, [width]);
 
-  return { isDesktop, screen };
+  return { isDesktop, screen, width };
 }

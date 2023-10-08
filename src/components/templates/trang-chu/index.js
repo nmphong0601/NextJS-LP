@@ -1,3 +1,4 @@
+import Gallery from "components/molecules/Gallery";
 import styles from "./index.module.scss";
 import Card from "components/molecules/Card";
 import PosterSlider from "components/molecules/PosterSlider";
@@ -550,6 +551,34 @@ const topRateProducts = [
   },
 ];
 
+const images = [
+  {
+    src: "assets/images/galleries/item-instagram-1.jpg",
+    width: 384,
+    height: 384,
+  },
+  {
+    src: "assets/images/galleries/item-instagram-2-266x266.jpg",
+    width: 266,
+    height: 266,
+  },
+  {
+    src: "assets/images/galleries/item-instagram-3-266x266.jpg",
+    width: 266,
+    height: 266,
+  },
+  {
+    src: "assets/images/galleries/item-instagram-4-266x266.jpg",
+    width: 266,
+    height: 266,
+  },
+  {
+    src: "assets/images/galleries/item-instagram-5-266x266.jpg",
+    width: 266,
+    height: 266,
+  },
+];
+
 const TrangChuTemplate = ({ infor }) => {
   const tabList = [
     {
@@ -592,6 +621,7 @@ const TrangChuTemplate = ({ infor }) => {
         <section className="pt-5 pb-14 relative">
           <Tabs items={tabList} />
         </section>
+        <Gallery title={"Gallery Feeds"} images={images} />
       </div>
     </>
   );

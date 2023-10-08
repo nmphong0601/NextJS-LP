@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styles from "./Index.module.scss";
 
 import ProCard from "components/molecules/ProCard";
@@ -14,7 +13,6 @@ import "swiper/css/effect-fade";
 import "swiper/css/autoplay";
 
 const ProSlider = ({ products, ...props }) => {
-  const [activeSlide, setActiveSlide] = useState(0);
   return (
     <div {...props}>
       <Swiper
@@ -42,8 +40,6 @@ const ProSlider = ({ products, ...props }) => {
             slidesPerView: 2,
           },
         }}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
         onRealIndexChange={(swipper) => {
           setActiveSlide(swipper.realIndex);
         }}

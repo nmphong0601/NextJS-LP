@@ -1,0 +1,12 @@
+.gallery-heading {
+    @apply text-center leading-6;
+
+    [class~="icon"] {
+        display: block;
+        font-size: 60px;
+        font-weight: normal;
+        margin-bottom: 10px;
+
+        @apply text-nmp-primary;
+    }
+}

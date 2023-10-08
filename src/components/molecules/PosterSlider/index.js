@@ -201,10 +201,12 @@ const Slider = (props) => {
             <SwiperSlide key={`slide-shop-${idxSlide}`}>
               <Image
                 src={slide.background.src}
+                sizes="100vw"
                 width={slide.background.width}
                 height={slide.background.height}
-                unoptimized
                 className="relative z-0 h-full"
+                unoptimized
+                priority={true}
                 alt={slide.background.alt}
               />
               <div className="absolute inset-0 flex flex-col justify-center px-8 md:px-10">
