@@ -407,7 +407,7 @@ const Header = () => {
                 title="Chào mừng bạn đến với cửa hàng của chúng tôi!"
                 href={process.env.NEXT_HOST}
               >
-                Chào mừng bạn đến với cửa hàng của chúng tôi!
+                Chào mừng bạn đến với cửa hàng Shesed Salom!
               </a>
             </li>
           </ul>
@@ -421,10 +421,7 @@ const Header = () => {
               </a>
             </li>
             <li className="first:pl-0 last:pr-0 px-2">
-              <a
-                title="Liên hệ"
-                href={`${process.env.NEXT_HOST}/contact-us`}
-              >
+              <a title="Liên hệ" href={`${process.env.NEXT_HOST}/contact-us`}>
                 Liên hệ
               </a>
             </li>
@@ -465,7 +462,10 @@ const Header = () => {
         <SearchWidget isOpen={showSearchWidget} />
         <div className="header-logo">
           <a href={process.env.NEXT_HOST}>
-            <img alt="NMP" className="logo" src="assets/images/logo.svg" />
+            {/* <img alt="Chesed Salom" className="logo" src="assets/images/logo.svg" /> */}
+            <div className="w-[160px] h-[54px] text-3xl uppercase font-bold flex justify-center items-center text-center lg:text-left">
+              Chesed Salom
+            </div>
           </a>
         </div>
         <div className="hidden lg:block">
