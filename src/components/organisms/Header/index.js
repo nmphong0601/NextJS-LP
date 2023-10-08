@@ -463,7 +463,7 @@ const Header = () => {
         <div className="header-logo">
           <a href={process.env.NEXT_HOST}>
             {/* <img alt="Chesed Salom" className="logo" src="assets/images/logo.svg" /> */}
-            <div className="w-[160px] h-[54px] text-3xl uppercase font-bold flex justify-center items-center text-center lg:text-left">
+            <div className="w-[160px] h-[54px] text-2xl leading-7 uppercase font-bold flex justify-center items-center text-center lg:text-left">
               Chesed Salom
             </div>
           </a>

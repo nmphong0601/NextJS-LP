@@ -12,7 +12,7 @@ const Footer = () => {
                 className="logo"
                 src="assets/images/logo-mini.png"
               /> */}
-              <div className="w-[172px] h-[54px] text-2xl uppercase font-bold flex justify-center items-center">
+              <div className="w-[172px] h-[54px] text-2xl leading-7 uppercase font-bold flex justify-center items-center">
                 Chesed Salom
               </div>
             </a>
