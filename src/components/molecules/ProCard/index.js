@@ -14,9 +14,10 @@ const ProCard = ({ data, ...props }) => {
   useEffect(() => {
     let timer = null;
 
-    if (data && data.saleOff) {
-      const setRemaining = (data) => {
-        const end = new Date(data.expireDate);
+    if (data && data.saleOff && data.saleOff.expireDate) {
+      const { expireDate } = data.saleOff;
+      const setRemaining = (date) => {
+        const end = new Date(date);
         const now = new Date();
         const distance = end - now;
         if (distance < 0) {
@@ -31,7 +32,7 @@ const ProCard = ({ data, ...props }) => {
         setDate({ day: days, hour: hours, min: minutes, sec: seconds });
       };
 
-      timer = setInterval(setRemaining, 1000, data.saleOff);
+      timer = setInterval(setRemaining, 1000, expireDate);
     }
   }, []);
 
@@ -55,24 +56,29 @@ const ProCard = ({ data, ...props }) => {
               width={data.imageHover.width}
               height={data.imageHover.height}
               unoptimized
-              className="relative z-0 h-full"
+              className="relative z-0"
               alt={data.imageHover.alt}
             />
           </a>
         </div>
         {data.saleOff ? (
-          <div class="flash">{`-${data.saleOff.ratio}%`}</div>
+          <div className="flash">{`-${data.saleOff.ratio}%`}</div>
         ) : (
           ""
         )}
-        <div className="group-button opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:-translate-y-1/2 group-hover:-translate-x-1/2">
-          <button className="block-link action-button add-wishlist-button">
+        {Number(data.quantity) === 0 ? (
+          <div className="sold-out">Hết hàng</div>
+        ) : (
+          ""
+        )}
+        <div className="group-button lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible lg:group-hover:-translate-y-1/2 lg:group-hover:-translate-x-1/2">
+          <button className="action-button add-wishlist-button">
             Add to wishlist
           </button>
-          <button className="block-link action-button quick-view-button">
+          <button className="action-button quick-view-button">
             Quick View
           </button>
-          <button className="block-link action-button add-to-cart-button">
+          <button className="action-button add-to-cart-button">
             Add to cart
           </button>
         </div>
@@ -139,10 +145,18 @@ const ProCard = ({ data, ...props }) => {
           ) : (
             <bdi>
               <span>
-                {Number(data.price).toLocaleString("vi-VN", {
-                  style: "currency",
-                  currency: "VND",
-                })}
+                {typeof data.price === "object"
+                  ? `${Number(data.price.min).toLocaleString("vi-VN", {
+                      style: "currency",
+                      currency: "VND",
+                    })} - ${Number(data.price.max).toLocaleString("vi-VN", {
+                      style: "currency",
+                      currency: "VND",
+                    })}`
+                  : Number(data.price).toLocaleString("vi-VN", {
+                      style: "currency",
+                      currency: "VND",
+                    })}
               </span>
             </bdi>
           )}

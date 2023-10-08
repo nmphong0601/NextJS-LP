@@ -7,10 +7,16 @@
     }
 
     [class~="nav-category"] {
-        @apply relative w-72;
+        white-space: nowrap;
+        @apply relative w-72 text-right;
 
         [class~="block-title"] {
-            @apply flex items-center gap-4 bg-nmp-primary px-8 cursor-pointer text-white;
+            @apply flex justify-start items-center gap-4 bg-nmp-primary px-8 cursor-pointer text-white;
+            [class~="icon-title"]{
+                flex-shrink: 0;
+                @apply w-6;
+            }
+            
             [class~="text-title"]{
                 @apply uppercase font-bold leading-[60px];
             }

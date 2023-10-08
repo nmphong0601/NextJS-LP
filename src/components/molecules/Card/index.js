@@ -22,7 +22,7 @@ const Card = ({ data, className, ...props }) => {
           <a
             href={data.button.url}
             target="_blank"
-            className="inline-block text-center mt-3 uppercase bg-nmp-primary hover:bg-nmp-dark p-2 px-5 lg:py-4 font-bold text-xs text-white hover:text-white max-w-max"
+            className="inline-block text-center mt-3 uppercase bg-nmp-primary hover:bg-nmp-dark p-3 px-5 lg:py-4 font-bold text-xs text-white hover:text-white max-w-max"
           >
             {data.button.label}
           </a>
