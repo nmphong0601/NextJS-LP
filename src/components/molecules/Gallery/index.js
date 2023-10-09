@@ -14,7 +14,7 @@ import "swiper/css/effect-fade";
 import "swiper/css/autoplay";
 
 const Gallery = ({ title, images = [] }) => {
-  const { isDesktop, width } = useDeviceDetect();
+  // const { isDesktop, width } = useDeviceDetect();
 
   return (
     <div>

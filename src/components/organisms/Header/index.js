@@ -404,10 +404,10 @@ const Header = () => {
           <ul className="menu-left">
             <li className="text-center lg:text-left">
               <a
-                title="Chào mừng bạn đến với cửa hàng của chúng tôi!"
+                title="Chào mừng bạn đến với cửa hàng Salom!"
                 href={process.env.NEXT_HOST}
               >
-                Chào mừng bạn đến với cửa hàng Shesed Salom!
+                Chào mừng bạn đến với cửa hàng Salom!
               </a>
             </li>
           </ul>
@@ -462,10 +462,7 @@ const Header = () => {
         <SearchWidget isOpen={showSearchWidget} />
         <div className="header-logo">
           <a href={process.env.NEXT_HOST}>
-            {/* <img alt="Chesed Salom" className="logo" src="assets/images/logo.svg" /> */}
-            <div className="w-[160px] h-[54px] text-2xl leading-7 uppercase font-bold flex justify-center items-center text-center lg:text-left">
-              Chesed Salom
-            </div>
+            <img alt="Salom" className="logo" src="assets/images/logo.png" />
           </a>
         </div>
         <div className="hidden lg:block">

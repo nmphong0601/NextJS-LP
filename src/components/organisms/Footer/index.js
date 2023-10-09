@@ -7,14 +7,11 @@ const Footer = () => {
         <div className="row">
           <div className="md:col-6 lg:col-3">
             <a href={process.env.NEXT_HOST}>
-              {/* <img
+              <img
                 alt="logo mini"
                 className="logo"
                 src="assets/images/logo-mini.png"
-              /> */}
-              <div className="w-[172px] h-[54px] text-2xl leading-7 uppercase font-bold flex justify-center items-center">
-                Chesed Salom
-              </div>
+              />
             </a>
             <div className="pt-5 pb-8">
               <p>

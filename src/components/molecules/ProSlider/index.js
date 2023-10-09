@@ -40,9 +40,6 @@ const ProSlider = ({ products, ...props }) => {
             slidesPerView: 2,
           },
         }}
-        onRealIndexChange={(swipper) => {
-          setActiveSlide(swipper.realIndex);
-        }}
       >
         {products.map((product, idxSlide) => {
           return (
