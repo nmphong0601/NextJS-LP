@@ -16,7 +16,7 @@ const SearchBox = ({ className, categories = [] }) => {
         >
           <a className="chosen-single" onClick={() => setIsOpen(!isOpen)}>
             <span className="chosen-label">
-              {categories.find((x) => x.value === activeCategory)?.label}
+              {categories.find((x) => x.id === activeCategory)?.name}
             </span>
             <div className="chosen-dropdown-btn">
               <b></b>
@@ -35,11 +35,11 @@ const SearchBox = ({ className, categories = [] }) => {
                     key={`category-${index}`}
                     className="active-result"
                     onClick={() => {
-                      setActiveCategory(category.value);
+                      setActiveCategory(category.id);
                       setIsOpen(false);
                     }}
                   >
-                    {category.label}
+                    {category.name}
                   </li>
                 );
               })}

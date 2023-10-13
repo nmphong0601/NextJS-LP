@@ -127,7 +127,7 @@ const Navbar = ({ className, categories = [], navigates = [] }) => {
             <span className="w-6 block border-solid border-b-2 border-white group-hover:border-nmp-primary"></span>
           </span>
           <span className="text-title">
-            {categories.find((x) => x.value === activeCategory)?.label}
+            {categories.find((x) => x.id === activeCategory)?.name}
           </span>
         </div>
         <div
@@ -142,11 +142,11 @@ const Navbar = ({ className, categories = [], navigates = [] }) => {
                   key={`nav-category-${index}`}
                   className="border-b last:border-none hover:cursor-pointer"
                   onClick={() => {
-                    setActiveCategory(category.value);
+                    setActiveCategory(category.id);
                     setIsDropdown(false);
                   }}
                 >
-                  <a className="block mx-6 py-4">{category.label}</a>
+                  <a className="block mx-6 py-4">{category.name}</a>
                 </li>
               );
             })}

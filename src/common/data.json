@@ -1,0 +1,2159 @@
+{
+    "categories": [
+      {
+        "id": 18,
+        "count": 3,
+        "description": "",
+        "link": "/product-category/cacti/",
+        "name": "Cacti",
+        "slug": "cacti",
+        "taxonomy": "product_cat",
+        "parent": 0,
+        "meta": [],
+        "_links": {
+          "self": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/product_cat/18"
+            }
+          ],
+          "collection": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/product_cat"
+            }
+          ],
+          "about": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/taxonomies/product_cat"
+            }
+          ],
+          "wp:post_type": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/product?product_cat=18"
+            }
+          ],
+          "curies": [
+            {
+              "name": "wp",
+              "href": "https://api.w.org/{rel}",
+              "templated": true
+            }
+          ]
+        }
+      },
+      {
+        "id": 20,
+        "count": 2,
+        "description": "",
+        "link": "/product-category/ferns/",
+        "name": "Ferns",
+        "slug": "ferns",
+        "taxonomy": "product_cat",
+        "parent": 0,
+        "meta": [],
+        "_links": {
+          "self": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/product_cat/20"
+            }
+          ],
+          "collection": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/product_cat"
+            }
+          ],
+          "about": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/taxonomies/product_cat"
+            }
+          ],
+          "wp:post_type": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/product?product_cat=20"
+            }
+          ],
+          "curies": [
+            {
+              "name": "wp",
+              "href": "https://api.w.org/{rel}",
+              "templated": true
+            }
+          ]
+        }
+      },
+      {
+        "id": 21,
+        "count": 3,
+        "description": "",
+        "link": "/product-category/hanging-plants/",
+        "name": "Hanging plants",
+        "slug": "hanging-plants",
+        "taxonomy": "product_cat",
+        "parent": 0,
+        "meta": [],
+        "_links": {
+          "self": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/product_cat/21"
+            }
+          ],
+          "collection": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/product_cat"
+            }
+          ],
+          "about": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/taxonomies/product_cat"
+            }
+          ],
+          "wp:post_type": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/product?product_cat=21"
+            }
+          ],
+          "curies": [
+            {
+              "name": "wp",
+              "href": "https://api.w.org/{rel}",
+              "templated": true
+            }
+          ]
+        }
+      },
+      {
+        "id": 17,
+        "count": 6,
+        "description": "",
+        "link": "/product-category/hot-sale/",
+        "name": "Hot Sale",
+        "slug": "hot-sale",
+        "taxonomy": "product_cat",
+        "parent": 0,
+        "meta": [],
+        "_links": {
+          "self": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/product_cat/17"
+            }
+          ],
+          "collection": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/product_cat"
+            }
+          ],
+          "about": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/taxonomies/product_cat"
+            }
+          ],
+          "wp:post_type": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/product?product_cat=17"
+            }
+          ],
+          "curies": [
+            {
+              "name": "wp",
+              "href": "https://api.w.org/{rel}",
+              "templated": true
+            }
+          ]
+        }
+      },
+      {
+        "id": 16,
+        "count": 0,
+        "description": "",
+        "link": "/product-category/new-arrivals/",
+        "name": "New Arrivals",
+        "slug": "new-arrivals",
+        "taxonomy": "product_cat",
+        "parent": 0,
+        "meta": [],
+        "_links": {
+          "self": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/product_cat/16"
+            }
+          ],
+          "collection": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/product_cat"
+            }
+          ],
+          "about": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/taxonomies/product_cat"
+            }
+          ],
+          "wp:post_type": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/product?product_cat=16"
+            }
+          ],
+          "curies": [
+            {
+              "name": "wp",
+              "href": "https://api.w.org/{rel}",
+              "templated": true
+            }
+          ]
+        }
+      },
+      {
+        "id": 19,
+        "count": 4,
+        "description": "",
+        "link": "/product-category/palms/",
+        "name": "Palms",
+        "slug": "palms",
+        "taxonomy": "product_cat",
+        "parent": 0,
+        "meta": [],
+        "_links": {
+          "self": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/product_cat/19"
+            }
+          ],
+          "collection": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/product_cat"
+            }
+          ],
+          "about": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/taxonomies/product_cat"
+            }
+          ],
+          "wp:post_type": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/product?product_cat=19"
+            }
+          ],
+          "curies": [
+            {
+              "name": "wp",
+              "href": "https://api.w.org/{rel}",
+              "templated": true
+            }
+          ]
+        }
+      },
+      {
+        "id": 23,
+        "count": 7,
+        "description": "",
+        "link": "/product-category/succulents/",
+        "name": "Succulents",
+        "slug": "succulents",
+        "taxonomy": "product_cat",
+        "parent": 0,
+        "meta": [],
+        "_links": {
+          "self": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/product_cat/23"
+            }
+          ],
+          "collection": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/product_cat"
+            }
+          ],
+          "about": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/taxonomies/product_cat"
+            }
+          ],
+          "wp:post_type": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/product?product_cat=23"
+            }
+          ],
+          "curies": [
+            {
+              "name": "wp",
+              "href": "https://api.w.org/{rel}",
+              "templated": true
+            }
+          ]
+        }
+      },
+      {
+        "id": 15,
+        "count": 0,
+        "description": "",
+        "link": "/product-category/uncategorized/",
+        "name": "Uncategorized",
+        "slug": "uncategorized",
+        "taxonomy": "product_cat",
+        "parent": 0,
+        "meta": [],
+        "_links": {
+          "self": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/product_cat/15"
+            }
+          ],
+          "collection": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/product_cat"
+            }
+          ],
+          "about": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/taxonomies/product_cat"
+            }
+          ],
+          "wp:post_type": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/product?product_cat=15"
+            }
+          ],
+          "curies": [
+            {
+              "name": "wp",
+              "href": "https://api.w.org/{rel}",
+              "templated": true
+            }
+          ]
+        }
+      },
+      {
+        "id": 22,
+        "count": 4,
+        "description": "",
+        "link": "/product-category/variegated/",
+        "name": "Variegated",
+        "slug": "variegated",
+        "taxonomy": "product_cat",
+        "parent": 0,
+        "meta": [],
+        "_links": {
+          "self": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/product_cat/22"
+            }
+          ],
+          "collection": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/product_cat"
+            }
+          ],
+          "about": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/taxonomies/product_cat"
+            }
+          ],
+          "wp:post_type": [
+            {
+              "href": "https://dreamingtheme.kiendaotac.com/teamo/wp-json/wp/v2/product?product_cat=22"
+            }
+          ],
+          "curies": [
+            {
+              "name": "wp",
+              "href": "https://api.w.org/{rel}",
+              "templated": true
+            }
+          ]
+        }
+      }
+    ],
+    "products": [
+      {
+        "id": 69,
+        "name": "Riccia Fluitans",
+        "slug": "riccia-fluitans",
+        "parent": 0,
+        "type": "simple",
+        "variation": "",
+        "permalink": "https://dreamingtheme.kiendaotac.com/teamo/product/riccia-fluitans/",
+        "sku": "018Q712",
+        "short_description": "<p>Imagine that human life cycles resembled those of the earliest plants. If you think about this analogy, you may begin to realize that many plants.</p>\n<ul>\n<li>Plants also have specialized reproductive organs.</li>\n<li>Almost all plants make food by photosynthesis.</li>\n<li>Life as we know it would not be possible without plants.</li>\n</ul>",
+        "description": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque integer, quam dapibus per risus donec semper vulputate interdum, imperdiet mus rhoncus commodo ultricies class urna tincidunt. Imperdiet vitae lacus etiam metus ut nisl curae, conubia enim scelerisque quis facilisis torquent, ultricies orci faucibus dictumst mauris curabitur. Massa risus nec sociosqu fames montes accumsan iaculis justo turpis luctus</p>\n<p>This generator uses a dictionary of Latin words to construct passages of Lorem Ipsum text that meet your desired length. The sentence and paragraph durations and punctuation dispersal are calculated using Gaussian distribution, based on statistical analysis of real world texts. This ensures that the generated Lorem Ipsum text is unique, free of repetition and also resembles readable text as much as possible.</p>",
+        "on_sale": false,
+        "prices": {
+          "price": "140000",
+          "regular_price": "140000",
+          "sale_price": "140000",
+          "price_range": null,
+          "currency_code": "VND",
+          "currency_symbol": "đ",
+          "currency_minor_unit": 2,
+          "currency_decimal_separator": ".",
+          "currency_thousand_separator": ",",
+          "currency_prefix": "đ",
+          "currency_suffix": ""
+        },
+        "price_html": "<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>140.00</span>",
+        "average_rating": "5.000",
+        "review_count": 2,
+        "images": [
+          {
+            "id": 70,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd22.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd22-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd22.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd22-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd22-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd22-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd22-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd22-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd22",
+            "alt": ""
+          },
+          {
+            "id": 24,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd1.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd1-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd1.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd1-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd1-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd1-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd1-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd1-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd1",
+            "alt": ""
+          },
+          {
+            "id": 26,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd2.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd2-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd2.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd2-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd2-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd2-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd2-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd2-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd2",
+            "alt": ""
+          },
+          {
+            "id": 28,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd3.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd3-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd3.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd3-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd3-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd3-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd3-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd3-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd3",
+            "alt": ""
+          },
+          {
+            "id": 31,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd4.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd4-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd4.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd4-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd4-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd4-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd4-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd4-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd4",
+            "alt": ""
+          },
+          {
+            "id": 33,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd5.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd5-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd5.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd5-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd5-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd5-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd5-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd5-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd5",
+            "alt": ""
+          }
+        ],
+        "categories": [
+          {
+            "id": 18,
+            "name": "Cacti",
+            "slug": "cacti",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-category/cacti/"
+          }
+        ],
+        "tags": [
+          {
+            "id": 38,
+            "name": "Cacti",
+            "slug": "cacti",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-tag/cacti/"
+          },
+          {
+            "id": 42,
+            "name": "New Arrivals",
+            "slug": "new-arrivals",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-tag/new-arrivals/"
+          }
+        ],
+        "attributes": [],
+        "variations": [],
+        "has_options": false,
+        "is_purchasable": true,
+        "is_in_stock": true,
+        "is_on_backorder": false,
+        "low_stock_remaining": null,
+        "sold_individually": false,
+        "add_to_cart": {
+          "text": "Add to cart",
+          "description": "Add &ldquo;Riccia Fluitans&rdquo; to your cart",
+          "url": "?add-to-cart=69",
+          "minimum": 1,
+          "maximum": 80,
+          "multiple_of": 1
+        },
+        "extensions": {}
+      },
+      {
+        "id": 67,
+        "name": "Cyperus helferi",
+        "slug": "cyperus-helferi",
+        "parent": 0,
+        "type": "variable",
+        "variation": "",
+        "permalink": "https://dreamingtheme.kiendaotac.com/teamo/product/cyperus-helferi/",
+        "sku": "548G511",
+        "short_description": "<p>Imagine that human life cycles resembled those of the earliest plants. If you think about this analogy, you may begin to realize that many plants.</p>\n<ul>\n<li>Plants also have specialized reproductive organs.</li>\n<li>Almost all plants make food by photosynthesis.</li>\n<li>Life as we know it would not be possible without plants.</li>\n</ul>",
+        "description": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque integer, quam dapibus per risus donec semper vulputate interdum, imperdiet mus rhoncus commodo ultricies class urna tincidunt. Imperdiet vitae lacus etiam metus ut nisl curae, conubia enim scelerisque quis facilisis torquent, ultricies orci faucibus dictumst mauris curabitur. Massa risus nec sociosqu fames montes accumsan iaculis justo turpis luctus</p>\n<p>This generator uses a dictionary of Latin words to construct passages of Lorem Ipsum text that meet your desired length. The sentence and paragraph durations and punctuation dispersal are calculated using Gaussian distribution, based on statistical analysis of real world texts. This ensures that the generated Lorem Ipsum text is unique, free of repetition and also resembles readable text as much as possible.</p>",
+        "on_sale": false,
+        "prices": {
+          "price": "290000",
+          "regular_price": "290000",
+          "sale_price": "290000",
+          "price_range": { "min_amount": "290000", "max_amount": "320000" },
+          "currency_code": "VND",
+          "currency_symbol": "đ",
+          "currency_minor_unit": 2,
+          "currency_decimal_separator": ".",
+          "currency_thousand_separator": ",",
+          "currency_prefix": "đ",
+          "currency_suffix": ""
+        },
+        "price_html": "<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>290.00</span> &ndash; <span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>320.00</span>",
+        "average_rating": "00",
+        "review_count": 0,
+        "images": [
+          {
+            "id": 68,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd21.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd21-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd21.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd21-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd21-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd21-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd21-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd21-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd21",
+            "alt": ""
+          }
+        ],
+        "categories": [
+          {
+            "id": 20,
+            "name": "Ferns",
+            "slug": "ferns",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-category/ferns/"
+          }
+        ],
+        "tags": [
+          {
+            "id": 39,
+            "name": "Ferns",
+            "slug": "ferns",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-tag/ferns/"
+          }
+        ],
+        "attributes": [
+          {
+            "id": 1,
+            "name": "Size",
+            "taxonomy": "pa_size",
+            "has_variations": true,
+            "terms": [
+              {
+                "id": 51,
+                "name": "Medium / 50cm-1m",
+                "slug": "medium-50cm-1m",
+                "default": false
+              },
+              {
+                "id": 50,
+                "name": "Small / 15-50cm",
+                "slug": "small-15-50cm",
+                "default": false
+              },
+              {
+                "id": 52,
+                "name": "Tall / 1m-2.8m",
+                "slug": "tall-1m-2-8m",
+                "default": false
+              },
+              {
+                "id": 49,
+                "name": "Tiny / 0-15cm",
+                "slug": "tiny-0-15cm",
+                "default": true
+              }
+            ]
+          }
+        ],
+        "variations": [
+          {
+            "id": 404,
+            "attributes": [{ "name": "Size", "value": "tall-1m-2-8m" }]
+          },
+          {
+            "id": 405,
+            "attributes": [{ "name": "Size", "value": "medium-50cm-1m" }]
+          },
+          {
+            "id": 406,
+            "attributes": [{ "name": "Size", "value": "small-15-50cm" }]
+          },
+          {
+            "id": 407,
+            "attributes": [{ "name": "Size", "value": "tiny-0-15cm" }]
+          }
+        ],
+        "has_options": true,
+        "is_purchasable": true,
+        "is_in_stock": true,
+        "is_on_backorder": false,
+        "low_stock_remaining": null,
+        "sold_individually": false,
+        "add_to_cart": {
+          "text": "Select options",
+          "description": "Select options for &ldquo;Cyperus helferi&rdquo;",
+          "url": "https://dreamingtheme.kiendaotac.com/teamo/product/cyperus-helferi/",
+          "minimum": 1,
+          "maximum": 64,
+          "multiple_of": 1
+        },
+        "extensions": {}
+      },
+      {
+        "id": 65,
+        "name": "Philodendron tenue",
+        "slug": "philodendron-tenue",
+        "parent": 0,
+        "type": "grouped",
+        "variation": "",
+        "permalink": "https://dreamingtheme.kiendaotac.com/teamo/product/philodendron-tenue/",
+        "sku": "984QE51",
+        "short_description": "<p>Imagine that human life cycles resembled those of the earliest plants. If you think about this analogy, you may begin to realize that many plants.</p>\n<ul>\n<li>Plants also have specialized reproductive organs.</li>\n<li>Almost all plants make food by photosynthesis.</li>\n<li>Life as we know it would not be possible without plants.</li>\n</ul>",
+        "description": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque integer, quam dapibus per risus donec semper vulputate interdum, imperdiet mus rhoncus commodo ultricies class urna tincidunt. Imperdiet vitae lacus etiam metus ut nisl curae, conubia enim scelerisque quis facilisis torquent, ultricies orci faucibus dictumst mauris curabitur. Massa risus nec sociosqu fames montes accumsan iaculis justo turpis luctus</p>\n<p>This generator uses a dictionary of Latin words to construct passages of Lorem Ipsum text that meet your desired length. The sentence and paragraph durations and punctuation dispersal are calculated using Gaussian distribution, based on statistical analysis of real world texts. This ensures that the generated Lorem Ipsum text is unique, free of repetition and also resembles readable text as much as possible.</p>",
+        "on_sale": false,
+        "prices": {
+          "price": "19000",
+          "regular_price": "19000",
+          "sale_price": "19000",
+          "price_range": { "min_amount": "250000", "max_amount": "290000" },
+          "currency_code": "VND",
+          "currency_symbol": "đ",
+          "currency_minor_unit": 2,
+          "currency_decimal_separator": ".",
+          "currency_thousand_separator": ",",
+          "currency_prefix": "đ",
+          "currency_suffix": ""
+        },
+        "price_html": "<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>250.00</span> &ndash; <span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>290.00</span>",
+        "average_rating": "00",
+        "review_count": 0,
+        "images": [
+          {
+            "id": 66,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd20.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd20-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd20.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd20-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd20-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd20-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd20-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd20-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd200",
+            "alt": ""
+          }
+        ],
+        "categories": [
+          {
+            "id": 21,
+            "name": "Hanging plants",
+            "slug": "hanging-plants",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-category/hanging-plants/"
+          }
+        ],
+        "tags": [
+          {
+            "id": 40,
+            "name": "Hanging plants",
+            "slug": "hanging-plants",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-tag/hanging-plants/"
+          },
+          {
+            "id": 41,
+            "name": "Hot Sale",
+            "slug": "hot-sale",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-tag/hot-sale/"
+          }
+        ],
+        "attributes": [],
+        "variations": [],
+        "has_options": false,
+        "is_purchasable": false,
+        "is_in_stock": true,
+        "is_on_backorder": false,
+        "low_stock_remaining": null,
+        "sold_individually": false,
+        "add_to_cart": {
+          "text": "View products",
+          "description": "View products in the &ldquo;Philodendron tenue&rdquo; group",
+          "url": "https://dreamingtheme.kiendaotac.com/teamo/product/philodendron-tenue/",
+          "minimum": 1,
+          "maximum": 53,
+          "multiple_of": 1
+        },
+        "extensions": {}
+      },
+      {
+        "id": 62,
+        "name": "Alocasia Chantrieri",
+        "slug": "alocasia-chantrieri",
+        "parent": 0,
+        "type": "external",
+        "variation": "",
+        "permalink": "https://dreamingtheme.kiendaotac.com/teamo/product/alocasia-chantrieri/",
+        "sku": "78QW874",
+        "short_description": "<p>Imagine that human life cycles resembled those of the earliest plants. If you think about this analogy, you may begin to realize that many plants.</p>\n<ul>\n<li>Plants also have specialized reproductive organs.</li>\n<li>Almost all plants make food by photosynthesis.</li>\n<li>Life as we know it would not be possible without plants.</li>\n</ul>",
+        "description": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque integer, quam dapibus per risus donec semper vulputate interdum, imperdiet mus rhoncus commodo ultricies class urna tincidunt. Imperdiet vitae lacus etiam metus ut nisl curae, conubia enim scelerisque quis facilisis torquent, ultricies orci faucibus dictumst mauris curabitur. Massa risus nec sociosqu fames montes accumsan iaculis justo turpis luctus</p>\n<p>This generator uses a dictionary of Latin words to construct passages of Lorem Ipsum text that meet your desired length. The sentence and paragraph durations and punctuation dispersal are calculated using Gaussian distribution, based on statistical analysis of real world texts. This ensures that the generated Lorem Ipsum text is unique, free of repetition and also resembles readable text as much as possible.</p>",
+        "on_sale": false,
+        "prices": {
+          "price": "200000",
+          "regular_price": "200000",
+          "sale_price": "200000",
+          "price_range": null,
+          "currency_code": "VND",
+          "currency_symbol": "đ",
+          "currency_minor_unit": 2,
+          "currency_decimal_separator": ".",
+          "currency_thousand_separator": ",",
+          "currency_prefix": "đ",
+          "currency_suffix": ""
+        },
+        "price_html": "<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>200.00</span>",
+        "average_rating": "00",
+        "review_count": 0,
+        "images": [
+          {
+            "id": 63,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd19.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd19-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd19.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd19-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd19-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd19-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd19-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd19-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd19",
+            "alt": ""
+          }
+        ],
+        "categories": [
+          {
+            "id": 19,
+            "name": "Palms",
+            "slug": "palms",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-category/palms/"
+          }
+        ],
+        "tags": [
+          {
+            "id": 42,
+            "name": "New Arrivals",
+            "slug": "new-arrivals",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-tag/new-arrivals/"
+          },
+          {
+            "id": 43,
+            "name": "Palms",
+            "slug": "palms",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-tag/palms/"
+          }
+        ],
+        "attributes": [],
+        "variations": [],
+        "has_options": false,
+        "is_purchasable": false,
+        "is_in_stock": true,
+        "is_on_backorder": false,
+        "low_stock_remaining": null,
+        "sold_individually": false,
+        "add_to_cart": {
+          "text": "Buy On Amazon",
+          "description": "Buy On Amazon",
+          "url": "#",
+          "minimum": 1,
+          "maximum": 9999,
+          "multiple_of": 1
+        },
+        "extensions": {}
+      },
+      {
+        "id": 59,
+        "name": "Monstera subpinnata",
+        "slug": "monstera-subpinnata",
+        "parent": 0,
+        "type": "simple",
+        "variation": "",
+        "permalink": "https://dreamingtheme.kiendaotac.com/teamo/product/monstera-subpinnata/",
+        "sku": "57Q5414",
+        "short_description": "<p>Imagine that human life cycles resembled those of the earliest plants. If you think about this analogy, you may begin to realize that many plants.</p>\n<ul>\n<li>Plants also have specialized reproductive organs.</li>\n<li>Almost all plants make food by photosynthesis.</li>\n<li>Life as we know it would not be possible without plants.</li>\n</ul>",
+        "description": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque integer, quam dapibus per risus donec semper vulputate interdum, imperdiet mus rhoncus commodo ultricies class urna tincidunt. Imperdiet vitae lacus etiam metus ut nisl curae, conubia enim scelerisque quis facilisis torquent, ultricies orci faucibus dictumst mauris curabitur. Massa risus nec sociosqu fames montes accumsan iaculis justo turpis luctus</p>\n<p>This generator uses a dictionary of Latin words to construct passages of Lorem Ipsum text that meet your desired length. The sentence and paragraph durations and punctuation dispersal are calculated using Gaussian distribution, based on statistical analysis of real world texts. This ensures that the generated Lorem Ipsum text is unique, free of repetition and also resembles readable text as much as possible.</p>",
+        "on_sale": true,
+        "prices": {
+          "price": "299000",
+          "regular_price": "330000",
+          "sale_price": "299000",
+          "price_range": null,
+          "currency_code": "VND",
+          "currency_symbol": "đ",
+          "currency_minor_unit": 2,
+          "currency_decimal_separator": ".",
+          "currency_thousand_separator": ",",
+          "currency_prefix": "đ",
+          "currency_suffix": ""
+        },
+        "price_html": "<del aria-hidden=\"true\"><span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>330.00</span></del> <ins><span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>299.00</span></ins>",
+        "average_rating": "00",
+        "review_count": 0,
+        "images": [
+          {
+            "id": 60,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd18.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd18-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd18.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd18-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd18-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd18-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd18-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd18-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd18",
+            "alt": ""
+          }
+        ],
+        "categories": [
+          {
+            "id": 17,
+            "name": "Hot Sale",
+            "slug": "hot-sale",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-category/hot-sale/"
+          },
+          {
+            "id": 23,
+            "name": "Succulents",
+            "slug": "succulents",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-category/succulents/"
+          }
+        ],
+        "tags": [
+          {
+            "id": 42,
+            "name": "New Arrivals",
+            "slug": "new-arrivals",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-tag/new-arrivals/"
+          },
+          {
+            "id": 44,
+            "name": "Succulents",
+            "slug": "succulents",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-tag/succulents/"
+          }
+        ],
+        "attributes": [],
+        "variations": [],
+        "has_options": false,
+        "is_purchasable": true,
+        "is_in_stock": true,
+        "is_on_backorder": false,
+        "low_stock_remaining": null,
+        "sold_individually": false,
+        "add_to_cart": {
+          "text": "Add to cart",
+          "description": "Add &ldquo;Monstera subpinnata&rdquo; to your cart",
+          "url": "?add-to-cart=59",
+          "minimum": 1,
+          "maximum": 34,
+          "multiple_of": 1
+        },
+        "extensions": {}
+      },
+      {
+        "id": 57,
+        "name": "Aspidistra Elatior",
+        "slug": "aspidistra-elatior",
+        "parent": 0,
+        "type": "simple",
+        "variation": "",
+        "permalink": "https://dreamingtheme.kiendaotac.com/teamo/product/aspidistra-elatior/",
+        "sku": "761H471",
+        "short_description": "<p>Imagine that human life cycles resembled those of the earliest plants. If you think about this analogy, you may begin to realize that many plants.</p>\n<ul>\n<li>Plants also have specialized reproductive organs.</li>\n<li>Almost all plants make food by photosynthesis.</li>\n<li>Life as we know it would not be possible without plants.</li>\n</ul>",
+        "description": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque integer, quam dapibus per risus donec semper vulputate interdum, imperdiet mus rhoncus commodo ultricies class urna tincidunt. Imperdiet vitae lacus etiam metus ut nisl curae, conubia enim scelerisque quis facilisis torquent, ultricies orci faucibus dictumst mauris curabitur. Massa risus nec sociosqu fames montes accumsan iaculis justo turpis luctus</p>\n<p>This generator uses a dictionary of Latin words to construct passages of Lorem Ipsum text that meet your desired length. The sentence and paragraph durations and punctuation dispersal are calculated using Gaussian distribution, based on statistical analysis of real world texts. This ensures that the generated Lorem Ipsum text is unique, free of repetition and also resembles readable text as much as possible.</p>",
+        "on_sale": true,
+        "prices": {
+          "price": "130000",
+          "regular_price": "150000",
+          "sale_price": "130000",
+          "price_range": null,
+          "currency_code": "VND",
+          "currency_symbol": "đ",
+          "currency_minor_unit": 2,
+          "currency_decimal_separator": ".",
+          "currency_thousand_separator": ",",
+          "currency_prefix": "đ",
+          "currency_suffix": ""
+        },
+        "price_html": "<del aria-hidden=\"true\"><span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>150.00</span></del> <ins><span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>130.00</span></ins>",
+        "average_rating": "00",
+        "review_count": 0,
+        "images": [
+          {
+            "id": 58,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd17.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd17-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd17.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd17-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd17-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd17-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd17-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd17-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd17",
+            "alt": ""
+          },
+          {
+            "id": 63,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd19.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd19-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd19.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd19-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd19-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd19-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd19-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd19-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd19",
+            "alt": ""
+          },
+          {
+            "id": 60,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd18.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd18-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd18.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd18-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd18-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd18-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd18-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd18-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd18",
+            "alt": ""
+          },
+          {
+            "id": 66,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd20.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd20-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd20.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd20-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd20-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd20-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd20-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd20-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd200",
+            "alt": ""
+          },
+          {
+            "id": 56,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd16.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd16-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd16.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd16-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd16-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd16-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd16-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd16-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd16",
+            "alt": ""
+          }
+        ],
+        "categories": [
+          {
+            "id": 17,
+            "name": "Hot Sale",
+            "slug": "hot-sale",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-category/hot-sale/"
+          },
+          {
+            "id": 22,
+            "name": "Variegated",
+            "slug": "variegated",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-category/variegated/"
+          }
+        ],
+        "tags": [
+          {
+            "id": 42,
+            "name": "New Arrivals",
+            "slug": "new-arrivals",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-tag/new-arrivals/"
+          },
+          {
+            "id": 45,
+            "name": "Variegated",
+            "slug": "variegated",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-tag/variegated/"
+          }
+        ],
+        "attributes": [],
+        "variations": [],
+        "has_options": false,
+        "is_purchasable": true,
+        "is_in_stock": true,
+        "is_on_backorder": false,
+        "low_stock_remaining": null,
+        "sold_individually": false,
+        "add_to_cart": {
+          "text": "Add to cart",
+          "description": "Add &ldquo;Aspidistra Elatior&rdquo; to your cart",
+          "url": "?add-to-cart=57",
+          "minimum": 1,
+          "maximum": 55,
+          "multiple_of": 1
+        },
+        "extensions": {}
+      },
+      {
+        "id": 55,
+        "name": "Golden Pothos",
+        "slug": "golden-pothos",
+        "parent": 0,
+        "type": "simple",
+        "variation": "",
+        "permalink": "https://dreamingtheme.kiendaotac.com/teamo/product/golden-pothos/",
+        "sku": "964BV42",
+        "short_description": "<p>Imagine that human life cycles resembled those of the earliest plants. If you think about this analogy, you may begin to realize that many plants.</p>\n<ul>\n<li>Plants also have specialized reproductive organs.</li>\n<li>Almost all plants make food by photosynthesis.</li>\n<li>Life as we know it would not be possible without plants.</li>\n</ul>",
+        "description": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque integer, quam dapibus per risus donec semper vulputate interdum, imperdiet mus rhoncus commodo ultricies class urna tincidunt. Imperdiet vitae lacus etiam metus ut nisl curae, conubia enim scelerisque quis facilisis torquent, ultricies orci faucibus dictumst mauris curabitur. Massa risus nec sociosqu fames montes accumsan iaculis justo turpis luctus</p>\n<p>This generator uses a dictionary of Latin words to construct passages of Lorem Ipsum text that meet your desired length. The sentence and paragraph durations and punctuation dispersal are calculated using Gaussian distribution, based on statistical analysis of real world texts. This ensures that the generated Lorem Ipsum text is unique, free of repetition and also resembles readable text as much as possible.</p>",
+        "on_sale": false,
+        "prices": {
+          "price": "280000",
+          "regular_price": "280000",
+          "sale_price": "280000",
+          "price_range": null,
+          "currency_code": "VND",
+          "currency_symbol": "đ",
+          "currency_minor_unit": 2,
+          "currency_decimal_separator": ".",
+          "currency_thousand_separator": ",",
+          "currency_prefix": "đ",
+          "currency_suffix": ""
+        },
+        "price_html": "<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>280.00</span>",
+        "average_rating": "00",
+        "review_count": 0,
+        "images": [
+          {
+            "id": 56,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd16.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd16-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd16.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd16-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd16-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd16-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd16-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd16-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd16",
+            "alt": ""
+          }
+        ],
+        "categories": [
+          {
+            "id": 18,
+            "name": "Cacti",
+            "slug": "cacti",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-category/cacti/"
+          }
+        ],
+        "tags": [
+          {
+            "id": 42,
+            "name": "New Arrivals",
+            "slug": "new-arrivals",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-tag/new-arrivals/"
+          }
+        ],
+        "attributes": [],
+        "variations": [],
+        "has_options": false,
+        "is_purchasable": true,
+        "is_in_stock": true,
+        "is_on_backorder": false,
+        "low_stock_remaining": null,
+        "sold_individually": false,
+        "add_to_cart": {
+          "text": "Add to cart",
+          "description": "Add &ldquo;Golden Pothos&rdquo; to your cart",
+          "url": "?add-to-cart=55",
+          "minimum": 1,
+          "maximum": 45,
+          "multiple_of": 1
+        },
+        "extensions": {}
+      },
+      {
+        "id": 53,
+        "name": "Fiddle Leaf Fig",
+        "slug": "fiddle-leaf-fig",
+        "parent": 0,
+        "type": "simple",
+        "variation": "",
+        "permalink": "https://dreamingtheme.kiendaotac.com/teamo/product/fiddle-leaf-fig/",
+        "sku": "687T971",
+        "short_description": "<p>Imagine that human life cycles resembled those of the earliest plants. If you think about this analogy, you may begin to realize that many plants.</p>\n<ul>\n<li>Plants also have specialized reproductive organs.</li>\n<li>Almost all plants make food by photosynthesis.</li>\n<li>Life as we know it would not be possible without plants.</li>\n</ul>",
+        "description": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque integer, quam dapibus per risus donec semper vulputate interdum, imperdiet mus rhoncus commodo ultricies class urna tincidunt. Imperdiet vitae lacus etiam metus ut nisl curae, conubia enim scelerisque quis facilisis torquent, ultricies orci faucibus dictumst mauris curabitur. Massa risus nec sociosqu fames montes accumsan iaculis justo turpis luctus</p>\n<p>This generator uses a dictionary of Latin words to construct passages of Lorem Ipsum text that meet your desired length. The sentence and paragraph durations and punctuation dispersal are calculated using Gaussian distribution, based on statistical analysis of real world texts. This ensures that the generated Lorem Ipsum text is unique, free of repetition and also resembles readable text as much as possible.</p>",
+        "on_sale": true,
+        "prices": {
+          "price": "290000",
+          "regular_price": "350000",
+          "sale_price": "290000",
+          "price_range": null,
+          "currency_code": "VND",
+          "currency_symbol": "đ",
+          "currency_minor_unit": 2,
+          "currency_decimal_separator": ".",
+          "currency_thousand_separator": ",",
+          "currency_prefix": "đ",
+          "currency_suffix": ""
+        },
+        "price_html": "<del aria-hidden=\"true\"><span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>350.00</span></del> <ins><span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>290.00</span></ins>",
+        "average_rating": "00",
+        "review_count": 0,
+        "images": [
+          {
+            "id": 54,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd15.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd15-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd15.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd15-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd15-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd15-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd15-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd15-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd15",
+            "alt": ""
+          },
+          {
+            "id": 40,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd8.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd8-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd8.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd8-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd8-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd8-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd8-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd8-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd8",
+            "alt": ""
+          },
+          {
+            "id": 42,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd9.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd9-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd9.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd9-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd9-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd9-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd9-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd9-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd9",
+            "alt": ""
+          },
+          {
+            "id": 38,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd7.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd7-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd7.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd7-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd7-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd7-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd7-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd7-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd7",
+            "alt": ""
+          }
+        ],
+        "categories": [
+          {
+            "id": 19,
+            "name": "Palms",
+            "slug": "palms",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-category/palms/"
+          },
+          {
+            "id": 23,
+            "name": "Succulents",
+            "slug": "succulents",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-category/succulents/"
+          }
+        ],
+        "tags": [
+          {
+            "id": 41,
+            "name": "Hot Sale",
+            "slug": "hot-sale",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-tag/hot-sale/"
+          }
+        ],
+        "attributes": [],
+        "variations": [],
+        "has_options": false,
+        "is_purchasable": true,
+        "is_in_stock": true,
+        "is_on_backorder": false,
+        "low_stock_remaining": null,
+        "sold_individually": false,
+        "add_to_cart": {
+          "text": "Add to cart",
+          "description": "Add &ldquo;Fiddle Leaf Fig&rdquo; to your cart",
+          "url": "?add-to-cart=53",
+          "minimum": 1,
+          "maximum": 34,
+          "multiple_of": 1
+        },
+        "extensions": {}
+      },
+      {
+        "id": 51,
+        "name": "European Pan Palm",
+        "slug": "european-pan-palm",
+        "parent": 0,
+        "type": "simple",
+        "variation": "",
+        "permalink": "https://dreamingtheme.kiendaotac.com/teamo/product/european-pan-palm/",
+        "sku": "451T541",
+        "short_description": "<p>Imagine that human life cycles resembled those of the earliest plants. If you think about this analogy, you may begin to realize that many plants.</p>\n<ul>\n<li>Plants also have specialized reproductive organs.</li>\n<li>Almost all plants make food by photosynthesis.</li>\n<li>Life as we know it would not be possible without plants.</li>\n</ul>",
+        "description": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque integer, quam dapibus per risus donec semper vulputate interdum, imperdiet mus rhoncus commodo ultricies class urna tincidunt. Imperdiet vitae lacus etiam metus ut nisl curae, conubia enim scelerisque quis facilisis torquent, ultricies orci faucibus dictumst mauris curabitur. Massa risus nec sociosqu fames montes accumsan iaculis justo turpis luctus</p>\n<p>This generator uses a dictionary of Latin words to construct passages of Lorem Ipsum text that meet your desired length. The sentence and paragraph durations and punctuation dispersal are calculated using Gaussian distribution, based on statistical analysis of real world texts. This ensures that the generated Lorem Ipsum text is unique, free of repetition and also resembles readable text as much as possible.</p>",
+        "on_sale": false,
+        "prices": {
+          "price": "220000",
+          "regular_price": "220000",
+          "sale_price": "220000",
+          "price_range": null,
+          "currency_code": "VND",
+          "currency_symbol": "đ",
+          "currency_minor_unit": 2,
+          "currency_decimal_separator": ".",
+          "currency_thousand_separator": ",",
+          "currency_prefix": "đ",
+          "currency_suffix": ""
+        },
+        "price_html": "<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>220.00</span>",
+        "average_rating": "00",
+        "review_count": 0,
+        "images": [
+          {
+            "id": 52,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd13.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd13-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd13.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd13-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd13-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd13-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd13-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd13-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd13",
+            "alt": ""
+          },
+          {
+            "id": 35,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd6.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd6-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd6.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd6-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd6-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd6-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd6-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd6-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd6",
+            "alt": ""
+          },
+          {
+            "id": 33,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd5.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd5-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd5.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd5-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd5-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd5-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd5-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd5-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd5",
+            "alt": ""
+          }
+        ],
+        "categories": [
+          {
+            "id": 23,
+            "name": "Succulents",
+            "slug": "succulents",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-category/succulents/"
+          },
+          {
+            "id": 22,
+            "name": "Variegated",
+            "slug": "variegated",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-category/variegated/"
+          }
+        ],
+        "tags": [
+          {
+            "id": 42,
+            "name": "New Arrivals",
+            "slug": "new-arrivals",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-tag/new-arrivals/"
+          }
+        ],
+        "attributes": [],
+        "variations": [],
+        "has_options": false,
+        "is_purchasable": true,
+        "is_in_stock": true,
+        "is_on_backorder": false,
+        "low_stock_remaining": null,
+        "sold_individually": false,
+        "add_to_cart": {
+          "text": "Add to cart",
+          "description": "Add &ldquo;European Pan Palm&rdquo; to your cart",
+          "url": "?add-to-cart=51",
+          "minimum": 1,
+          "maximum": 81,
+          "multiple_of": 1
+        },
+        "extensions": {}
+      },
+      {
+        "id": 48,
+        "name": "Dumb Cane",
+        "slug": "dumb-cane",
+        "parent": 0,
+        "type": "simple",
+        "variation": "",
+        "permalink": "https://dreamingtheme.kiendaotac.com/teamo/product/dumb-cane/",
+        "sku": "475VB12",
+        "short_description": "<p>Imagine that human life cycles resembled those of the earliest plants. If you think about this analogy, you may begin to realize that many plants.</p>\n<ul>\n<li>Plants also have specialized reproductive organs.</li>\n<li>Almost all plants make food by photosynthesis.</li>\n<li>Life as we know it would not be possible without plants.</li>\n</ul>",
+        "description": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque integer, quam dapibus per risus donec semper vulputate interdum, imperdiet mus rhoncus commodo ultricies class urna tincidunt. Imperdiet vitae lacus etiam metus ut nisl curae, conubia enim scelerisque quis facilisis torquent, ultricies orci faucibus dictumst mauris curabitur. Massa risus nec sociosqu fames montes accumsan iaculis justo turpis luctus</p>\n<p>This generator uses a dictionary of Latin words to construct passages of Lorem Ipsum text that meet your desired length. The sentence and paragraph durations and punctuation dispersal are calculated using Gaussian distribution, based on statistical analysis of real world texts. This ensures that the generated Lorem Ipsum text is unique, free of repetition and also resembles readable text as much as possible.</p>",
+        "on_sale": false,
+        "prices": {
+          "price": "320000",
+          "regular_price": "320000",
+          "sale_price": "320000",
+          "price_range": null,
+          "currency_code": "VND",
+          "currency_symbol": "đ",
+          "currency_minor_unit": 2,
+          "currency_decimal_separator": ".",
+          "currency_thousand_separator": ",",
+          "currency_prefix": "đ",
+          "currency_suffix": ""
+        },
+        "price_html": "<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>320.00</span>",
+        "average_rating": "00",
+        "review_count": 0,
+        "images": [
+          {
+            "id": 49,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd12.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd12-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd12.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd12-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd12-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd12-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd12-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd12-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd12",
+            "alt": ""
+          }
+        ],
+        "categories": [
+          {
+            "id": 19,
+            "name": "Palms",
+            "slug": "palms",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-category/palms/"
+          }
+        ],
+        "tags": [
+          {
+            "id": 43,
+            "name": "Palms",
+            "slug": "palms",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-tag/palms/"
+          }
+        ],
+        "attributes": [],
+        "variations": [],
+        "has_options": false,
+        "is_purchasable": true,
+        "is_in_stock": true,
+        "is_on_backorder": false,
+        "low_stock_remaining": null,
+        "sold_individually": false,
+        "add_to_cart": {
+          "text": "Add to cart",
+          "description": "Add &ldquo;Dumb Cane&rdquo; to your cart",
+          "url": "?add-to-cart=48",
+          "minimum": 1,
+          "maximum": 32,
+          "multiple_of": 1
+        },
+        "extensions": {}
+      },
+      {
+        "id": 45,
+        "name": "Cretan Brake Fern",
+        "slug": "cretan-brake-fern",
+        "parent": 0,
+        "type": "simple",
+        "variation": "",
+        "permalink": "https://dreamingtheme.kiendaotac.com/teamo/product/cretan-brake-fern/",
+        "sku": "341D154",
+        "short_description": "<p>Imagine that human life cycles resembled those of the earliest plants. If you think about this analogy, you may begin to realize that many plants.</p>\n<ul>\n<li>Plants also have specialized reproductive organs.</li>\n<li>Almost all plants make food by photosynthesis.</li>\n<li>Life as we know it would not be possible without plants.</li>\n</ul>",
+        "description": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque integer, quam dapibus per risus donec semper vulputate interdum, imperdiet mus rhoncus commodo ultricies class urna tincidunt. Imperdiet vitae lacus etiam metus ut nisl curae, conubia enim scelerisque quis facilisis torquent, ultricies orci faucibus dictumst mauris curabitur. Massa risus nec sociosqu fames montes accumsan iaculis justo turpis luctus</p>\n<p>This generator uses a dictionary of Latin words to construct passages of Lorem Ipsum text that meet your desired length. The sentence and paragraph durations and punctuation dispersal are calculated using Gaussian distribution, based on statistical analysis of real world texts. This ensures that the generated Lorem Ipsum text is unique, free of repetition and also resembles readable text as much as possible.</p>",
+        "on_sale": false,
+        "prices": {
+          "price": "250000",
+          "regular_price": "250000",
+          "sale_price": "250000",
+          "price_range": null,
+          "currency_code": "VND",
+          "currency_symbol": "đ",
+          "currency_minor_unit": 2,
+          "currency_decimal_separator": ".",
+          "currency_thousand_separator": ",",
+          "currency_prefix": "đ",
+          "currency_suffix": ""
+        },
+        "price_html": "<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>250.00</span>",
+        "average_rating": "00",
+        "review_count": 0,
+        "images": [
+          {
+            "id": 46,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd11.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd11-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd11.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd11-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd11-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd11-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd11-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd11-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd11",
+            "alt": ""
+          }
+        ],
+        "categories": [
+          {
+            "id": 17,
+            "name": "Hot Sale",
+            "slug": "hot-sale",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-category/hot-sale/"
+          },
+          {
+            "id": 22,
+            "name": "Variegated",
+            "slug": "variegated",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-category/variegated/"
+          }
+        ],
+        "tags": [
+          {
+            "id": 45,
+            "name": "Variegated",
+            "slug": "variegated",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-tag/variegated/"
+          }
+        ],
+        "attributes": [],
+        "variations": [],
+        "has_options": false,
+        "is_purchasable": true,
+        "is_in_stock": true,
+        "is_on_backorder": false,
+        "low_stock_remaining": null,
+        "sold_individually": false,
+        "add_to_cart": {
+          "text": "Add to cart",
+          "description": "Add &ldquo;Cretan Brake Fern&rdquo; to your cart",
+          "url": "?add-to-cart=45",
+          "minimum": 1,
+          "maximum": 33,
+          "multiple_of": 1
+        },
+        "extensions": {}
+      },
+      {
+        "id": 43,
+        "name": "Corn Plant",
+        "slug": "corn-plant",
+        "parent": 0,
+        "type": "simple",
+        "variation": "",
+        "permalink": "https://dreamingtheme.kiendaotac.com/teamo/product/corn-plant/",
+        "sku": "471RE14",
+        "short_description": "<p>Imagine that human life cycles resembled those of the earliest plants. If you think about this analogy, you may begin to realize that many plants.</p>\n<ul>\n<li>Plants also have specialized reproductive organs.</li>\n<li>Almost all plants make food by photosynthesis.</li>\n<li>Life as we know it would not be possible without plants.</li>\n</ul>",
+        "description": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque integer, quam dapibus per risus donec semper vulputate interdum, imperdiet mus rhoncus commodo ultricies class urna tincidunt. Imperdiet vitae lacus etiam metus ut nisl curae, conubia enim scelerisque quis facilisis torquent, ultricies orci faucibus dictumst mauris curabitur. Massa risus nec sociosqu fames montes accumsan iaculis justo turpis luctus</p>\n<p>This generator uses a dictionary of Latin words to construct passages of Lorem Ipsum text that meet your desired length. The sentence and paragraph durations and punctuation dispersal are calculated using Gaussian distribution, based on statistical analysis of real world texts. This ensures that the generated Lorem Ipsum text is unique, free of repetition and also resembles readable text as much as possible.</p>",
+        "on_sale": false,
+        "prices": {
+          "price": "290000",
+          "regular_price": "290000",
+          "sale_price": "290000",
+          "price_range": null,
+          "currency_code": "VND",
+          "currency_symbol": "đ",
+          "currency_minor_unit": 2,
+          "currency_decimal_separator": ".",
+          "currency_thousand_separator": ",",
+          "currency_prefix": "đ",
+          "currency_suffix": ""
+        },
+        "price_html": "<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>290.00</span>",
+        "average_rating": "00",
+        "review_count": 0,
+        "images": [
+          {
+            "id": 44,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd10.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd10-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd10.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd10-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd10-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd10-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd10-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd10-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd100",
+            "alt": ""
+          }
+        ],
+        "categories": [
+          {
+            "id": 20,
+            "name": "Ferns",
+            "slug": "ferns",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-category/ferns/"
+          },
+          {
+            "id": 23,
+            "name": "Succulents",
+            "slug": "succulents",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-category/succulents/"
+          }
+        ],
+        "tags": [
+          {
+            "id": 41,
+            "name": "Hot Sale",
+            "slug": "hot-sale",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-tag/hot-sale/"
+          }
+        ],
+        "attributes": [],
+        "variations": [],
+        "has_options": false,
+        "is_purchasable": true,
+        "is_in_stock": true,
+        "is_on_backorder": false,
+        "low_stock_remaining": null,
+        "sold_individually": false,
+        "add_to_cart": {
+          "text": "Add to cart",
+          "description": "Add &ldquo;Corn Plant&rdquo; to your cart",
+          "url": "?add-to-cart=43",
+          "minimum": 1,
+          "maximum": 67,
+          "multiple_of": 1
+        },
+        "extensions": {}
+      },
+      {
+        "id": 41,
+        "name": "Chine Evergreen",
+        "slug": "chine-evergreen",
+        "parent": 0,
+        "type": "simple",
+        "variation": "",
+        "permalink": "https://dreamingtheme.kiendaotac.com/teamo/product/chine-evergreen/",
+        "sku": "432BQ12",
+        "short_description": "<p>Imagine that human life cycles resembled those of the earliest plants. If you think about this analogy, you may begin to realize that many plants.</p>\n<ul>\n<li>Plants also have specialized reproductive organs.</li>\n<li>Almost all plants make food by photosynthesis.</li>\n<li>Life as we know it would not be possible without plants.</li>\n</ul>",
+        "description": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque integer, quam dapibus per risus donec semper vulputate interdum, imperdiet mus rhoncus commodo ultricies class urna tincidunt. Imperdiet vitae lacus etiam metus ut nisl curae, conubia enim scelerisque quis facilisis torquent, ultricies orci faucibus dictumst mauris curabitur. Massa risus nec sociosqu fames montes accumsan iaculis justo turpis luctus</p>\n<p>This generator uses a dictionary of Latin words to construct passages of Lorem Ipsum text that meet your desired length. The sentence and paragraph durations and punctuation dispersal are calculated using Gaussian distribution, based on statistical analysis of real world texts. This ensures that the generated Lorem Ipsum text is unique, free of repetition and also resembles readable text as much as possible.</p>",
+        "on_sale": false,
+        "prices": {
+          "price": "260000",
+          "regular_price": "260000",
+          "sale_price": "260000",
+          "price_range": null,
+          "currency_code": "VND",
+          "currency_symbol": "đ",
+          "currency_minor_unit": 2,
+          "currency_decimal_separator": ".",
+          "currency_thousand_separator": ",",
+          "currency_prefix": "đ",
+          "currency_suffix": ""
+        },
+        "price_html": "<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>260.00</span>",
+        "average_rating": "00",
+        "review_count": 0,
+        "images": [
+          {
+            "id": 42,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd9.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd9-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd9.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd9-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd9-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd9-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd9-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd9-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd9",
+            "alt": ""
+          }
+        ],
+        "categories": [
+          {
+            "id": 21,
+            "name": "Hanging plants",
+            "slug": "hanging-plants",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-category/hanging-plants/"
+          }
+        ],
+        "tags": [
+          {
+            "id": 40,
+            "name": "Hanging plants",
+            "slug": "hanging-plants",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-tag/hanging-plants/"
+          }
+        ],
+        "attributes": [],
+        "variations": [],
+        "has_options": false,
+        "is_purchasable": true,
+        "is_in_stock": true,
+        "is_on_backorder": false,
+        "low_stock_remaining": null,
+        "sold_individually": false,
+        "add_to_cart": {
+          "text": "Add to cart",
+          "description": "Add &ldquo;Chine Evergreen&rdquo; to your cart",
+          "url": "?add-to-cart=41",
+          "minimum": 1,
+          "maximum": 57,
+          "multiple_of": 1
+        },
+        "extensions": {}
+      },
+      {
+        "id": 39,
+        "name": "Cast Iron Plant",
+        "slug": "cast-iron-plant",
+        "parent": 0,
+        "type": "simple",
+        "variation": "",
+        "permalink": "https://dreamingtheme.kiendaotac.com/teamo/product/cast-iron-plant/",
+        "sku": "154WQ87",
+        "short_description": "<p>Imagine that human life cycles resembled those of the earliest plants. If you think about this analogy, you may begin to realize that many plants.</p>\n<ul>\n<li>Plants also have specialized reproductive organs.</li>\n<li>Almost all plants make food by photosynthesis.</li>\n<li>Life as we know it would not be possible without plants.</li>\n</ul>",
+        "description": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque integer, quam dapibus per risus donec semper vulputate interdum, imperdiet mus rhoncus commodo ultricies class urna tincidunt. Imperdiet vitae lacus etiam metus ut nisl curae, conubia enim scelerisque quis facilisis torquent, ultricies orci faucibus dictumst mauris curabitur. Massa risus nec sociosqu fames montes accumsan iaculis justo turpis luctus</p>\n<p>This generator uses a dictionary of Latin words to construct passages of Lorem Ipsum text that meet your desired length. The sentence and paragraph durations and punctuation dispersal are calculated using Gaussian distribution, based on statistical analysis of real world texts. This ensures that the generated Lorem Ipsum text is unique, free of repetition and also resembles readable text as much as possible.</p>",
+        "on_sale": false,
+        "prices": {
+          "price": "390000",
+          "regular_price": "390000",
+          "sale_price": "390000",
+          "price_range": null,
+          "currency_code": "VND",
+          "currency_symbol": "đ",
+          "currency_minor_unit": 2,
+          "currency_decimal_separator": ".",
+          "currency_thousand_separator": ",",
+          "currency_prefix": "đ",
+          "currency_suffix": ""
+        },
+        "price_html": "<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>390.00</span>",
+        "average_rating": "00",
+        "review_count": 0,
+        "images": [
+          {
+            "id": 40,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd8.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd8-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd8.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd8-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd8-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd8-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd8-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd8-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd8",
+            "alt": ""
+          }
+        ],
+        "categories": [
+          {
+            "id": 23,
+            "name": "Succulents",
+            "slug": "succulents",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-category/succulents/"
+          }
+        ],
+        "tags": [
+          {
+            "id": 42,
+            "name": "New Arrivals",
+            "slug": "new-arrivals",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-tag/new-arrivals/"
+          }
+        ],
+        "attributes": [],
+        "variations": [],
+        "has_options": false,
+        "is_purchasable": true,
+        "is_in_stock": true,
+        "is_on_backorder": false,
+        "low_stock_remaining": null,
+        "sold_individually": false,
+        "add_to_cart": {
+          "text": "Add to cart",
+          "description": "Add &ldquo;Cast Iron Plant&rdquo; to your cart",
+          "url": "?add-to-cart=39",
+          "minimum": 1,
+          "maximum": 66,
+          "multiple_of": 1
+        },
+        "extensions": {}
+      },
+      {
+        "id": 37,
+        "name": "Canary Date Palm",
+        "slug": "canary-date-palm",
+        "parent": 0,
+        "type": "simple",
+        "variation": "",
+        "permalink": "https://dreamingtheme.kiendaotac.com/teamo/product/canary-date-palm/",
+        "sku": "158NB154",
+        "short_description": "<p>Imagine that human life cycles resembled those of the earliest plants. If you think about this analogy, you may begin to realize that many plants.</p>\n<ul>\n<li>Plants also have specialized reproductive organs.</li>\n<li>Almost all plants make food by photosynthesis.</li>\n<li>Life as we know it would not be possible without plants.</li>\n</ul>",
+        "description": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque integer, quam dapibus per risus donec semper vulputate interdum, imperdiet mus rhoncus commodo ultricies class urna tincidunt. Imperdiet vitae lacus etiam metus ut nisl curae, conubia enim scelerisque quis facilisis torquent, ultricies orci faucibus dictumst mauris curabitur. Massa risus nec sociosqu fames montes accumsan iaculis justo turpis luctus</p>\n<p>This generator uses a dictionary of Latin words to construct passages of Lorem Ipsum text that meet your desired length. The sentence and paragraph durations and punctuation dispersal are calculated using Gaussian distribution, based on statistical analysis of real world texts. This ensures that the generated Lorem Ipsum text is unique, free of repetition and also resembles readable text as much as possible.</p>",
+        "on_sale": true,
+        "prices": {
+          "price": "290000",
+          "regular_price": "310000",
+          "sale_price": "290000",
+          "price_range": null,
+          "currency_code": "VND",
+          "currency_symbol": "đ",
+          "currency_minor_unit": 2,
+          "currency_decimal_separator": ".",
+          "currency_thousand_separator": ",",
+          "currency_prefix": "đ",
+          "currency_suffix": ""
+        },
+        "price_html": "<del aria-hidden=\"true\"><span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>310.00</span></del> <ins><span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>290.00</span></ins>",
+        "average_rating": "00",
+        "review_count": 0,
+        "images": [
+          {
+            "id": 38,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd7.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd7-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd7.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd7-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd7-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd7-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd7-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd7-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd7",
+            "alt": ""
+          }
+        ],
+        "categories": [
+          {
+            "id": 17,
+            "name": "Hot Sale",
+            "slug": "hot-sale",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-category/hot-sale/"
+          },
+          {
+            "id": 19,
+            "name": "Palms",
+            "slug": "palms",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-category/palms/"
+          }
+        ],
+        "tags": [
+          {
+            "id": 43,
+            "name": "Palms",
+            "slug": "palms",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-tag/palms/"
+          }
+        ],
+        "attributes": [],
+        "variations": [],
+        "has_options": false,
+        "is_purchasable": true,
+        "is_in_stock": true,
+        "is_on_backorder": false,
+        "low_stock_remaining": null,
+        "sold_individually": false,
+        "add_to_cart": {
+          "text": "Add to cart",
+          "description": "Add &ldquo;Canary Date Palm&rdquo; to your cart",
+          "url": "?add-to-cart=37",
+          "minimum": 1,
+          "maximum": 36,
+          "multiple_of": 1
+        },
+        "extensions": {}
+      },
+      {
+        "id": 34,
+        "name": "Broadleaf Lady Palm",
+        "slug": "broadleaf-lady-palm",
+        "parent": 0,
+        "type": "simple",
+        "variation": "",
+        "permalink": "https://dreamingtheme.kiendaotac.com/teamo/product/broadleaf-lady-palm/",
+        "sku": "989R414",
+        "short_description": "<p>Imagine that human life cycles resembled those of the earliest plants. If you think about this analogy, you may begin to realize that many plants.</p>\n<ul>\n<li>Plants also have specialized reproductive organs.</li>\n<li>Almost all plants make food by photosynthesis.</li>\n<li>Life as we know it would not be possible without plants.</li>\n</ul>",
+        "description": "<div class=\"vc_row wpb_row vc_row-fluid vc_row-o-equal-height vc_row-o-content-middle vc_row-flex teamo_custom_64a537b95cb7a\"><div class=\"wpb_column vc_column_container vc_col-sm-7 teamo_custom_64a537b95cb80 vc_custom_1636817854904 vc_custom_1636817854904\"><div class=\"vc_column-inner vc_custom_1636817854904\"><div class=\"wpb_wrapper\">\n\t<div class=\"wpb_text_column wpb_content_element teamo_custom_64a537b95cb84 \">\n\t\t<div class=\"wpb_wrapper\">\n\t\t\t<p>Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque integer, quam dapibus per risus donec semper vulputate interdum, imperdiet mus rhoncus commodo ultricies class urna tincidunt. Imperdiet vitae lacus etiam metus ut nisl curae, conubia enim scelerisque quis facilisis torquent, ultricies orci faucibus dictumst mauris curabitur. Massa risus nec sociosqu fames montes accumsan iaculis justo turpis luctus</p>\n<p>This generator uses a dictionary of Latin words to construct passages of Lorem Ipsum text that meet your desired length. The sentence and paragraph durations and punctuation dispersal are calculated using Gaussian distribution, based on statistical analysis of real world texts. This ensures that the generated Lorem Ipsum text is unique, free of repetition and also resembles readable text as much as possible.</p>\n<p>Ullamcorper magna natoque auctor etiam phasellus elementum eu ante, semper scelerisque ligula consequat dapibus per leo augue, ad dictum dignissim viverra diam neque tellus. Parturient phasellus egestas litora vestibulum pretium condimentum rhoncus at proin, iaculis mauris facilisi ante ullamcorper feugiat semper congue ut</p>\n\n\t\t</div>\n\t</div>\n</div></div></div><div class=\"wpb_column vc_column_container vc_col-sm-5\"><div class=\"vc_column-inner\"><div class=\"wpb_wrapper\">            <div class=\"teamo-pinmapper   teamo_custom_64a537b95cb89 \">\r\n                            <div id=\"shortcode-pinmap-504\" class=\"shortcode-pinmap-builder\">\n                <div id=\"teamo-pinmap-504\" class=\"teamo-pinmap none light \" data-width=\"470\" data-height=\"498\">\n                    <div class=\"wrap-image\"><img width=\"470\" height=\"498\" src=\"https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/11/pin.jpg\" class=\"attachment-full size-full\" alt=\"\" loading=\"lazy\" /></div>\n                                                                                            <div id=\"teamo-pin-d4QLG\" class=\"teamo-pin woocommerce position-left\" data-top=\"32.19544437515688%\" data-left=\"60.744680851063826%\" data-trigger=\"click\" data-position=\"left\">\n                                <div class=\"action-pin text__area icon-area\">01</div>            <div class=\"teamo-popup-tooltip\">\n            <div class=\"teamo-popup popup-woocommerce left\">\n            <div class=\"teamo-popup-main product-item style-01\">\n                                <div class=\"col-left product-thumb\">\n                        <a href=\"https://dreamingtheme.kiendaotac.com/teamo/product/chine-evergreen/\">\n                            <img width=\"266\" height=\"266\" src=\"https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd9-266x266.jpg\" class=\"attachment-266x266 size-266x266\" alt=\"\" loading=\"lazy\" />                        </a>\n                    </div>\n                                <div class=\"col-right product-info\">\n                    <h2 class=\"product-name product_title\">\n                        <a href=\"https://dreamingtheme.kiendaotac.com/teamo/product/chine-evergreen/\">\n                            Chine Evergreen                        </a>\n                    </h2>\n                                        <div class=\"price\">\n                        <span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>260.00</span>                    </div>\n                                            <div class=\"description\">\n                            Imagine that human life cycles resembled those of the earliest&#8230;                        </div>\n                                    </div>\n                            </div>\n            </div>\n            </div>\n                                        </div>\n                                                    <div id=\"teamo-pin-5rI95\" class=\"teamo-pin woocommerce position-top\" data-top=\"52.47657193716271%\" data-left=\"26.702127659574472%\" data-trigger=\"click\" data-position=\"top\">\n                                <div class=\"action-pin text__area icon-area\">02</div>            <div class=\"teamo-popup-tooltip\">\n            <div class=\"teamo-popup popup-woocommerce top\">\n            <div class=\"teamo-popup-main product-item style-01\">\n                                <div class=\"col-left product-thumb\">\n                        <a href=\"https://dreamingtheme.kiendaotac.com/teamo/product/alocasia-chantrieri/\">\n                            <img width=\"266\" height=\"266\" src=\"https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd19-266x266.jpg\" class=\"attachment-266x266 size-266x266\" alt=\"\" loading=\"lazy\" />                        </a>\n                    </div>\n                                <div class=\"col-right product-info\">\n                    <h2 class=\"product-name product_title\">\n                        <a href=\"https://dreamingtheme.kiendaotac.com/teamo/product/alocasia-chantrieri/\">\n                            Alocasia Chantrieri                        </a>\n                    </h2>\n                                        <div class=\"price\">\n                        <span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>200.00</span>                    </div>\n                                            <div class=\"description\">\n                            Imagine that human life cycles resembled those of the earliest&#8230;                        </div>\n                                    </div>\n                            </div>\n            </div>\n            </div>\n                                        </div>\n                                                            </div>\n                            </div>\n                        </div>\r\n            </div></div></div></div>",
+        "on_sale": false,
+        "prices": {
+          "price": "180000",
+          "regular_price": "180000",
+          "sale_price": "180000",
+          "price_range": null,
+          "currency_code": "VND",
+          "currency_symbol": "đ",
+          "currency_minor_unit": 2,
+          "currency_decimal_separator": ".",
+          "currency_thousand_separator": ",",
+          "currency_prefix": "đ",
+          "currency_suffix": ""
+        },
+        "price_html": "<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>180.00</span>",
+        "average_rating": "00",
+        "review_count": 0,
+        "images": [
+          {
+            "id": 35,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd6.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd6-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd6.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd6-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd6-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd6-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd6-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd6-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd6",
+            "alt": ""
+          }
+        ],
+        "categories": [
+          {
+            "id": 18,
+            "name": "Cacti",
+            "slug": "cacti",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-category/cacti/"
+          }
+        ],
+        "tags": [
+          {
+            "id": 41,
+            "name": "Hot Sale",
+            "slug": "hot-sale",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-tag/hot-sale/"
+          }
+        ],
+        "attributes": [],
+        "variations": [],
+        "has_options": false,
+        "is_purchasable": true,
+        "is_in_stock": true,
+        "is_on_backorder": false,
+        "low_stock_remaining": null,
+        "sold_individually": false,
+        "add_to_cart": {
+          "text": "Add to cart",
+          "description": "Add &ldquo;Broadleaf Lady Palm&rdquo; to your cart",
+          "url": "?add-to-cart=34",
+          "minimum": 1,
+          "maximum": 64,
+          "multiple_of": 1
+        },
+        "extensions": {}
+      },
+      {
+        "id": 32,
+        "name": "Boston Fern",
+        "slug": "boston-fern",
+        "parent": 0,
+        "type": "simple",
+        "variation": "",
+        "permalink": "https://dreamingtheme.kiendaotac.com/teamo/product/boston-fern/",
+        "sku": "142B114",
+        "short_description": "<p>Imagine that human life cycles resembled those of the earliest plants. If you think about this analogy, you may begin to realize that many plants.</p>\n<ul>\n<li>Plants also have specialized reproductive organs.</li>\n<li>Almost all plants make food by photosynthesis.</li>\n<li>Life as we know it would not be possible without plants.</li>\n</ul>",
+        "description": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque integer, quam dapibus per risus donec semper vulputate interdum, imperdiet mus rhoncus commodo ultricies class urna tincidunt. Imperdiet vitae lacus etiam metus ut nisl curae, conubia enim scelerisque quis facilisis torquent, ultricies orci faucibus dictumst mauris curabitur. Massa risus nec sociosqu fames montes accumsan iaculis justo turpis luctus</p>\n<p>This generator uses a dictionary of Latin words to construct passages of Lorem Ipsum text that meet your desired length. The sentence and paragraph durations and punctuation dispersal are calculated using Gaussian distribution, based on statistical analysis of real world texts. This ensures that the generated Lorem Ipsum text is unique, free of repetition and also resembles readable text as much as possible.</p>",
+        "on_sale": false,
+        "prices": {
+          "price": "230000",
+          "regular_price": "230000",
+          "sale_price": "230000",
+          "price_range": null,
+          "currency_code": "VND",
+          "currency_symbol": "đ",
+          "currency_minor_unit": 2,
+          "currency_decimal_separator": ".",
+          "currency_thousand_separator": ",",
+          "currency_prefix": "đ",
+          "currency_suffix": ""
+        },
+        "price_html": "<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>230.00</span>",
+        "average_rating": "00",
+        "review_count": 0,
+        "images": [
+          {
+            "id": 33,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd5.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd5-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd5.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd5-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd5-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd5-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd5-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd5-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd5",
+            "alt": ""
+          }
+        ],
+        "categories": [
+          {
+            "id": 21,
+            "name": "Hanging plants",
+            "slug": "hanging-plants",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-category/hanging-plants/"
+          }
+        ],
+        "tags": [
+          {
+            "id": 42,
+            "name": "New Arrivals",
+            "slug": "new-arrivals",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-tag/new-arrivals/"
+          }
+        ],
+        "attributes": [],
+        "variations": [],
+        "has_options": false,
+        "is_purchasable": true,
+        "is_in_stock": true,
+        "is_on_backorder": false,
+        "low_stock_remaining": null,
+        "sold_individually": false,
+        "add_to_cart": {
+          "text": "Add to cart",
+          "description": "Add &ldquo;Boston Fern&rdquo; to your cart",
+          "url": "?add-to-cart=32",
+          "minimum": 1,
+          "maximum": 33,
+          "multiple_of": 1
+        },
+        "extensions": {}
+      },
+      {
+        "id": 30,
+        "name": "Bird\u2019s Nest Fern",
+        "slug": "birds-nest-fern",
+        "parent": 0,
+        "type": "simple",
+        "variation": "",
+        "permalink": "https://dreamingtheme.kiendaotac.com/teamo/product/birds-nest-fern/",
+        "sku": "568W141",
+        "short_description": "<p>Imagine that human life cycles resembled those of the earliest plants. If you think about this analogy, you may begin to realize that many plants.</p>\n<ul>\n<li>Plants also have specialized reproductive organs.</li>\n<li>Almost all plants make food by photosynthesis.</li>\n<li>Life as we know it would not be possible without plants.</li>\n</ul>",
+        "description": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque integer, quam dapibus per risus donec semper vulputate interdum, imperdiet mus rhoncus commodo ultricies class urna tincidunt. Imperdiet vitae lacus etiam metus ut nisl curae, conubia enim scelerisque quis facilisis torquent, ultricies orci faucibus dictumst mauris curabitur. Massa risus nec sociosqu fames montes accumsan iaculis justo turpis luctus</p>\n<p>This generator uses a dictionary of Latin words to construct passages of Lorem Ipsum text that meet your desired length. The sentence and paragraph durations and punctuation dispersal are calculated using Gaussian distribution, based on statistical analysis of real world texts. This ensures that the generated Lorem Ipsum text is unique, free of repetition and also resembles readable text as much as possible.</p>",
+        "on_sale": true,
+        "prices": {
+          "price": "309000",
+          "regular_price": "340000",
+          "sale_price": "309000",
+          "price_range": null,
+          "currency_code": "VND",
+          "currency_symbol": "đ",
+          "currency_minor_unit": 2,
+          "currency_decimal_separator": ".",
+          "currency_thousand_separator": ",",
+          "currency_prefix": "đ",
+          "currency_suffix": ""
+        },
+        "price_html": "<del aria-hidden=\"true\"><span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>340.00</span></del> <ins><span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>309.00</span></ins>",
+        "average_rating": "00",
+        "review_count": 0,
+        "images": [
+          {
+            "id": 31,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd4.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd4-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd4.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd4-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd4-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd4-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd4-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd4-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd4",
+            "alt": ""
+          }
+        ],
+        "categories": [
+          {
+            "id": 17,
+            "name": "Hot Sale",
+            "slug": "hot-sale",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-category/hot-sale/"
+          },
+          {
+            "id": 22,
+            "name": "Variegated",
+            "slug": "variegated",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-category/variegated/"
+          }
+        ],
+        "tags": [
+          {
+            "id": 42,
+            "name": "New Arrivals",
+            "slug": "new-arrivals",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-tag/new-arrivals/"
+          }
+        ],
+        "attributes": [],
+        "variations": [],
+        "has_options": false,
+        "is_purchasable": true,
+        "is_in_stock": true,
+        "is_on_backorder": false,
+        "low_stock_remaining": null,
+        "sold_individually": false,
+        "add_to_cart": {
+          "text": "Add to cart",
+          "description": "Add &ldquo;Bird\u2019s Nest Fern&rdquo; to your cart",
+          "url": "?add-to-cart=300",
+          "minimum": 1,
+          "maximum": 43,
+          "multiple_of": 1
+        },
+        "extensions": {}
+      },
+      {
+        "id": 27,
+        "name": "Arrowhead",
+        "slug": "arrowhead",
+        "parent": 0,
+        "type": "simple",
+        "variation": "",
+        "permalink": "https://dreamingtheme.kiendaotac.com/teamo/product/arrowhead/",
+        "sku": "487EW14",
+        "short_description": "<p>Imagine that human life cycles resembled those of the earliest plants. If you think about this analogy, you may begin to realize that many plants.</p>\n<ul>\n<li>Plants also have specialized reproductive organs.</li>\n<li>Almost all plants make food by photosynthesis.</li>\n<li>Life as we know it would not be possible without plants.</li>\n</ul>",
+        "description": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque integer, quam dapibus per risus donec semper vulputate interdum, imperdiet mus rhoncus commodo ultricies class urna tincidunt. Imperdiet vitae lacus etiam metus ut nisl curae, conubia enim scelerisque quis facilisis torquent, ultricies orci faucibus dictumst mauris curabitur. Massa risus nec sociosqu fames montes accumsan iaculis justo turpis luctus</p>\n<p>This generator uses a dictionary of Latin words to construct passages of Lorem Ipsum text that meet your desired length. The sentence and paragraph durations and punctuation dispersal are calculated using Gaussian distribution, based on statistical analysis of real world texts. This ensures that the generated Lorem Ipsum text is unique, free of repetition and also resembles readable text as much as possible.</p>",
+        "on_sale": false,
+        "prices": {
+          "price": "190000",
+          "regular_price": "190000",
+          "sale_price": "190000",
+          "price_range": null,
+          "currency_code": "VND",
+          "currency_symbol": "đ",
+          "currency_minor_unit": 2,
+          "currency_decimal_separator": ".",
+          "currency_thousand_separator": ",",
+          "currency_prefix": "đ",
+          "currency_suffix": ""
+        },
+        "price_html": "<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>190.00</span>",
+        "average_rating": "00",
+        "review_count": 0,
+        "images": [
+          {
+            "id": 28,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd3.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd3-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd3.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd3-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd3-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd3-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd3-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd3-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd3",
+            "alt": ""
+          }
+        ],
+        "categories": [
+          {
+            "id": 23,
+            "name": "Succulents",
+            "slug": "succulents",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-category/succulents/"
+          }
+        ],
+        "tags": [
+          {
+            "id": 41,
+            "name": "Hot Sale",
+            "slug": "hot-sale",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-tag/hot-sale/"
+          },
+          {
+            "id": 44,
+            "name": "Succulents",
+            "slug": "succulents",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-tag/succulents/"
+          }
+        ],
+        "attributes": [],
+        "variations": [],
+        "has_options": false,
+        "is_purchasable": true,
+        "is_in_stock": true,
+        "is_on_backorder": false,
+        "low_stock_remaining": null,
+        "sold_individually": false,
+        "add_to_cart": {
+          "text": "Add to cart",
+          "description": "Add &ldquo;Arrowhead&rdquo; to your cart",
+          "url": "?add-to-cart=27",
+          "minimum": 1,
+          "maximum": 60,
+          "multiple_of": 1
+        },
+        "extensions": {}
+      },
+      {
+        "id": 25,
+        "name": "Areca palm",
+        "slug": "areca-palm",
+        "parent": 0,
+        "type": "simple",
+        "variation": "",
+        "permalink": "https://dreamingtheme.kiendaotac.com/teamo/product/areca-palm/",
+        "sku": "444E249",
+        "short_description": "<p>Imagine that human life cycles resembled those of the earliest plants. If you think about this analogy, you may begin to realize that many plants.</p>\n<ul>\n<li>Plants also have specialized reproductive organs.</li>\n<li>Almost all plants make food by photosynthesis.</li>\n<li>Life as we know it would not be possible without plants.</li>\n</ul>",
+        "description": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque integer, quam dapibus per risus donec semper vulputate interdum, imperdiet mus rhoncus commodo ultricies class urna tincidunt. Imperdiet vitae lacus etiam metus ut nisl curae, conubia enim scelerisque quis facilisis torquent, ultricies orci faucibus dictumst mauris curabitur. Massa risus nec sociosqu fames montes accumsan iaculis justo turpis luctus</p>\n<p>This generator uses a dictionary of Latin words to construct passages of Lorem Ipsum text that meet your desired length. The sentence and paragraph durations and punctuation dispersal are calculated using Gaussian distribution, based on statistical analysis of real world texts. This ensures that the generated Lorem Ipsum text is unique, free of repetition and also resembles readable text as much as possible.</p>",
+        "on_sale": true,
+        "prices": {
+          "price": "189000",
+          "regular_price": "210000",
+          "sale_price": "189000",
+          "price_range": null,
+          "currency_code": "VND",
+          "currency_symbol": "đ",
+          "currency_minor_unit": 2,
+          "currency_decimal_separator": ".",
+          "currency_thousand_separator": ",",
+          "currency_prefix": "đ",
+          "currency_suffix": ""
+        },
+        "price_html": "<del aria-hidden=\"true\"><span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>210.00</span></del> <ins><span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>189.00</span></ins>",
+        "average_rating": "00",
+        "review_count": 0,
+        "images": [
+          {
+            "id": 26,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd2.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd2-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd2.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd2-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd2-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd2-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd2-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd2-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd2",
+            "alt": ""
+          }
+        ],
+        "categories": [
+          {
+            "id": 17,
+            "name": "Hot Sale",
+            "slug": "hot-sale",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-category/hot-sale/"
+          }
+        ],
+        "tags": [
+          {
+            "id": 39,
+            "name": "Ferns",
+            "slug": "ferns",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-tag/ferns/"
+          }
+        ],
+        "attributes": [],
+        "variations": [],
+        "has_options": false,
+        "is_purchasable": true,
+        "is_in_stock": false,
+        "is_on_backorder": false,
+        "low_stock_remaining": null,
+        "sold_individually": false,
+        "add_to_cart": {
+          "text": "Read more",
+          "description": "Read more about &ldquo;Areca palm&rdquo;",
+          "url": "https://dreamingtheme.kiendaotac.com/teamo/product/areca-palm/",
+          "minimum": 1,
+          "maximum": 9999,
+          "multiple_of": 1
+        },
+        "extensions": {}
+      },
+      {
+        "id": 23,
+        "name": "Aluminum Plant",
+        "slug": "aluminum-plant",
+        "parent": 0,
+        "type": "simple",
+        "variation": "",
+        "permalink": "https://dreamingtheme.kiendaotac.com/teamo/product/aluminum-plant/",
+        "sku": "784Y141",
+        "short_description": "<p>Imagine that human life cycles resembled those of the earliest plants. If you think about this analogy, you may begin to realize that many plants.</p>\n<ul>\n<li>Plants also have specialized reproductive organs.</li>\n<li>Almost all plants make food by photosynthesis.</li>\n<li>Life as we know it would not be possible without plants.</li>\n</ul>",
+        "description": "<p>Lorem ipsum dolor sit amet consectetur adipiscing elit scelerisque integer, quam dapibus per risus donec semper vulputate interdum, imperdiet mus rhoncus commodo ultricies class urna tincidunt. Imperdiet vitae lacus etiam metus ut nisl curae, conubia enim scelerisque quis facilisis torquent, ultricies orci faucibus dictumst mauris curabitur. Massa risus nec sociosqu fames montes accumsan iaculis justo turpis luctus</p>\n<p>This generator uses a dictionary of Latin words to construct passages of Lorem Ipsum text that meet your desired length. The sentence and paragraph durations and punctuation dispersal are calculated using Gaussian distribution, based on statistical analysis of real world texts. This ensures that the generated Lorem Ipsum text is unique, free of repetition and also resembles readable text as much as possible.</p>",
+        "on_sale": false,
+        "prices": {
+          "price": "160000",
+          "regular_price": "160000",
+          "sale_price": "160000",
+          "price_range": null,
+          "currency_code": "VND",
+          "currency_symbol": "đ",
+          "currency_minor_unit": 2,
+          "currency_decimal_separator": ".",
+          "currency_thousand_separator": ",",
+          "currency_prefix": "đ",
+          "currency_suffix": ""
+        },
+        "price_html": "<span class=\"woocommerce-Price-amount amount\"><span class=\"woocommerce-Price-currencySymbol\">&#036;</span>160.00</span>",
+        "average_rating": "00",
+        "review_count": 0,
+        "images": [
+          {
+            "id": 24,
+            "src": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd1.jpg",
+            "thumbnail": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd1-266x266.jpg",
+            "srcset": "https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd1.jpg 840w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd1-266x266.jpg 266w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd1-100x100.jpg 100w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd1-300x300.jpg 300w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd1-150x150.jpg 150w, https://dreamingtheme.kiendaotac.com/teamo/wp-content/uploads/2021/10/pd1-768x768.jpg 768w",
+            "sizes": "(max-width: 840px) 100vw, 840px",
+            "name": "pd1",
+            "alt": ""
+          }
+        ],
+        "categories": [
+          {
+            "id": 23,
+            "name": "Succulents",
+            "slug": "succulents",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-category/succulents/"
+          }
+        ],
+        "tags": [
+          {
+            "id": 42,
+            "name": "New Arrivals",
+            "slug": "new-arrivals",
+            "link": "https://dreamingtheme.kiendaotac.com/teamo/product-tag/new-arrivals/"
+          }
+        ],
+        "attributes": [],
+        "variations": [],
+        "has_options": false,
+        "is_purchasable": true,
+        "is_in_stock": true,
+        "is_on_backorder": false,
+        "low_stock_remaining": null,
+        "sold_individually": false,
+        "add_to_cart": {
+          "text": "Add to cart",
+          "description": "Add &ldquo;Aluminum Plant&rdquo; to your cart",
+          "url": "?add-to-cart=23",
+          "minimum": 1,
+          "maximum": 77,
+          "multiple_of": 1
+        },
+        "extensions": {}
+      }
+    ]
+}

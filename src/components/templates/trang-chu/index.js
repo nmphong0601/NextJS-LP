@@ -1,10 +1,11 @@
-import Gallery from "components/molecules/Gallery";
 import styles from "./index.module.scss";
+
 import Card from "components/molecules/Card";
 import PosterSlider from "components/molecules/PosterSlider";
 import ProList from "components/molecules/ProList";
 import ProSlider from "components/molecules/ProSlider";
 import Tabs from "components/molecules/Tabs";
+import Gallery from "components/molecules/Gallery";
 
 const posters = [
   {

@@ -7,27 +7,15 @@ import SearchBox from "./SearchBox";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 
+import data from "common/data.json";
+
 const categories = [
   {
-    label: "Tất cả loại sản phẩm",
-    url: "/",
-    value: 0,
+    id: 0,
+    name: "All Categories",
+    link: "/",
   },
-  {
-    label: "Loại 1",
-    url: "/type-1",
-    value: 1,
-  },
-  {
-    label: "Loại 2",
-    url: "/type-2",
-    value: 2,
-  },
-  {
-    label: "Loại 3",
-    url: "/type-3",
-    value: 3,
-  },
+  ...data.categories,
 ];
 
 const menus = [
