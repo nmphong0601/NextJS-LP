@@ -89,7 +89,7 @@ const SanPhamTemplate = ({ ...props }) => {
         timer = setInterval(setRemaining, 1000, _offer);
       } else {
         const _offer = {
-          price: data.prices?.price,
+          price: product.prices?.price,
           priceValidUntil: null,
         };
         setOffer(_offer);
