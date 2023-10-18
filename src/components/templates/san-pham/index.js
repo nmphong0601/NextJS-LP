@@ -160,7 +160,7 @@ const SanPhamTemplate = ({ ...props }) => {
               <img
                 ref={sourceRef}
                 alt={product?.images[0].name}
-                srcset={product?.images[0]?.srcset}
+                srcSet={product?.images[0]?.srcset}
                 src={product?.images[0]?.src}
                 sizes={product?.images[0]?.sizes}
                 loading="lazy"

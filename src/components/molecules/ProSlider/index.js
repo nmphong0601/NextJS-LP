@@ -19,7 +19,7 @@ const ProSlider = ({ products, ...props }) => {
         modules={[Navigation, Pagination, EffectFade, Autoplay]}
         effect="slide"
         pagination={{
-          //   dynamicBullets: true,
+          dynamicBullets: true,
           clickable: true,
           bulletClass: styles["swiper-bullet"],
           bulletActiveClass: styles["swiper-bullet-active"],
@@ -31,13 +31,13 @@ const ProSlider = ({ products, ...props }) => {
         initialSlide={0}
         breakpoints={{
           1280: {
-            slidesPerView: 4,
+            slidesPerView: products.length === 3 ? 3 : 4,
           },
           990: {
-            slidesPerView: 3,
+            slidesPerView: products.length === 2 ? 2 : 3,
           },
           640: {
-            slidesPerView: 2,
+            slidesPerView: products.length === 1 ? 1 : 2,
           },
         }}
       >
