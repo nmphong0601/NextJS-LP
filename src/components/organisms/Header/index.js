@@ -450,7 +450,7 @@ const Header = () => {
         <SearchWidget isOpen={showSearchWidget} />
         <div className="header-logo">
           <a href={process.env.NEXT_HOST}>
-            <img alt="Salom" className="logo" src="assets/images/logo.png" />
+            <img alt="Salom" className="logo" src="/assets/images/logo.png" />
           </a>
         </div>
         <div className="hidden lg:block">

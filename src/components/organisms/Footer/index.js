@@ -10,7 +10,7 @@ const Footer = () => {
               <img
                 alt="logo mini"
                 className="logo"
-                src="assets/images/logo-mini.png"
+                src="/assets/images/logo-mini.png"
               />
             </a>
             <div className="pt-5 pb-8">

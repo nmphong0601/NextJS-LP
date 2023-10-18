@@ -1,0 +1,149 @@
+.product-title {
+    @apply text-2xl text-black font-semibold mb-4;
+}
+.product-price {
+    @apply text-nmp-primary font-bold text-xl inline-block mb-4;
+
+    del {
+      margin-right: 5px;
+      font-size: 20px;
+      color: #8a8a8a;
+    }
+
+    ins {
+      color: #65a15a;
+      text-decoration: none;
+    }
+}
+.product-stock {
+    @apply mb-4;
+    > span {
+        @apply text-nmp-primary font-bold;
+    }
+}
+.product-short-description {
+    @apply mb-5;
+    > p {
+        @apply mb-2;
+    }
+
+    > ul {
+        @apply list-disc list-inside text-nmp-gray-dark;
+    }
+}
+.product-deal-title {
+    @apply mt-0 mb-5 text-lg font-semibold text-black;
+    &::before {
+        content: "\f11e";
+        font-family: 'Flaticon', sans-serif;
+        font-size: 34px;
+        margin-right: 7px;
+        vertical-align: bottom;
+        font-weight: 400;
+        @apply text-nmp-primary;
+    }
+}
+.product-countdown {
+    @apply mb-3 leading-6;
+
+    > span {
+      display: inline-block;
+      min-width: 49px;
+      height: 49px;
+      color: #fff;
+      background-color: #65a15a;
+      padding: 9px 3px;
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      margin-bottom: 7px;
+      margin-right: 7px;
+      position: relative;
+
+      :last-child {
+        margin-right: 0;
+      }
+
+      [class~="number"] {
+        display: block;
+        font-size: 12px;
+        line-height: 1;
+      }
+
+      [class~="text"] {
+        display: block;
+        font-size: 10px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+.product-cart {
+    @apply relative flex justify-start gap-4 mb-5;
+}
+
+.product-quantity {
+    @apply text-center w-fit border border-nmp-gray;
+
+    [class~="control"] {
+        @apply overflow-hidden;
+    }
+    
+    [class~="btn-number"] {
+        width: 20px;
+        color: #d9d9d9;
+
+        @apply inline-block text-xl leading-10 align-middle;
+    }
+}
+
+.add-to-cart {
+    font-family: 'Montserrat', sans-serif;
+    @apply relative bg-nmp-primary px-4 text-xs font-bold text-center overflow-hidden uppercase;
+
+    &::before{
+        vertical-align: middle;
+        font-family: 'Flaticon', sans-serif;
+        content: "\f137";
+
+        @apply inline-block text-xl font-normal mr-2;
+    }
+
+    &::after {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        z-index: 2;
+        display: block;
+        content: '';
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+        transform: skewX(-45deg);
+    }
+
+    &:hover {
+        @apply bg-black;
+        &::after {
+            animation: shine .75s;
+        }
+    }
+}
+
+.product-meta {
+    @apply flex flex-col gap-2 justify-center;
+
+    span {
+        @apply text-black;
+    }
+
+    div, span {
+        @apply text-sm;
+    }
+}
+
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}

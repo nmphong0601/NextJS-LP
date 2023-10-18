@@ -1,0 +1,24 @@
+.share-socials-list {
+    i {
+        padding-right: 4px;
+    }
+    a {
+        font-size: 14px;
+        line-height: 29px;
+        font-weight: 400;
+        display: inline-block;
+        padding: 0 12px;
+        margin-top: 15px;
+        margin-right: 3px;
+        background-color: #3b5998;
+        color: #fff;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &[class~="twitter"] {
+            background-color: #1da1f2;
+        }
+    }
+}

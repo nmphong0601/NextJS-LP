@@ -5,10 +5,22 @@
     
 }
 .tab-links {
-    @apply text-center mb-6 lg:mb-10;
+    @apply mb-6 lg:mb-10;
 
     [class~="tab-link"] {
         @apply inline-block;
+
+        &:first-child {
+            button {
+                @apply ml-0;
+            }
+        }
+
+        &:last-child {
+            button {
+                @apply mr-0;
+            }
+        }
 
         button {
             font-family: 'Montserrat', sans-serif;
@@ -56,5 +68,11 @@
         position: static;
         height: auto;
         overflow: inherit;
+    }
+
+    [class~="tab-panel-content"] {
+        > p:not(:last-child) {
+            @apply mb-7;
+        }
     }
 }

@@ -10,67 +10,127 @@ const _day = _hour * 24;
 
 const ProCard = ({ data, ...props }) => {
   const [date, setDate] = useState(null);
+  const [offer, setOffer] = useState({ price: null, priceValidUntil: null });
 
   useEffect(() => {
     let timer = null;
 
-    if (data && data.saleOff && data.saleOff.expireDate) {
-      const { expireDate } = data.saleOff;
-      const setRemaining = (date) => {
-        const end = new Date(date);
-        const now = new Date();
-        const distance = end - now;
-        if (distance < 0) {
-          clearInterval(timer);
-          return;
-        }
-        let days = Math.floor(distance / _day);
-        let hours = Math.floor((distance % _day) / _hour);
-        let minutes = Math.floor((distance % _hour) / _minute);
-        let seconds = Math.floor((distance % _minute) / _second);
+    if (data && data.on_sale) {
+      const setRemaining = (offer) => {
+        if (offer.priceValidUntil) {
+          const { priceValidUntil: date } = offer;
+          const end = new Date(date);
+          const now = new Date();
+          const distance = end - now;
+          if (distance < 0) {
+            clearInterval(timer);
+            return;
+          }
+          let days = Math.floor(distance / _day);
+          let hours = Math.floor((distance % _day) / _hour);
+          let minutes = Math.floor((distance % _hour) / _minute);
+          let seconds = Math.floor((distance % _minute) / _second);
 
-        setDate({ day: days, hour: hours, min: minutes, sec: seconds });
+          setOffer(offer);
+          setDate({ day: days, hour: hours, min: minutes, sec: seconds });
+        }
       };
 
-      timer = setInterval(setRemaining, 1000, expireDate);
+      if (data.offers && data.offers.length > 0) {
+        const maxDate = new Date(
+          Math.max(
+            ...data.offers.map((offer) => {
+              return new Date(offer.priceValidUntil);
+            })
+          )
+        );
+        const _offer = data.offers.find((x) => {
+          const currentDate = new Date(x.priceValidUntil);
+          return currentDate.getTime() === maxDate.getTime();
+        });
+
+        timer = setInterval(setRemaining, 1000, _offer);
+      } else {
+        const _offer = {
+          price: data.prices?.price,
+          priceValidUntil: null,
+        };
+        setOffer(_offer);
+      }
     }
   }, []);
 
   return (
     <div className={`group ${styles["product-container"]}`} {...props}>
       <div className={styles["product-thumb"]}>
-        <a className="block relative" href={`/san-pham?id=${data.id}`}>
-          <Image
-            src={data.image.src}
-            width={data.image.width}
-            height={data.image.height}
-            unoptimized
-            className="relative z-0 h-full"
-            alt={data.image.alt}
-          />
+        <a className="block relative" href={`/san-pham/${data.slug}`}>
+          {data.image ? (
+            <Image
+              src={data.image.src}
+              width={data.image.width}
+              height={data.image.height}
+              unoptimized
+              className="relative z-0 h-full"
+              alt={data.image.alt}
+            />
+          ) : (
+            <Image
+              src={data.images[0].src}
+              sizes={data.images[0].sizes}
+              unoptimized
+              className="relative z-0 h-full"
+              width={600}
+              height={600}
+              alt={data.images[0].name}
+            />
+          )}
         </a>
         <div className="hover-image invisible opacity-100 group-hover:visible group-hover:opacity-1">
-          <a href={`/san-pham?id=${data.id}`}>
-            <Image
-              src={data.imageHover.src}
-              width={data.imageHover.width}
-              height={data.imageHover.height}
-              unoptimized
-              className="relative z-0"
-              alt={data.imageHover.alt}
-            />
+          <a href={`/san-pham/${data.slug}`}>
+            {data.imageHover ? (
+              <Image
+                src={data.imageHover.src}
+                width={data.imageHover.width}
+                height={data.imageHover.height}
+                unoptimized
+                className="relative z-0"
+                alt={data.imageHover.alt}
+              />
+            ) : (
+              <Image
+                src={
+                  data.images.length > 1
+                    ? data.images[1].src
+                    : data.images[0].src
+                }
+                sizes={
+                  data.images.length > 1
+                    ? data.images[1].sizes
+                    : data.images[0].sizes
+                }
+                unoptimized
+                className="relative z-0"
+                alt={
+                  data.images.length > 1
+                    ? data.images[1].name
+                    : data.images[0].name
+                }
+                width={600}
+                height={600}
+              />
+            )}
           </a>
         </div>
-        {data.saleOff ? (
-          <div className="flash">{`-${data.saleOff.ratio}%`}</div>
+        {data.on_sale ? (
+          <div className="flash">{`-${Math.floor(
+            100 -
+              (Number(data.prices?.sale_price) * 100) /
+                Number(data.prices?.regular_price)
+          )}%`}</div>
         ) : (
           ""
         )}
-        {Number(data.quantity) === 0 ? (
-          <div className="sold-out">Hết hàng</div>
-        ) : (
-          ""
-        )}
+        {!data.is_in_stock ? <div className="sold-out">Sold Out</div> : ""}
         <div className="group-button lg:opacity-0 lg:invisible lg:group-hover:opacity-100 lg:group-hover:visible lg:group-hover:-translate-y-1/2 lg:group-hover:-translate-x-1/2">
           <button className="action-button add-wishlist-button">
             Add to wishlist
@@ -107,24 +167,29 @@ const ProCard = ({ data, ...props }) => {
           ""
         )}
         <h3 className={"product-name"}>
-          <a href={`/san-pham?id=${data.id}`}>{data.title}</a>
+          <a href={`/san-pham/${data.slug}`}>{data.name}</a>
         </h3>
         <div className={"product-rating-wrapper"}>
           <div className={"product-rating"}>
-            <span style={{ width: `${(data.rate * 100) / 5}%` }}></span>
+            <span
+              style={{ width: `${(Number(data.average_rating) * 100) / 5}%` }}
+            ></span>
           </div>
         </div>
         <div className={"product-price"}>
-          {data.saleOff ? (
+          {data.on_sale ? (
             <Fragment>
               <del>
                 <span>
                   <bdi>
                     <span>
-                      {Number(data.price).toLocaleString("vi-VN", {
-                        style: "currency",
-                        currency: "VND",
-                      })}
+                      {Number(data.prices?.regular_price).toLocaleString(
+                        "vi-VN",
+                        {
+                          style: "currency",
+                          currency: "VND",
+                        }
+                      )}
                     </span>
                   </bdi>
                 </span>
@@ -133,7 +198,7 @@ const ProCard = ({ data, ...props }) => {
                 <span>
                   <bdi>
                     <span>
-                      {Number(data.saleOff.price).toLocaleString("vi-VN", {
+                      {Number(offer.price).toLocaleString("vi-VN", {
                         style: "currency",
                         currency: "VND",
                       })}
@@ -145,15 +210,19 @@ const ProCard = ({ data, ...props }) => {
           ) : (
             <bdi>
               <span>
-                {typeof data.price === "object"
-                  ? `${Number(data.price.min).toLocaleString("vi-VN", {
+                {data.prices?.price_range
+                  ? `${Number(
+                      data.prices.price_range.min_amount
+                    ).toLocaleString("vi-VN", {
                       style: "currency",
                       currency: "VND",
-                    })} - ${Number(data.price.max).toLocaleString("vi-VN", {
+                    })} - ${Number(
+                      data.prices.price_range.max_amount
+                    ).toLocaleString("vi-VN", {
                       style: "currency",
                       currency: "VND",
                     })}`
-                  : Number(data.price).toLocaleString("vi-VN", {
+                  : Number(data.prices?.price).toLocaleString("vi-VN", {
                       style: "currency",
                       currency: "VND",
                     })}

@@ -1,13 +1,16 @@
 import { useState } from "react";
 import styles from "./Index.module.scss";
 
-const Tabs = ({ items = [], ...props }) => {
+const Tabs = ({ items = [], position = "center", ...props }) => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
     <div>
-      <div className={`${styles["tab-head"]}`}>
-        <ul className={`${styles["tab-links"]}`} style={{ listStyle: "none" }}>
+      <div className={`${styles["tab-head"] || ""}`}>
+        <ul
+          className={`${styles["tab-links"]}`}
+          style={{ listStyle: "none", textAlign: position }}
+        >
           {items.map((item, idxItem) => {
             return (
               <li
@@ -37,7 +40,7 @@ const Tabs = ({ items = [], ...props }) => {
               }`}
             >
               {typeof item.content === "string" ? (
-                <div dangerouslySetInnerHTML={{ __html: item.content }}></div>
+                <div className="tab-panel-content" dangerouslySetInnerHTML={{ __html: item.content }}></div>
               ) : (
                 item.content
               )}

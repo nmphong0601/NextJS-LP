@@ -151,6 +151,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 a,
+.ant-breadcrumb a,
 button.block-link,
 .label-block-link {
   color: #0a0a0a;
@@ -159,9 +160,26 @@ button.block-link,
     opacity 0.25s, width 0.25s ease 0s;
 }
 a:hover,
+.ant-breadcrumb a:hover,
 button.block-link:hover,
 .label-block-link:hover {
   color: #65a15a;
+  background-color: transparent;
+}
+
+.ant-breadcrumb ol {
+    align-items: center;
+}
+
+.ant-breadcrumb .ant-breadcrumb-separator{
+  display: inline-block;
+  font: normal normal normal 16px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+
+  &::before {
+    content: "\f101";
+  }
 }
 
 .label-block-link {
