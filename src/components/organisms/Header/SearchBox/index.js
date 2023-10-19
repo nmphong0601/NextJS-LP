@@ -51,8 +51,8 @@ const SearchBox = ({ className, categories = [] }) => {
         type="text"
         autoComplete="off"
         className="txt-search focus:ring-0 w-full"
-        placeholder="Tìm kiếm tại đây..."
-        aria-label="Tìm kiếm tại đây..."
+        placeholder="Search here..."
+        aria-label="Search here..."
         aria-describedby="basic-addon"
       />
       <button type="button" className="btn-shine btn-search">

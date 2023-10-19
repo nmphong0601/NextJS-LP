@@ -391,26 +391,23 @@ const Header = () => {
         <div className="container flex max-w-full items-center justify-center lg:justify-between">
           <ul className="menu-left">
             <li className="text-center lg:text-left">
-              <a
-                title="Chào mừng bạn đến với cửa hàng Salom!"
-                href={process.env.NEXT_HOST}
-              >
-                Chào mừng bạn đến với cửa hàng Salom!
+              <a title="Welcome to Shalom store!" href={process.env.NEXT_HOST}>
+                Welcome to Shalom store!
               </a>
             </li>
           </ul>
           <ul className="menu-right">
             <li className="first:pl-0 last:pr-0 px-2">
-              <a
-                title="Về chúng tôi"
-                href={`${process.env.NEXT_HOST}/about-us`}
-              >
-                Về chúng tôi
+              <a title="About Us" href={`${process.env.NEXT_HOST}/about-us`}>
+                About Us
               </a>
             </li>
             <li className="first:pl-0 last:pr-0 px-2">
-              <a title="Liên hệ" href={`${process.env.NEXT_HOST}/contact-us`}>
-                Liên hệ
+              <a
+                title="Contact Us"
+                href={`${process.env.NEXT_HOST}/contact-us`}
+              >
+                Contact Us
               </a>
             </li>
           </ul>
