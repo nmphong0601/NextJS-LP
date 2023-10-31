@@ -17,7 +17,7 @@ export default function Home({ initialUsers }) {
 }
 
 export const getServerSideProps = async () => {
-  const response = await fetch("http://localhost:3000/api/users", {
+  const response = await fetch(`${process.env.NEXT_HOST}/api/users`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json; charset=utf8",
