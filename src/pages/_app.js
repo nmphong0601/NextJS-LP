@@ -22,11 +22,11 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <Fragment>
-      <Header />
+      {/* <Header /> */}
       <main className="">
         <Component {...pageProps} />
       </main>
-      <Footer />
+      {/* <Footer /> */}
       <button
         className={`back-to-top ${offset !== 0 ? "active" : ""}`}
         onClick={(e) => {

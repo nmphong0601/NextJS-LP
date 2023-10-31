@@ -2,6 +2,9 @@
 const path = require("path");
 
 const nextConfig = {
+  experimental: {
+    appDir: true,
+  },
   basePath: "",
   reactStrictMode: true,
   swcMinify: true,
@@ -27,15 +30,15 @@ const nextConfig = {
     dirs: ["pages", "utils"], // Only run ESLint on the 'pages' and 'utils' directories during production builds (next build)
   },
 
-  async redirects() {
-    return [
-      {
-        source: "/",
-        destination: "/trang-chu",
-        permanent: true,
-      },
-    ];
-  },
+  // async redirects() {
+  //   return [
+  //     {
+  //       source: "/",
+  //       destination: "/trang-chu",
+  //       permanent: true,
+  //     },
+  //   ];
+  // },
   headers: () => [
     {
       source: "/:path*",

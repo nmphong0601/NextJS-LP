@@ -1,0 +1,196 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Account {
+  id           String   @id @default(uuid())
+  username     String   @unique
+  password     String
+  salt         String?
+  userId       String   @unique
+  permissionId String   @unique
+  published    Boolean? @default(false)
+
+  createdAt  DateTime    @default(now())
+  updatedAt  DateTime    @updatedAt
+  User       User?       @relation(fields: [userId], references: [id])
+  Permission Permission? @relation(fields: [permissionId], references: [id])
+  Order      Order?
+  Review     Review[]
+
+  @@map(name: "accounts")
+}
+
+model User {
+  id        String   @id @default(uuid())
+  name      String
+  email     String
+  phone     String
+  dob       DateTime
+  address   String?
+  published Boolean? @default(false)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  Account   Account?
+
+  @@map(name: "users")
+}
+
+model Permission {
+  id        String   @id @default(uuid())
+  name      String
+  slug      String
+  published Boolean? @default(false)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  Account   Account?
+
+  @@map(name: "permissions")
+}
+
+model Category {
+  id        String   @id @default(uuid())
+  name      String
+  slug      String
+  published Boolean? @default(false)
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  Products  Product[]
+
+  @@map(name: "categories")
+}
+
+model Producer {
+  id        String   @id @default(uuid())
+  name      String
+  slug      String
+  published Boolean? @default(false)
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  Products  Product[]
+
+  @@map(name: "producer")
+}
+
+model Product {
+  id              String @id @default(uuid())
+  name            String
+  slug            String
+  shortDesription String
+  desription      String
+
+  quantity      Int
+  onSale        Boolean
+  averageRating String
+  isInStock     Boolean
+  isPurchasable Boolean
+  categoryId    String
+  producerId    String
+  published     Boolean? @default(false)
+
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+  reviews     Review[]
+  prices      Price[]
+  Category    Category?     @relation(fields: [categoryId], references: [id])
+  Producer    Producer?     @relation(fields: [producerId], references: [id])
+  OrderDetail OrderDetail[]
+
+  @@map(name: "products")
+}
+
+model Price {
+  id                       String   @id @default(uuid())
+  price                    Decimal
+  regularPrice             Decimal
+  salePrice                String
+  priceRange               String
+  currencyCode             String
+  currencySynbol           String
+  currencyMinorUnit        Int
+  currencyDecimalSeparate  String
+  currencyThousandSeparate String
+  currencyPrefix           String
+  currencySuffix           String
+  priceValidUntil          DateTime
+  productId                String
+  published                Boolean? @default(false)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  Product   Product? @relation(fields: [productId], references: [id])
+
+  @@map(name: "prices")
+}
+
+model Review {
+  id        String   @id @default(uuid())
+  title     String
+  content   String
+  accountId String
+  productId String
+  published Boolean? @default(false)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  Account   Account? @relation(fields: [accountId], references: [id])
+  Product   Product? @relation(fields: [productId], references: [id])
+
+  @@map(name: "reviews")
+}
+
+model Order {
+  id        String   @id @default(uuid())
+  date      DateTime
+  amount    Decimal
+  accountId String   @unique
+  statusId  String
+  published Boolean? @default(false)
+
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  Account      Account?      @relation(fields: [accountId], references: [id])
+  Status       Status?       @relation(fields: [statusId], references: [id])
+  OrderDetails OrderDetail[]
+
+  @@map(name: "orders")
+}
+
+model OrderDetail {
+  id        String   @id @default(uuid())
+  total     Int
+  orderId   String
+  productId String
+  published Boolean? @default(false)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  Order     Order?   @relation(fields: [orderId], references: [id])
+  Product   Product? @relation(fields: [productId], references: [id])
+
+  @@map(name: "orderDetails")
+}
+
+model Status {
+  id        String   @id @default(uuid())
+  name      String
+  published Boolean? @default(false)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  Orders    Order[]
+
+  @@map(name: "statues")
+}
