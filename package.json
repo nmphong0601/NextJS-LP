@@ -4,14 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run partytown && next build",
+    "build": "yarn prisma generate && npm run partytown && next build",
     "start": "next start",
     "lint": "next lint",
     "build:production": "npm run partytown && env-cmd -f .env.production next build && next export",
     "build:development": "npm run partytown && env-cmd -f .env.development next build && next export",
     "partytown": "partytown copylib public/~partytown",
-    "db:migrate": "npx prisma migrate dev --name note-entity --create-only && yarn prisma generate",
-    "db:push": "npx prisma db push"
+    "db:migrate": "yarn prisma migrate dev --name note-entity --create-only && yarn prisma generate",
+    "db:push": "yarn prisma db push"
   },
   "dependencies": {
     "@apollo/client": "^3.6.9",
